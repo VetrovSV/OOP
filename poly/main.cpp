@@ -11,37 +11,46 @@
 #include <typeinfo>
 #include <list>
 
-#include "student.h"
+#include "abstractprogrammer.h"
 #include "coder1.h"
 #include "coder2.h"
 #include "university.h"
 #include "firma.h"
+#include "no_poly.h"
+
+
 
 
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    const Student s1;
+
+    // Контроль постоянтсва
+    const AbstractWorker a1;
     //s1.set_age(120); // контроль постоянтсва не позволить вызывать неконстантный метод
-    cout<< int(s1.age()) << endl;
+    // у обхекта-константы можно вызывать можно только константные методы:
+    cout<< int(a1.age()) << endl;
 
 
+    // При использовании виртуальных классов следует использовать переменные-указатели на классы,
+    // вместо экземпляров класса непостредственно.
+    // Указатель на люой класс занимает фиксированное количество памяти.
+    // Но если записать в переменную базового класса производный, то потомок будет "обрезан" по размерам предка.
 
-    Student *s = new Student(); // Виртуальный класс
+    // Виртуальный класс
+    AbstractWorker *s = new AbstractWorker();
+
+    // Потомки...
     Coder1 *c1 = new Coder1();
     Coder2 *c2 = new Coder2();
 
-    cout << "Coder1 age " << int(c1->age()) << endl;
-    c1->set_age(22);
-    cout << "Coder1"
-            " age " << int(c1->age()) << endl;
 
-
-    // один интерфейс
+    // у них один интерфейс (метод  work) но работает он по-разному
     s->work(Task());
     c1->work(Task());
     c2->work(Task());
+
 
     cout << endl;
     s = c1;
@@ -50,10 +59,11 @@ int main(int argc, char *argv[])
     s = c2;
     s->work(Task()); // Coder2::work()
 
+
    // Проверка типа
-   Student *x;
+   AbstractWorker *x;
    x = c2;
-   if (typeid(x) == typeid(Student))
+   if (typeid(x) == typeid(AbstractWorker))
        cout << "X is Student" << endl;
    else if (typeid(x) == typeid(Coder1))
             cout << "X is Coder1"<< endl;
@@ -61,22 +71,27 @@ int main(int argc, char *argv[])
 
 
    Firm f;
-
 // Выпуск программистов
    University U; //Генератор классов.
-   list<Student*> coders;
+   list<AbstractWorker*> coders; // Список для примера
    for (int i=0; i<15; i++){
-       Student *s = U.graduate();
+       AbstractWorker *s = U.graduate();
         coders.push_front(s);
         f.addProgrammer(s);
+}
 
-   }
 
    cout << endl;
    for (auto x : coders)
        if (typeid(*x) == typeid(Coder1))
           cout << "I am Coder1"<< endl;
        else cout << "Coder2 I am"<< endl;
+
+
+   // Пример: без виртуальных функций ничего не работает
+   cout << endl;
+   no_poly::run_me();
+
 
    return a.exec();
 }

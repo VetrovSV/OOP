@@ -1,19 +1,19 @@
 #ifndef FIRMA_H
 #define FIRMA_H
 #include<list>
-#include"student.h"
+#include"abstractprogrammer.h"
 
 
 
 class Firm
 {
-    list <Student*> programmers;
+    list <AbstractWorker*> programmers;
 
 public:
 
     Firm();
-    void addProgrammer(Student *p);
-    list <Student*> Programmers() const;
+    void addProgrammer(AbstractWorker *p);
+    list <AbstractWorker*> Programmers() const;
 };
 
 #endif // FIRMA_H

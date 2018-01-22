@@ -1,9 +1,9 @@
 #ifndef PROGR1_H
 #define PROGR1_H
 
-#include "student.h"
+#include "abstractprogrammer.h"
 
-class Coder1 : public Student
+class Coder1 : public AbstractWorker
 {
 public:
     Coder1();

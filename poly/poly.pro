@@ -1,6 +1,7 @@
 QT -= gui
 
 CONFIG += c++11 console
+QMAKE_CXXFLAGS += -std=c++14
 CONFIG -= app_bundle
 
 # The following define makes your compiler emit warnings if you use
@@ -15,19 +16,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    student.cpp \
     task.cpp \
     programm.cpp \
     coder1.cpp \
     coder2.cpp \
     university.cpp \
-    firma.cpp
+    firma.cpp \
+    abstractprogrammer.cpp
 
 HEADERS += \
-    student.h \
     task.h \
     programm.h \
     coder1.h \
     coder2.h \
     university.h \
-    firma.h
+    firma.h \
+    no_poly.h \
+    abstractprogrammer.h

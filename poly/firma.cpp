@@ -6,11 +6,11 @@ Firm::Firm()
 }
 
 
-void Firm::addProgrammer(Student *p){
+void Firm::addProgrammer(AbstractWorker *p){
     programmers.push_back(p);
 }
 
 
-list <Student*> Firm::Programmers()const{
+list <AbstractWorker*> Firm::Programmers()const{
     return programmers;
 }
