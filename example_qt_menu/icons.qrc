@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>trash-bin-symbol.png</file>
+    </qresource>
+</RCC>
