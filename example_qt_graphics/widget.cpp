@@ -89,7 +89,9 @@ void GraphicWidget::keyPressEvent(QKeyEvent *event){
 // обработчик нажатия кнопки мыши
 void GraphicWidget::mousePressEvent(QMouseEvent* event){
     short d = 1;
-    scene.addEllipse( event->x()-ceil(d/2)-1, event->y()-ceil(d/2)-1, d,d, QPen(), QBrush(Qt::yellow));
+    scene.addEllipse( event->x()-ceil(d/2)-1,
+                      event->y()-ceil(d/2)-1, d,d,
+                      QPen(), QBrush(Qt::yellow));
 }
 
 
