@@ -28,6 +28,10 @@ import calc 1.0
 
 Window {
     visible: true
+
+    minimumWidth: 320
+    minimumHeight: 350
+
     width: 320
     height: 350
     title: qsTr("Нормальное распределение")
