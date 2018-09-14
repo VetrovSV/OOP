@@ -47,7 +47,7 @@ void MainWindow::on_pushButton_calc_clicked(){
 
     for (size_t i =0; i<n; i++)
         for (size_t j =0; j<n; j++)
-            A[i][j] = ui->tableWidget->item(i,j)->text().toFloat(); // Здесь должна быть обработка искл.ситуаций: если в яйчейке не число
+            A[i][j] = ui->tableWidget->item(i,j)->text().toFloat(); // Здесь должна быть обработка искл.ситуаций: если в ячейке не число
 
     for (size_t i =0; i<n; i++) B[i] = ui->tableWidget->item(i,n)->text().toFloat();
 
@@ -62,7 +62,7 @@ void MainWindow::on_spinBox_n_valueChanged(int n){
     ui->tableWidget->setColumnCount(n+2);
 
     // Содержимое каждой яйчейки талицы - это экземпляр класса QTableWidgetItem
-    // Таблица создаётся с яйчеками без содержимого. Сколько бы строк и столбцов там не было.
+    // Таблица создаётся с ячейками без содержимого. Сколько бы строк и столбцов там не было.
     // Поэтому нужно создавать для каждой яйчейки объекты.
     for (size_t i = 0; i<n; i++){
         for (size_t j = 0; j<n+2; j++){
