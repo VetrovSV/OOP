@@ -23,36 +23,46 @@ void MainWindow::on_pushButton_gen_clicked(){
     auto rnd = [](){return 1.*(random() % 100 - 50 )/10; };
 
     { // Это должно быть отдбельным методом отдельного класса СЛАУ
-    for (auto &row : A)
+    for (auto &row : sole.A)
         for (auto &e : row) e = rnd();
 
-    for (auto &e : B) e = rnd();}
+    for (auto &e : sole.B) e = rnd();}
 
-    size_t n = A.size();
+
+     // Такой код тоже стоит выделить в отдельный метод
+    size_t n = sole.A.size();
     for (size_t i = 0; i<n; i++){
         for (size_t j = 0; j<n; j++)
-            ui->tableWidget->item(i,j)->setText( QString::number(A[i][j]) );
+            ui->tableWidget->item(i,j)->setText( QString::number(sole.A[i][j]) );
     }
 
-    for (size_t i = 0; i<n; i++) ui->tableWidget->item(i,n)->setText( QString::number(B[i]) );
+
+    for (size_t i = 0; i<n; i++) ui->tableWidget->item(i,n)->setText( QString::number(sole.B[i]) );
 }
 
 
+// Метод который должен выполнять полезную работу
+// ... но он только имитирует деятельность
 void MainWindow::on_pushButton_calc_clicked(){
-    // Таблица -> Матрицы
-    // Решение...
-    // Матрицы -> Таблицы
-    size_t n = A.size();
-    auto m = n+2;
+    // Алгоритм работы с данными полученными от польователя может быть примерно таким
+    // Записать данные в соответствующие объекты (здесь: Таблица -> Матрицы)
+    // Изменить данные( Решение )
+    // Отобразить на форме новые данные (здесь: Матрицы -> Таблицы )
+    size_t n = sole.A.size();
 
+    {// Считывание данных из таблицы. Хорошо бы сделать методом
     for (size_t i =0; i<n; i++)
         for (size_t j =0; j<n; j++)
-            A[i][j] = ui->tableWidget->item(i,j)->text().toFloat(); // Здесь должна быть обработка искл.ситуаций: если в ячейке не число
+            // Здесь должна быть обработка искл.ситуаций: если в ячейке не число
+            sole.A[i][j] = ui->tableWidget->item(i,j)->text().toFloat();
+    }
 
-    for (size_t i =0; i<n; i++) B[i] = ui->tableWidget->item(i,n)->text().toFloat();
+    for (size_t i =0; i<n; i++) sole.B[i] = ui->tableWidget->item(i,n)->text().toFloat();
 
-    for (auto &e : X) e = 1. * random()/RAND_MAX;
-    for (size_t i = 0; i<n; i++) ui->tableWidget->item(i,n+1)->setText( QString::number(X[i]) );
+    // Симуляция решения СЛАУ: заполним иксы случайными числами
+    for (auto &e : sole.X) e = 1. * random()/RAND_MAX;
+
+    for (size_t i = 0; i<n; i++) ui->tableWidget->item(i,n+1)->setText( QString::number(sole.X[i]) );
 }
 
 
@@ -73,9 +83,9 @@ void MainWindow::on_spinBox_n_valueChanged(int n){
 
 
     {  // Это должно быть отдбельным методом отдельного класса СЛАУ
-    A.resize(n);
-    for (auto &row : A) row.resize(n);
-    B.resize(n);
-    X.resize(n);}
+    sole.A.resize(n);
+    for (auto &row : sole.A) row.resize(n);
+    sole.B.resize(n);
+    sole.X.resize(n);}
 
 }

@@ -85,6 +85,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_calc">
+        <property name="statusTip">
+         <string>Эта кнопка только притворяется, что делает полезную работу</string>
+        </property>
         <property name="text">
          <string>Вычислить</string>
         </property>

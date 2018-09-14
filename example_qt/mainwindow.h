@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <vector>
+#include "sole.h"
 
 using namespace std;
 
@@ -28,12 +29,7 @@ private slots:
 private:
     Ui::MainWindow *ui;  // Этот класс генерируется автоматически из файла mainwindow.ui
 
-
-    // Эти поля представляют собой коэффициенты, cтолбец свободных членов и решения СЛАУ
-    // Лучше всего они бы смотрелись внутри отдельного класса - СЛАУ, который бы агрегировался например сюда.
-    vector <vector <float> > A;
-    vector <float> B;
-    vector <float> X;
+    SoLE sole;
 };
 
 #endif // MAINWINDOW_H
