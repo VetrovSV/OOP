@@ -74,8 +74,8 @@ void MainWindow::on_spinBox_n_valueChanged(int n){
     // Содержимое каждой яйчейки талицы - это экземпляр класса QTableWidgetItem
     // Таблица создаётся с ячейками без содержимого. Сколько бы строк и столбцов там не было.
     // Поэтому нужно создавать для каждой яйчейки объекты.
-    for (size_t i = 0; i<n; i++){
-        for (size_t j = 0; j<n+2; j++){
+    for (int i = 0; i<n; i++){
+        for (int j = 0; j<n+2; j++){
         QTableWidgetItem *cell;
         if (ui->tableWidget->item(i,j) == NULL ) {
          cell = new QTableWidgetItem();
