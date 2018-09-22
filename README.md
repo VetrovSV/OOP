@@ -60,6 +60,19 @@
 
 **OOP_patterns.pdf** - некоторые паттерны проектирования
 
+
+## Qt
+
+**Qt_lec1.pdf** - введение в Qt.
+
+**Qt_lec2.pdf** - создание приложений c GUI в Qt Creator
+
+**Qt_lec3.pdf** - QObject, основнеы классы, отладочный вывод.
+
+**Qt_lec4.pdf** - Qt: меню, горчие клавишиы
+
+**OOP_2_8_UI_markup_language.pdf** - языки описания UI на примере QML
+
 # Примеры
 
 ### poly 
