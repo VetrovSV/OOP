@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -20,7 +21,7 @@ void MainWindow::on_pushButton_gen_clicked(){
     // Заполнение матриц случайными числами
     // Матрицы -> Таблица
 
-    auto rnd = [](){return 1.*(random() % 100 - 50 )/10; };
+    auto rnd = [](){return 1.*(rand() % 100 - 50 )/10; };
 
     { // Это должно быть отдбельным методом отдельного класса СЛАУ
     for (auto &row : sole.A)
