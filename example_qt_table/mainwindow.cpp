@@ -61,7 +61,7 @@ void MainWindow::on_pushButton_calc_clicked(){
     for (size_t i =0; i<n; i++) sole.B[i] = ui->tableWidget->item(i,n)->text().toFloat();
 
     // Симуляция решения СЛАУ: заполним иксы случайными числами
-    for (auto &e : sole.X) e = 1. * random()/RAND_MAX;
+    for (auto &e : sole.X) e = 1. * rand()/RAND_MAX;
 
     for (size_t i = 0; i<n; i++) ui->tableWidget->item(i,n+1)->setText( QString::number(sole.X[i]) );
 }
