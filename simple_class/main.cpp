@@ -1,5 +1,4 @@
 #include <iostream>
-#include <assert.h>
 #include <vector>
 #include "seconds.h"
 #include "tests/test.h"
