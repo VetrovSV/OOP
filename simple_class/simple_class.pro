@@ -5,7 +5,11 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    seconds.cpp
+    seconds.cpp \
+    tests/test.cpp
 
 HEADERS += \
-    seconds.h
+    seconds.h \
+    tests/test.h
+
+DISTFILES +=
