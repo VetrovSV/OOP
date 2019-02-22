@@ -26,10 +26,10 @@ public:
     void setSeconds(SecType s1);
     SecType seconds() const;
 
-    std::string toString() const;                 // возвращает строковое предсталвние состояния. для примера
+    std::string toString() const;                 // возвращает строковое представление данных класса. для примера
 
-    Seconds operator + (const Seconds& s2) const;   // сложение секунд и секунд. при переполнении возвращает результат по модулю 60
-    Seconds operator + (SecType s2) const;          // сложение секунд и числа. при переполнении возвращает результат по модулю 60
+    Seconds operator + (const Seconds& s2) const;   // сложение Seconds и Seconds. при переполнении возвращает результат по модулю 60
+    Seconds operator + (SecType s2) const;          // сложение Seconds и числа. при переполнении возвращает результат по модулю 60
 
                                               // постфиксный оператор (вида s++). int в параметрах - только для того, чтобы отличить от префиксного
     Seconds operator ++ (int);                // увеличение секунд на 1. при переполнении возвращает результат по модулю 60
