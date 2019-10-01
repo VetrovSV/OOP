@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 using namespace std;
-
+float y = 0, dy=0.005;
 
 void draw_xyz(){
     glLineWidth(2);
@@ -29,22 +29,28 @@ void draw_xyz(){
 // Функция рисования каждого кадра
 void draw_main(int){
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);  // Очитска экрана
-
     glRotatef(1, 0, 1, 0); // поворот на 1 градус (первый параметр) вокруг оси y
     // ось поворота задана вектором: 0, 1, 0
+
+
+    glPushMatrix();
+    glTranslatef(0,y,0);
+    y = y + dy;
+    if (abs(y) > 0.5)
+        dy = -dy;
 
     draw_xyz();
 
     glLineWidth(1);
     glColor3f(1,1,1);
     glutWireTeapot(0.5);  // чайник из Юты
+    glPopMatrix();
 
     glutSwapBuffers();
 
     //задать время через которое функция отрисовки будет вызвана снова
     glutTimerFunc(1000/60, draw_main, 0);
 }
-
 
 
 int main(int argc, char** argv)
