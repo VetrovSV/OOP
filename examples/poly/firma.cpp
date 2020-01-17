@@ -11,6 +11,16 @@ void Firm::addProgrammer(AbstractWorker *p){
 }
 
 
-list <AbstractWorker*> Firm::Programmers()const{
+vector <AbstractWorker*> Firm::Programmers()const{
     return programmers;
 }
+
+void Firm::do_smthng(){
+        for(unsigned i = 0; i<programmers.size(); i++){
+            programmers[i]->work( Task() );
+}
+}
+
+
+
+

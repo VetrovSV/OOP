@@ -1,19 +1,21 @@
 #ifndef FIRMA_H
 #define FIRMA_H
-#include<list>
+#include<vector>
 #include"abstractprogrammer.h"
 
 
 
 class Firm
 {
-    list <AbstractWorker*> programmers;
+    vector <AbstractWorker*> programmers;
 
 public:
 
     Firm();
     void addProgrammer(AbstractWorker *p);
-    list <AbstractWorker*> Programmers() const;
+    vector <AbstractWorker*> Programmers() const;
+
+    void do_smthng();
 };
 
 #endif // FIRMA_H
