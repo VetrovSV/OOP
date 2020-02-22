@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>552</width>
-    <height>310</height>
+    <width>720</width>
+    <height>311</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -146,6 +146,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>в отдельном потоке (std::thread)</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item>
@@ -162,8 +169,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>552</width>
-     <height>22</height>
+     <width>720</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

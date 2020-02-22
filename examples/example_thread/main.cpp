@@ -4,6 +4,9 @@
 #include <thread>
 #include <future>
 
+// для предачи функции как параметра
+#include <functional>
+
 
 #include <chrono>
 
@@ -54,6 +57,7 @@ void example1(){
         std::thread th1(foo, N, '|');
         std::thread th2(foo, N, '.');
 
+
         // ожидание завершения первого, _затем_ второго потока
         th1.join();
         th2.join();
@@ -82,6 +86,8 @@ void example2(){
     // нужно передавать с помощью специальных типов cref или ref.
     std::thread th3(bar, N, std::ref(sum));
 
+    // ...
+
     th3.join();
     cout << endl << "sum = " << sum << endl;
     auto t1 = chrono::system_clock::now();
@@ -101,12 +107,14 @@ float baz(unsigned long n){
     return sum;
 }
 
-// пример: получение данных из потока
+// пример 3: получение данных из потока
 void example3(){
 
     std::future< float > result;  // объект для хранения будущих данных
 
     result = std::async( baz, N );  // запуск функции в отдельном потоке
+
+    // ...
 
     result.wait();  // ожидание завершения потока
 
@@ -114,6 +122,33 @@ void example3(){
 
 }
 
+void bar2(unsigned n, void(*callback)(float s)  ){
+    // указатель на функцию можено передавать и через класс-обёртку std::function
+    float sum = 0;
+    for (unsigned i = 0; i<n; i++)
+        sum += sin(i);
+
+    callback(sum);
+}
+
+
+void bar2_done(float sum){
+    cout << "sum = " << sum << endl;
+}
+
+
+// Пример 4: Вызов callback функции из потока
+void example4(){
+    // Если по завершении потока нужно выполнить определённое действие,
+    // при этом не дожидаясь завершения этого нового потока в основном (не использую join)
+    // то в цункцию можно передать адрес другой функции, которая и выполнит необхоимые действия
+    unsigned n = 1000;
+    std::thread th(bar2, n, bar2_done);
+
+    // здесь вызывается join только для того,
+    // чтобы основной поток не завершился раньше вновь созданного
+    th.join();
+}
 
 
 
@@ -121,9 +156,10 @@ void example3(){
 int main(){
 
 
-//    example1();
-//    example2();
-    example3();
+//    example1();  // Пример 1: запуск функции в отдельном потоке
+//    example2();  // Пример 2: передача данных в поток по ссылке
+//    example3();  // Пример 3: получение данных из потока
+    example4();  // Пример 4: Вызов callback функции
 
     return 0;
 }
