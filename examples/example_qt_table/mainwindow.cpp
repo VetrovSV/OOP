@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow){
     ui->setupUi(this);
     this->on_spinBox_n_valueChanged( ui->spinBox_n->value() );
+
+
 }
 
 
@@ -89,4 +91,9 @@ void MainWindow::on_spinBox_n_valueChanged(int n){
     sole.B.resize(n);
     sole.X.resize(n);}
 
+}
+
+void MainWindow::on_actionclose_triggered()
+{
+    this->close();
 }

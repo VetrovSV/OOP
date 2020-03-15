@@ -26,6 +26,8 @@ private slots:
 
     void on_spinBox_n_valueChanged(int n);
 
+    void on_actionclose_triggered();
+
 private:
     Ui::MainWindow *ui;  // Этот класс генерируется автоматически из файла mainwindow.ui
 
