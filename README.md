@@ -1,10 +1,6 @@
 # OOP
 
-[Материалы для дистанционного обучения 08-10 июня](https://github.com/VetrovSV/OOP/blob/master/distance-2020/distance-2020.md)
-
 Осень 2020: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md)
-
-Материалы по Объектно-ориентированному программированию
 
 ## Примерная стуктура курса
 #### 1. Введение в С++
