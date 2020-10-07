@@ -57,13 +57,24 @@ void print_vector(const vector<int> &v){
 
 int main()
 {
-    // Обработка искл. ситуаций. Способ 1.
     string filename = "../lec55555555555555555555555555555555555555555_4/main.cpp";
-    long n = count_lines(filename);
+    long n;
+
+    // Обработка искл. ситуаций. Способ 1.
+    n = count_lines(filename);
     if (n == -1)
         cout << "Ошибка чтения файла "<< filename;
     else
         cout << "Число строк в файле " << filename << ": " << n;
+
+    // Обработка искл. ситуаций. Способ 2. Рекомендуемый
+    try {
+        n = count_lines(filename);
+        cout << "Число строк в файле " << filename << ": " << n;
+    } catch (int e) {
+        cout << "Ошибка чтения файла "<< filename;
+    }
+
 
 //    vector<int> arr(100000);
 //    arr[4] = 42;
