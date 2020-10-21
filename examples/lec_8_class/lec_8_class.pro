@@ -7,7 +7,9 @@ SOURCES += \
         main.cpp \
         square.cpp
 
-DISTFILES +=
+DISTFILES += \
+    Square.UML-2.png \
+    square.adt.txt
 
 HEADERS += \
     square.h
