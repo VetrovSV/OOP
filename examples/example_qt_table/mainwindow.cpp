@@ -25,7 +25,7 @@ void MainWindow::on_pushButton_gen_clicked(){
 
     auto rnd = [](){return 1.*(rand() % 100 - 50 )/10; };
 
-    { // Это должно быть отдбельным методом отдельного класса СЛАУ
+    { // Это должно быть отдельным методом отдельного класса СЛАУ
     for (auto &row : sole.A)
         for (auto &e : row) e = rnd();
 

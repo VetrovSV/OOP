@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>527</width>
+    <width>518</width>
     <height>437</height>
    </rect>
   </property>
@@ -103,6 +103,40 @@
        </spacer>
       </item>
       <item>
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>231</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>231</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>math.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="pushButton_calc">
         <property name="minimumSize">
          <size>
@@ -124,7 +158,14 @@
      </layout>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="plainTextEdit_report"/>
+     <widget class="QPlainTextEdit" name="plainTextEdit_report">
+      <property name="minimumSize">
+       <size>
+        <width>261</width>
+        <height>371</height>
+       </size>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -133,7 +174,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>527</width>
+     <width>518</width>
      <height>24</height>
     </rect>
    </property>
