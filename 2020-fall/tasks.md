@@ -3,6 +3,7 @@
 - 12:00 в дискорд
 - ООП. Введение. ADT. Класс и объект. Поля и методы. Инкапсуляция: https://github.com/VetrovSV/OOP/blob/master/OOP_1.0.pdf
   - Примеры: описания ADT в Markdown, создание UML, код класса на C++
+    - https://github.com/VetrovSV/OOP/tree/master/examples/lec_8_class
 - Разбор вопросов
 
 ## Практическое занятие
