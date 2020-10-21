@@ -8,8 +8,8 @@ SOURCES += \
         square.cpp
 
 DISTFILES += \
-    Square.UML-2.png \
-    square.adt.txt
+    square.adt.txt \
+    square.uml.png
 
 HEADERS += \
     square.h
