@@ -10,7 +10,7 @@ Square::Square(float a1){
 
 
 void Square::set_a(float a1){
-    if (a1 > 0)
+    if (a1 >= 0)
         a = a1;
     else throw InvalidArgument;
 }
