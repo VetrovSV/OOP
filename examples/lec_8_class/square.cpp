@@ -1,7 +1,8 @@
 #include "square.h"
 
 Square::Square(){
-    a = 0;
+    // this - указатель на объект
+    this->a = 0;
 }
 
 Square::Square(float a1){
@@ -11,18 +12,18 @@ Square::Square(float a1){
 
 void Square::set_a(float a1){
     if (a1 >= 0)
-        a = a1;
+        this->a = a1;
     else throw InvalidArgument;
 }
 
-float Square::get_a(){
-    return a;
+float Square::get_a() const{
+    return this->a;
 }
 
-float Square::perimeter(){
-    return a*4;
+float Square::perimeter() const{
+    return this->a*4;
 }
 
-float Square::area(){
-    return a*a;
+float Square::area() const{
+    return this->a * this->a;
 }

@@ -15,10 +15,10 @@ public:  // открытый раздел
 
     // методы - функции внутри класса
     void set_a(float a1);
-    float get_a();
+    float get_a() const;    // const значит, что метод не меняет полей класса
 
-    float perimeter();
-    float area();
+    float perimeter() const;
+    float area() const;
 
 };
 

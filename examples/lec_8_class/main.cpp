@@ -5,6 +5,18 @@
 
 using namespace std;
 
+// Передавай объект всегда по ссылке
+// если объект не меняется внутри функции, то добавь const
+void print_square(const Square &s){
+        cout << s.get_a() << endl;
+}
+
+
+void foo(Square s){
+    //...
+}
+
+
 int main()
 {
     Square s;
@@ -91,6 +103,25 @@ int main()
 
 
    }
+
+    print_square(s);
+
+    const Square s4;
+    s4.get_a();
+    print_square(s4);
+
+
+    Square s5; // вызывается конструктор Square()
+    Square *s6; // не вызывается конструктор
+
+    s6 = new Square();  // Выделение пямяти и вызов конустрктора Square()
+
+    Square s51(); // вызывается конструктор Square()
+    Square s7(42); // вызывается конструктор Square(float a1)
+
+    Square s52 = Square(); // вызывается конструктор Square()
+    Square s72 = Square(42); // вызывается конструктор Square(float a1)
+
 
     return 0;
 }
