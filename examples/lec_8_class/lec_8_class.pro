@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        complex.cpp \
         main.cpp \
         square.cpp
 
@@ -12,4 +13,5 @@ DISTFILES += \
     square.uml.png
 
 HEADERS += \
+    complex.h \
     square.h

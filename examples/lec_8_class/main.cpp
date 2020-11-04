@@ -1,6 +1,6 @@
 #include <iostream>
 #include <random>
-
+#include "complex.h"
 #include "square.h"
 
 using namespace std;
@@ -14,6 +14,16 @@ void print_square(const Square &s){
 
 void foo(Square s){
     //...
+}
+
+
+void print(float x){
+    cout << x << endl;
+}
+
+// перегурзка функции print
+void print(const Complex &c){
+    cout << c.a << ", " << c.b << endl;
 }
 
 
@@ -104,7 +114,8 @@ int main()
 
    }
 
-    print_square(s);
+    {
+        print_square(s);
 
     const Square s4;
     s4.get_a();
@@ -121,7 +132,31 @@ int main()
 
     Square s52 = Square(); // вызывается конструктор Square()
     Square s72 = Square(42); // вызывается конструктор Square(float a1)
+}
 
+
+    Complex c1(2.5, 3), c2(1, 2);
+
+    Complex c3 = c1.plus(c2);
+    Complex c4 = c1 + c2;
+    c4 = c1.operator+(c2);
+
+    c4 = c2 * 2;    // вызов operator + (float)
+    c3 = 0.5 * c1;  // вызов operator + (float, Complex)
+
+
+
+    print(3.14);
+    print(c4);
+
+    int a,b,max;
+    a = 3;
+    b = 8;
+
+    max = a > b ? a : b;
+    // аналогично
+    if (a > b) max = a;
+    else max = b;
 
     return 0;
 }
