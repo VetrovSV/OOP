@@ -1,19 +1,33 @@
-# Занятие 10 (4 ноября)
+# Занятие 11 (11 ноября)
 ## Лекция
 - 12:00 в дискорд
-- Перегрузка. Операторы. Деструкторы.
+- автоматические тесты для классов
 - Наследование 
 - Материалы лекции:
 https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
 https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+- Разбор вопросов
+
+## Практическое занятие
+- Создать UML диаграмму для задания 3, начать писать код.
+- https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+
+
+# Занятие 10 (4 ноября)
+## Лекция
+- 12:00 в дискорд
+- Перегрузка. Операторы. Деструкторы.
+- ~~~Наследование~~~
+- Материалы лекции:
+https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
+https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 - Пример 1 https://github.com/VetrovSV/OOP/tree/master/examples/lec_8_class
-- Пример 2 
 - Разбор вопросов
 
 ## Практическое занятие
 https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
 - Задание выполнить полностью
-- Создать UML диаграмму для задания 3, начать писать код.
+- ~~~Создать UML диаграмму для задания 3, начать писать код.~~~
   
   
   ## Домашнее задание
