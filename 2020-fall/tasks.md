@@ -2,11 +2,12 @@
 ## Лекция
 - 12:00 в дискорд
 - автоматические тесты для классов
-- Наследование, агрегация, композиция, ассоциация. 
+- Агрегация, композиция, ассоциация, наследование.
 - Материалы лекции:
 https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
 https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 - Разбор вопросов
+- Пример с лекции: https://github.com/VetrovSV/OOP/tree/master/examples/lec_11_class_relations
 
 ## Практическое занятие
 - Создать UML диаграмму для задания 3, начать писать код.
