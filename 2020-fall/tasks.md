@@ -2,7 +2,7 @@
 ## Лекция
 - 12:00 в дискорд
 - автоматические тесты для классов
-- Наследование 
+- Наследование, агрегация, композиция, ассоциация. 
 - Материалы лекции:
 https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
 https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
@@ -11,6 +11,9 @@ https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 ## Практическое занятие
 - Создать UML диаграмму для задания 3, начать писать код.
 - https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+
+# Домашнее задание
+- Порядок вызова конструкторов и деструкторов
 
 
 # Занятие 10 (4 ноября)
