@@ -6,7 +6,8 @@ CONFIG -= qt
 SOURCES += \
         complex.cpp \
         main.cpp \
-        square.cpp
+        square.cpp \
+        test_square.cpp
 
 DISTFILES += \
     square.adt.txt \
@@ -14,4 +15,5 @@ DISTFILES += \
 
 HEADERS += \
     complex.h \
-    square.h
+    square.h \
+    test_square.h

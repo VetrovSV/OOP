@@ -3,6 +3,15 @@
 #include "complex.h"
 #include "square.h"
 
+// отключение тестов (для релизной версии программы)
+// отключение должно быть ДО инклуда файла с тестами
+// хм. не работает
+#define NDEBUG
+
+#include "test_square.h"
+
+
+
 using namespace std;
 
 // Передавай объект всегда по ссылке
@@ -27,8 +36,9 @@ void print(const Complex &c){
 }
 
 
-int main()
-{
+int main(){
+    test_square_all();
+
     Square s;
 
     s.set_a(42.02);
