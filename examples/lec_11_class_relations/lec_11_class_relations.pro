@@ -15,3 +15,6 @@ HEADERS += \
     person.h \
     sertificate.h \
     university.h
+
+DISTFILES += \
+    uml.png
