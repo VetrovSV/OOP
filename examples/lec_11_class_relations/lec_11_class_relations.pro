@@ -7,9 +7,11 @@ SOURCES += \
         date.cpp \
         main.cpp \
         person.cpp \
-        sertificate.cpp
+        sertificate.cpp \
+        university.cpp
 
 HEADERS += \
     date.h \
     person.h \
-    sertificate.h
+    sertificate.h \
+    university.h
