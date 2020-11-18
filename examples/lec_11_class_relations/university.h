@@ -9,7 +9,7 @@ class University
 public:
     University();
 
-    Sertificate educate(const Person& p);
+    Sertificate *educate(const Person& p);
 };
 
 /* University ассоциирует Sertificate и Person
