@@ -1,16 +1,18 @@
 # Занятие 12 (18 ноября)
 ## Лекция
 - 12:00 в дискорд
-- Наследование. 
+- Ассоциация. Наследование. 
 - Материалы лекции:
   https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 - Разбор вопросов
-- Пример с лекции: ...
+- Пример с лекции: https://github.com/VetrovSV/OOP/tree/master/examples/lec_11_class_relations
 
 
 # Домашнее задание
-- Согласовать тему лаб3: наследование с преподавателем
-- Выполнить лаб3: https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+- Согласовать тему лаб4: наследование с преподавателем
+- Изобразить UML диаграмму
+- Закодировать классы за 2 недели
+- Задание https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
 
 
 
