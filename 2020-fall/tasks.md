@@ -3,7 +3,8 @@
 - 12:00 в дискорд
 - Наследование (продолжение). Переопределение. Множественное наследование. Интерфейсы. SOLID: принцип единственной ответственности и открытости\закрытости.
 - Материалы лекции:
-  https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+    - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+    - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
 - Разбор вопросов
 - Пример с лекции: https://github.com/VetrovSV/OOP/tree/master/examples/lec_11_class_relations
 
