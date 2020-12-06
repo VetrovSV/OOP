@@ -6,6 +6,11 @@
     - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
     - https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B_C%2B%2B
     - https://code-live.ru/post/cpp-template-functions/
+    
+
+# Домашнее задание
+- Закодировать классы для задания 4
+- Задание https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
 
 
 # Занятие 14 (02 декабря)
