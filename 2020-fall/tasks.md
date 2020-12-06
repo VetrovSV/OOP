@@ -1,10 +1,11 @@
 # Занятие 14 (1 декабря)
 ## Лекция
-- 12:00 в дискорд
-- Динамический полиморфизм. Шаблоны. 
+- Изучите материалы лекции самостоятельно
+- Тема: Шаблоны. 
 - Материалы лекции:
     - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
-- Разбор вопросов
+    - https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B_C%2B%2B
+    - https://code-live.ru/post/cpp-template-functions/
 
 
 # Домашнее задание
