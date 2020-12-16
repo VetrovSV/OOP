@@ -15,6 +15,7 @@ public:
     AbstractWorker();
 
     virtual Programm work(const Task& task);
+
     void set_age(char a);
     char age() const;
 

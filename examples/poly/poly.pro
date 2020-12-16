@@ -33,3 +33,6 @@ HEADERS += \
     firma.h \
     no_poly.h \
     abstractprogrammer.h
+
+DISTFILES += \
+    uml.qmodel
