@@ -1,16 +1,76 @@
-# Занятие 12 (18 ноября)
+# Занятие 16 (16 декабря)
+## Лекция
+- Тема: MVC. Фреимворк Qt  
+- Материалы лекции:
+    - https://github.com/VetrovSV/OOP/blob/master/Qt_lec1.pdf
+    
+
+# Домашнее задание
+- Задание 7: https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+
+
+
+# Занятие 15 (09 декабря)
+## Лекция
+- Изучите материалы лекции самостоятельно
+- Тема: Шаблоны. 
+- Материалы лекции:
+    - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+    - https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B_C%2B%2B
+    - https://code-live.ru/post/cpp-template-functions/
+    
+
+# Домашнее задание
+- Закодировать классы для задания 4
+- Задание https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+
+
+# Занятие 14 (02 декабря)
 ## Лекция
 - 12:00 в дискорд
-- Наследование. 
+- Динамический полиморфизм. Шаблоны.  
 - Материалы лекции:
-  https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+    - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 - Разбор вопросов
-- Пример с лекции: ...
 
 
 # Домашнее задание
-- Согласовать тему лаб3: наследование с преподавателем
-- Выполнить лаб3: https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+- Закодировать классы для задания 4
+- Задание https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+
+
+# Занятие 13 (25 ноября)
+## Лекция
+- 12:00 в дискорд
+- Наследование (продолжение). Переопределение. Множественное наследование. Интерфейсы. SOLID: принцип единственной ответственности и открытости\закрытости.
+- Материалы лекции:
+    - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+    - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+- Разбор вопросов
+- Пример с лекции: https://github.com/VetrovSV/OOP/tree/master/examples/lec_11_class_relations
+
+
+# Домашнее задание
+- Закодировать классы для задания 4
+- Задание https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
+
+
+
+# Занятие 12 (18 ноября)
+## Лекция
+- 12:00 в дискорд
+- Ассоциация. Наследование. 
+- Материалы лекции:
+  https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
+- Разбор вопросов
+- Пример с лекции: https://github.com/VetrovSV/OOP/tree/master/examples/lec_11_class_relations
+
+
+# Домашнее задание
+- Согласовать тему лаб4: наследование с преподавателем
+- Изобразить UML диаграмму
+- Закодировать классы за 2 недели
+- Задание https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
 
 
 
