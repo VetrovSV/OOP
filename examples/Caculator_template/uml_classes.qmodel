@@ -49,7 +49,7 @@
                          </base-DElement>
                          <object>{534e2792-c136-4d99-a360-3958c6cbe437}</object>
                          <name>MainWindow</name>
-                         <pos>x:215;y:190</pos>
+                         <pos>x:265;y:235</pos>
                          <rect>x:-45;y:-30;w:90;h:60</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -69,7 +69,7 @@
                          </base-DElement>
                          <object>{d65f5b93-64c7-4363-bef4-ebee997bc7a2}</object>
                          <name>Calculator</name>
-                         <pos>x:215;y:80</pos>
+                         <pos>x:260;y:460</pos>
                          <rect>x:-40;y:-30;w:80;h:60</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -114,7 +114,7 @@
                          </base-DElement>
                          <object>{cf4ecbe3-0e99-4153-8e48-f072bfe2d4f3}</object>
                          <name>Ui::MainWindow</name>
-                         <pos>x:340;y:80</pos>
+                         <pos>x:265;y:50</pos>
                          <rect>x:-50;y:-30;w:100;h:60</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -261,9 +261,51 @@
                       </DDependency>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DBoundary">
+                      <DBoundary>
+                       <base-DElement>
+                        <DElement>
+                         <uid>{857ee146-8f81-45cd-91b0-21186629896c}</uid>
+                        </DElement>
+                       </base-DElement>
+                       <text>Модель</text>
+                       <pos>x:295;y:460</pos>
+                       <rect>x:-165;y:-75;w:330;h:150</rect>
+                      </DBoundary>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DBoundary">
+                      <DBoundary>
+                       <base-DElement>
+                        <DElement>
+                         <uid>{b743d046-4dad-4fd8-a2f5-3a9510a4f82a}</uid>
+                        </DElement>
+                       </base-DElement>
+                       <text>Вид (View)</text>
+                       <pos>x:280;y:35</pos>
+                       <rect>x:-155;y:-60;w:310;h:120</rect>
+                      </DBoundary>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DBoundary">
+                      <DBoundary>
+                       <base-DElement>
+                        <DElement>
+                         <uid>{272d331b-a602-41d8-94eb-d0db5701a082}</uid>
+                        </DElement>
+                       </base-DElement>
+                       <text>Контроллер (Controller)</text>
+                       <pos>x:290;y:230</pos>
+                       <rect>x:-265;y:-115;w:530;h:230</rect>
+                      </DBoundary>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1608693790833</last-modified>
+                  <last-modified>1608696410451</last-modified>
                   <toolbarid>General</toolbarid>
                  </MDiagram>
                 </base-MDiagram>
@@ -526,6 +568,27 @@
                  </MObject>
                 </base-MObject>
                </MClass>
+              </instance>
+             </target>
+            </handle>
+           </item>
+           <item>
+            <handle>
+             <uid>{a4112dc3-1b90-4e41-b9f2-0bcbc2dcb88f}</uid>
+             <target>
+              <instance type="MItem">
+               <MItem>
+                <base-MObject>
+                 <MObject>
+                  <base-MElement>
+                   <MElement>
+                    <uid>{a4112dc3-1b90-4e41-b9f2-0bcbc2dcb88f}</uid>
+                   </MElement>
+                  </base-MElement>
+                  <name>Создать элемент</name>
+                 </MObject>
+                </base-MObject>
+               </MItem>
               </instance>
              </target>
             </handle>
