@@ -6,99 +6,115 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>426</width>
-    <height>267</height>
+    <width>322</width>
+    <height>445</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>322</width>
+    <height>445</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Заготовка для Калькулятора</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_num1">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>88</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_num2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>140</y>
-      <width>88</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>2</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_plus">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>90</y>
-      <width>88</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>+</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_sin">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>140</y>
-      <width>88</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>sin</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>30</y>
-      <width>301</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_calc">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>180</y>
-      <width>88</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>=</string>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>191</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_num1">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_plus">
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_sin">
+        <property name="toolTip">
+         <string>считает синус угла в радианах. не надо так делать!</string>
+        </property>
+        <property name="text">
+         <string>sin</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_num2">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pushButton_calc">
+        <property name="styleSheet">
+         <string notr="true">background-color: #ba0202;  /* цвет фона */
+color: white;	 /* цвет текса */
+</string>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_test">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>426</width>
+     <width>322</width>
      <height>24</height>
     </rect>
    </property>

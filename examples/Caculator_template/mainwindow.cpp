@@ -1,5 +1,7 @@
+#include <QKeyEvent>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -21,4 +23,25 @@ void MainWindow::on_pushButton_sin_clicked()
     float result = this->calc.sin( a );
 
     ui->lineEdit->setText( QString::number(result) );
+}
+
+void MainWindow::keyPressEvent(QKeyEvent *ev)
+{
+    ui->label_test->setText("You Pressed Key " + ev->text() );
+
+    if (ev->key() == Qt::Key_Backspace)
+        ui->lineEdit->clear();
+
+
+    // Выход из программы на Ctrl + Q
+    if (ev->modifiers() & Qt::ControlModifier){
+        if (ev->key() == Qt::Key_Q){
+            this->close();
+        }
+    }
+}
+
+void MainWindow::on_pushButton_sin_released()
+{
+
 }

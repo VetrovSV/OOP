@@ -18,6 +18,9 @@ public:
 
 private slots:
     void on_pushButton_sin_clicked();
+    void keyPressEvent(QKeyEvent *ev);
+
+    void on_pushButton_sin_released();
 
 private:
     Ui::MainWindow *ui;
