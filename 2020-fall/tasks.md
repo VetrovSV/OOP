@@ -3,6 +3,7 @@
 - Тема: MVC. Фреимворк Qt  (продолжение)
 - Материалы лекции:
     - https://github.com/VetrovSV/OOP/blob/master/Qt_lec1.pdf
+    - Пример с лекции -- заготовка для программы Калькулятор: https://github.com/VetrovSV/OOP/tree/master/examples/Caculator_template
     
 
 # Домашнее задание
@@ -14,6 +15,7 @@
 - Тема: MVC. Фреимворк Qt  
 - Материалы лекции:
     - https://github.com/VetrovSV/OOP/blob/master/Qt_lec1.pdf
+    - Пример с лекции -- заготовка для программы Калькулятор: https://github.com/VetrovSV/OOP/tree/master/examples/Caculator_template
     
 
 # Домашнее задание
