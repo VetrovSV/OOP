@@ -1,4 +1,6 @@
-Пример JavaFX приложения. Cозданн в intelliJ IDEA
+# Пример JavaFX приложения. 
+
+Cозданн в intelliJ IDEA
 
 1. Создание проекта в intelij IDEA: File > New > Project: Шаблон JavFX
 
