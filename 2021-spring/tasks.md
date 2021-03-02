@@ -1,7 +1,10 @@
 # Лекция 2
+- Создание и запуск тестов в InteliJ IDEA (JUnit)
+- Загрузка дополнительных пакетов для вашего проекта в InteliJ IDEA
+- todo комментарии
 - Создание JavaFX приложений в inteliJ IDEA: https://www.jetbrains.com/help/idea/javafx.html#create-project
 - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/JavaFX
-- Регулярные выражения
+- Регулярные выражения:
   - для проверки: https://regex101.com
   - [шпаргалка по регулярным выражениям. В примерах](https://medium.com/nuances-of-programming/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%BC-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC-%D0%B2-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D1%85-53820a5f3435)
 - https://github.com/VetrovSV/OOP/blob/master/OOP_2.pdf
