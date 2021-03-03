@@ -10,17 +10,17 @@ import static org.junit.jupiter.api.Assertions.*;
 // Создание этого теста: https://www.jetbrains.com/help/idea/create-tests.html
 // Запуск теста: в дереве проекта выбрать тест > нажать ПКМ > Run ...
 
-class MyRndNumberTest {
+public class MyRndNumberTest {
 
     @org.junit.jupiter.api.Test
-    void setMax() {
+    public void setMax() {
         MyRndNumber num = new MyRndNumber();
         num.setMax(1001);
         assertEquals(1001, num.getMax());
     }
 
     @org.junit.jupiter.api.Test
-    void setMin() {
+    public void setMin() {
         // todo: доделать тест
     }
 }
