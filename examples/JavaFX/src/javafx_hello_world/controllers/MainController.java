@@ -16,7 +16,7 @@ public class MainController {
     // поэтому он может обращаться к содержимому окна
     @FXML
     public void initialize(){
-        rnd_number_gen = new MyRndNumber();
+        rnd_number_gen = new MyRndNumber();     // создание объектов только динамически
         button_rnd.setText("Нажми!");
     }
 
