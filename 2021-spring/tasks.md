@@ -3,8 +3,11 @@
 - Наследование в Java и C#. Абстрактный класс.
 - SOLID: приницп инверсии зависимостей.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+- Сигналы и слоты в Qt
 - Обработчики нажатий клавиш, горячие клавиши на примере Qt.
-- Многооконные приложения. 
+  - Обработчики клавиш: http://blog.kislenko.net/show.php?id=1302
+  - Горячие клавиши: https://evileg.com/ru/post/75/
+- Многооконные приложения?
   - Слайд: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
   - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
 
