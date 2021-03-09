@@ -3,8 +3,10 @@
 - Наследование в Java и C#. Абстрактный класс.
 - SOLID: приницп инверсии зависимостей.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
-- Обработчики нажатий клавиш
-- Многооконные приложения
+- Обработчики нажатий клавиш, горячие клавиши на примере Qt.
+- Многооконные приложения. 
+  - Слайд: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+  - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
 
 # Лекция 2
 - Создание и запуск тестов в InteliJ IDEA (JUnit)
