@@ -1,3 +1,13 @@
+# Лекция 3
+- Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
+- Наследование в Java и C#. Абстрактный класс.
+- SOLID: приницп инверсии зависимостей.
+- https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+- Обработчики нажатий клавиш, горячие клавиши на примере Qt.
+- Многооконные приложения. 
+  - Слайд: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+  - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
+
 # Лекция 2
 - Создание и запуск тестов в InteliJ IDEA (JUnit)
 - Загрузка дополнительных пакетов для вашего проекта в InteliJ IDEA
