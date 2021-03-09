@@ -5,9 +5,10 @@
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
 - Сигналы и слоты в Qt
   - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
-- Обработчики нажатий клавиш, горячие клавиши на примере Qt.
+- Обработчики нажатий клавиш, горячие клавиши. На примере Qt:
   - Обработчики клавиш: http://blog.kislenko.net/show.php?id=1302
   - Горячие клавиши: https://evileg.com/ru/post/75/
+  - Обработчики нажатия клавиш в C# (Windows Forms): https://docs.microsoft.com/ru-ru/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-5.0, демонстрация в лекции
 - Многооконные приложения?
   - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
   - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
