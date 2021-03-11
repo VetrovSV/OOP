@@ -1,7 +1,7 @@
 # OOP
+Весна 2021: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md) \
+Осень 2020: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md) 
 
-Осень 2020: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md) \
-Весна 2021: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md)
 
 ## Примерная стуктура курса
 #### 1. Введение в С++
