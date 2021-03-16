@@ -1,11 +1,17 @@
 # Лекция 3
 - Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
 - Наследование в Java и C#. Абстрактный класс.
+- слайды: https://github.com/VetrovSV/OOP/raw/master/OOP_2.pdf
 - SOLID: приницп инверсии зависимостей.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
-- Обработчики нажатий клавиш, горячие клавиши на примере Qt.
-- Многооконные приложения. 
-  - Слайд: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+- Сигналы и слоты в Qt
+  - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+- Обработчики нажатий клавиш, горячие клавиши. На примере Qt:
+  - Обработчики клавиш: http://blog.kislenko.net/show.php?id=1302
+  - Горячие клавиши: https://evileg.com/ru/post/75/
+  - Обработчики нажатия клавиш в C# (Windows Forms): https://docs.microsoft.com/ru-ru/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-5.0, демонстрация в лекции
+- Многооконные приложения?
+  - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
   - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
 
 # Лекция 2
