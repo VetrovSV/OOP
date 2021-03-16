@@ -1,6 +1,7 @@
 # Лекция 3
 - Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
 - Наследование в Java и C#. Абстрактный класс.
+- слайды: https://github.com/VetrovSV/OOP/raw/master/OOP_2.pdf
 - SOLID: приницп инверсии зависимостей.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
 - Сигналы и слоты в Qt
