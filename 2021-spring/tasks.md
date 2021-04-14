@@ -1,3 +1,9 @@
+# Лекция 5
+- Вопросы
+- Пример создания чат-бота
+- шаблоны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
+- модель и представление: https://github.com/VetrovSV/OOP/blob/master/Qt_lec2.pdf
+
 # Лекция 4
 - Вопросы
 - Повторение: сигналы и слоты в Qt; SOLID: приницп инверсии зависимостей, принцип подставновки.
