@@ -2,6 +2,7 @@
 #define FORM_H
 
 #include <QWidget>
+#include "data.h"
 
 namespace Ui {
 class Form;
@@ -15,6 +16,9 @@ public:
     explicit Form(QWidget *parent = 0);
     ~Form();
 
+    Data *data;
+
+
 signals:
     void back_clicked();
 
@@ -23,6 +27,8 @@ private slots:
 
 private:
     Ui::Form *ui;
+
+    void showEvent ( QShowEvent * event );
 
 
 };

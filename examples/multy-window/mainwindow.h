@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "data.h"
 #include "form.h"    // окно #2
+
 
 namespace Ui {
 class MainWindow;
@@ -21,7 +23,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
     Form *form;
+
+    Data *data;
 
 };
 

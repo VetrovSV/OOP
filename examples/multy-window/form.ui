@@ -30,6 +30,13 @@
     </widget>
    </item>
    <item>
+    <widget class="QLabel" name="label_data">
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QPushButton" name="pushButton_back">
      <property name="text">
       <string>back</string>
