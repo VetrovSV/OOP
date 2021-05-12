@@ -1,3 +1,18 @@
+# Лекция 5
+- Вопросы
+- Пример создания чат-бота
+- шаблоны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
+- модель и представление: https://github.com/VetrovSV/OOP/blob/master/Qt_lec2.pdf
+
+# Лекция 4
+- Вопросы
+- Повторение: сигналы и слоты в Qt; SOLID: приницп инверсии зависимостей, принцип подставновки.
+- https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+- Многооконные приложения
+  - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+  - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
+
+
 # Лекция 3
 - Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
 - Наследование в Java и C#. Абстрактный класс.
