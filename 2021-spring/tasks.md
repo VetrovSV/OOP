@@ -1,6 +1,6 @@
 # Лекция 8
 май 26
-- Пвторение
+- Повторение
 - Некоторые паттерны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
    - декоратор
    - фасад
@@ -9,7 +9,7 @@
 
 # Лекция 7
 май 12
-- Пвторение
+- Повторение
 - Языки для описания интерфейса пользователя: https://github.com/VetrovSV/OOP/blob/master/OOP_2_8_UI_markup_language.pdf
 
 # Лекция 6
@@ -28,7 +28,7 @@
 # Лекция 4
 март 31
 - Вопросы
-- Повторение: сигналы и слоты в Qt; SOLID: приницп инверсии зависимостей, принцип подставновки.
+- Повторение: сигналы и слоты в Qt; SOLID: принцип инверсии зависимостей, принцип подстановки.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
 - Многооконные приложения
   - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
@@ -40,7 +40,7 @@
 - Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
 - Наследование в Java и C#. Абстрактный класс.
 - слайды: https://github.com/VetrovSV/OOP/raw/master/OOP_2.pdf
-- SOLID: приницп инверсии зависимостей.
+- SOLID: принцип инверсии зависимостей.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
 - Сигналы и слоты в Qt
   - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
@@ -56,7 +56,6 @@
 март 03
 - Создание и запуск тестов в InteliJ IDEA (JUnit)
 - Загрузка дополнительных пакетов для вашего проекта в InteliJ IDEA
-- todo комментарии
 - Создание JavaFX приложений в inteliJ IDEA: https://www.jetbrains.com/help/idea/javafx.html#create-project
 - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/JavaFX
 - Регулярные выражения:
