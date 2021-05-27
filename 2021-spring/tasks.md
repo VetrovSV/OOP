@@ -1,3 +1,20 @@
+# Лекция 8
+- Пвторение
+- Некоторые паттерны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
+   - декоратор
+   - фасад
+- Библиотеки и модули, развёртывание приложений: https://github.com/VetrovSV/OOP/blob/master/OOP_2_7_lib_and_deploy.pdf
+
+
+# Лекция 7
+- Пвторение
+- Языки для описания интерфейса пользователя: https://github.com/VetrovSV/OOP/blob/master/OOP_2_8_UI_markup_language.pdf
+
+# Лекция 6
+- Повторение
+- Пример создания БД, связь таблицы и класса хранения табличных данных
+
+
 # Лекция 5
 - Вопросы
 - Пример создания чат-бота
