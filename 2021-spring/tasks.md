@@ -1,4 +1,5 @@
 # Лекция 8
+май 26
 - Пвторение
 - Некоторые паттерны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
    - декоратор
@@ -7,21 +8,25 @@
 
 
 # Лекция 7
+май 12
 - Пвторение
 - Языки для описания интерфейса пользователя: https://github.com/VetrovSV/OOP/blob/master/OOP_2_8_UI_markup_language.pdf
 
 # Лекция 6
+апрель 28
 - Повторение
 - Пример создания БД, связь таблицы и класса хранения табличных данных
 
 
 # Лекция 5
+апрель 14
 - Вопросы
 - Пример создания чат-бота
 - шаблоны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
 - модель и представление: https://github.com/VetrovSV/OOP/blob/master/Qt_lec2.pdf
 
 # Лекция 4
+март 31
 - Вопросы
 - Повторение: сигналы и слоты в Qt; SOLID: приницп инверсии зависимостей, принцип подставновки.
 - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
@@ -31,6 +36,7 @@
 
 
 # Лекция 3
+март 17
 - Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
 - Наследование в Java и C#. Абстрактный класс.
 - слайды: https://github.com/VetrovSV/OOP/raw/master/OOP_2.pdf
@@ -47,6 +53,7 @@
   - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
 
 # Лекция 2
+март 03
 - Создание и запуск тестов в InteliJ IDEA (JUnit)
 - Загрузка дополнительных пакетов для вашего проекта в InteliJ IDEA
 - todo комментарии
@@ -69,6 +76,7 @@
 
 
 # Лекция 1
+февраль 17
 - https://github.com/VetrovSV/OOP/blob/master/OOP_2.pdf
 - Классы в Java
 
