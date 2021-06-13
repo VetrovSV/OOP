@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Window 2.2
 
-// Подключение элементов интерфейса (версия 1.4)
+// Подк0лючение элементов интерфейса (версия 1.4)
 import QtQuick.Controls 1.4
 // Некоторые элементы интерфейса имеют разные свойства в разных версиях
 
@@ -73,6 +73,8 @@ Window {
 
     SpinBox {
         id: spinbox_pvalue
+        width: 99
+        height: 25
         minimumValue: 0.0001
         maximumValue: 0.9999
         value: 0.5
