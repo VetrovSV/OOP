@@ -18,3 +18,8 @@ void Form::on_pushButton_back_clicked()
     this->hide();
     emit back_clicked();
 }
+
+void Form::showEvent(QShowEvent *event)
+{
+    ui->label_data->setText( QString::fromUtf8(data->s.c_str()) );
+}

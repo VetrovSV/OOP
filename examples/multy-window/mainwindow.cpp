@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    data = new Data();
+    data->s = "Secret String";
 }
 
 MainWindow::~MainWindow()
@@ -16,19 +19,21 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_newwindow_clicked(){
 
 // вариант #1: доступны обо окна
-    if (form == nullptr){
-        form = new Form();  // новое окно не добавляется дочерним к текущему: parent = nullprt
-    }
-    form->show();
+//    if (form == nullptr){
+//        form = new Form();  // новое окно не добавляется дочерним к текущему: parent = nullprt
+//        form->data = this->data;
+//    }
+//    form->show();
 
 
 // вариант #2: основное окно скрывается
-//    if (form == nullptr){
-//        this->hide();
-//        form = new Form();
-//        // когда на втором окне назать кнопка back показать главное окно
-//        connect(form, &Form::back_clicked, this, &MainWindow::show);
-//    }
-//    this->hide();  // скрыть текущее окно
-//    form->show();  // показать новое
+    if (form == nullptr){
+        this->hide();
+        form = new Form();
+        form->data = this->data;
+        // когда на втором окне назать кнопка back показать главное окно
+        connect(form, &Form::back_clicked, this, &MainWindow::show);
+    }
+    this->hide();  // скрыть текущее окно
+    form->show();  // показать новое
 }
