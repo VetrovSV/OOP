@@ -86,6 +86,8 @@
 ### example_qt_table (Qt)
 Работа с таблицей (QTableWidget)
 
+### Модель и представление для табличных данных в C#
+[examples/WpfApp_DataGrid](examples/WpfApp_DataGrid)
 
 ### example_qt0 (Qt)
 Простое приложение с GUI на Qt
