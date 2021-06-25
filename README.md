@@ -1,6 +1,10 @@
 # OOP
+Осень 2021: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2021-fall/tasks.md)
+
+***
 Весна 2021: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md) \
 Осень 2020: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md)
+
 
 
 ## Примерная стуктура курса
@@ -86,6 +90,8 @@
 ### example_qt_table (Qt)
 Работа с таблицей (QTableWidget)
 
+### Модель и представление для табличных данных в C#
+[examples/WpfApp_DataGrid](examples/WpfApp_DataGrid)
 
 ### example_qt0 (Qt)
 Простое приложение с GUI на Qt
