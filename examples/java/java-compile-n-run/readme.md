@@ -82,3 +82,7 @@ java -jar jokes.jar
 ```
 
 Исходные файлы примера приведены в папке [java-compile-n-run](examples\java\java-compile-n-run)
+
+***
+
+Создание jar файла в InteliJ IDEA: https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar
