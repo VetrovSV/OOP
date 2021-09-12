@@ -27,10 +27,11 @@ GUI в Qt?
 # Лекция 2
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf
 - Исключительные ситуации
-- auto, литералы и преобразования типов
+- auto, литералы и преобразования типов ???
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%202).pdf
 - vector
-- string
+- двумерные массивы
+
 
 
 ### Домашнее задание
@@ -38,6 +39,7 @@ GUI в Qt?
 - static
 - лямбда-функции (не обязательно)
 - синонимы (не обязательно)
+- string
 
 
 # Занятие 2. Assert. Компиляция в командной строке
