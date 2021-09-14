@@ -53,6 +53,12 @@ GUI в Qt?
 - string
 
 
+### Ссылки
+- https://en.cppreference.com/w/cpp/container/vector
+- https://habr.com/ru/post/182920/ 
+- https://en.cppreference.com/w/cpp/error/exception -- типы данных стандартной библиотеки для исключений
+- http://mycpp.ru/cpp/book/c11.html -- подробнее об исключениях
+
 # Занятие 2. Assert. Компиляция в командной строке
 
 ### Автоматическое тестирование функций
