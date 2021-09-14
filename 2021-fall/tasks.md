@@ -165,7 +165,6 @@ Windows не использует кодировку Юникод в коман�
 ### Ссылки
 - https://en.cppreference.com/w/cpp/error/assert -- страница документации
 - https://ravesli.com/urok-109-assert-i-static_assert/ 
-
 - [Полный список опций компилятора](https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html) 
 - [GCC x86, как уменьшить размер кода](https://habr.com/ru/company/intel/blog/167417/)
 - https://docs.microsoft.com/ru-ru/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-160 -- компиляция в командной строке компилятором 
