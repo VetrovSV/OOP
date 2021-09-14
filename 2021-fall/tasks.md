@@ -58,6 +58,9 @@ GUI в Qt?
 - https://habr.com/ru/post/182920/ 
 - https://en.cppreference.com/w/cpp/error/exception -- типы данных стандартной библиотеки для исключений
 - http://mycpp.ru/cpp/book/c11.html -- подробнее об исключениях
+- https://github.com/VetrovSV/OOP/tree/master/examples/lec_2_1
+- https://en.cppreference.com/w/cpp/language/range-for -- пример перебора элементов динамического массива vector с помощью совместного цикла и auto
+- https://ravesli.com/urok-94-vvedenie-v-std-array/ -- о типе std::array
 
 # Занятие 2. Assert. Компиляция в командной строке
 
