@@ -176,6 +176,10 @@ C++, структура программы, ввод и вывод, простр
 - Visual Studio 2019
 
 
+### Дополнительные материалы
+- https://docs.microsoft.com/ru-ru/visualstudio/ide/whats-new-visual-studio-2019?view=vs-2019
+
+
 **Вопросы**
 1. В чём разница между IDE и компилятором?
 2. Какие режимы запуска программы есть в VisualStudio? Чем они отличаются?
