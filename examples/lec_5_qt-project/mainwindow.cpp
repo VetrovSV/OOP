@@ -17,7 +17,6 @@ MainWindow::~MainWindow()
 // создаётся автоматически: пкм на кнопке > перейти к слоту > clicked()
 void MainWindow::on_pushButton_calc_clicked()
 {
-    float x, y, sum;
     // получение данных с формы
     // в ui лежат все элементы интерфейса с формы
     // text() выдаёт содержащийся в элементе текст
