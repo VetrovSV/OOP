@@ -1,6 +1,7 @@
 # Лекция 4
 - общий принцип построения приложений с ГИП, класс, обработчики событий. QT.
 - git
+- слайды: https://github.com/VetrovSV/Programming/blob/master/git_lec.pdf
 
 
 ### Домашнее задание
