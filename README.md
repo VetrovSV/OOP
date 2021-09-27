@@ -1,6 +1,6 @@
 # OOP
-**Осень 2021**
-  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md)
+**Осень 2021**\
+  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md) \
   [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
 
 ***
