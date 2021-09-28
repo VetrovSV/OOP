@@ -1,7 +1,3 @@
-# Лекция 5
-- Введение в ООП
-- слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.0.pdf
-
 # Занятие 5
 - Защита работ?
 
