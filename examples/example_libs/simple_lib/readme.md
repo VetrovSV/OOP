@@ -24,3 +24,8 @@ ar rcs lib/random_names.a lib/random_names.o
 ```bash
 g++ main.cpp lib/random_names.a -o main.exe
 ```
+
+### Подключение статической библиотеки в VisualStudio
+1. Добавить пусть к заголовочнуму файлу библиотеки (если не в папке проекта): Project Properties > C/C++ > General > Additional Include Directories
+
+1. Указать файл статической библиотеки (.lib в Windows): Project Properties > Linker > Input 
