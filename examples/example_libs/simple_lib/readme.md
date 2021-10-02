@@ -29,3 +29,10 @@ g++ main.cpp lib/random_names.a -o main.exe
 1. Добавить пусть к заголовочнуму файлу библиотеки (если не в папке проекта): Project Properties > C/C++ > General > Additional Include Directories
 
 1. Указать файл статической библиотеки (.lib в Windows): Project Properties > Linker > Input 
+
+
+
+# Дополнительно
+-  Создание и подключение статической библиотеки в Visual Studio: https://docs.microsoft.com/ru-ru/cpp/build/walkthrough-creating-and-using-a-static-library-cpp?view=msvc-160
+
+
