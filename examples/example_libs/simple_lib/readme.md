@@ -25,6 +25,19 @@ ar rcs lib/random_names.a lib/random_names.o
 g++ main.cpp lib/random_names.a -o main.exe
 ```
 
+### Создание статической библиотеки в Qt Creator
+Шаблон проекта: Бибблиотека | С++ библиотека > ... > Project Details:
+   type = static library 
+   Qt module = None (если не будт использоватся библиотеки Qt)
+   
+По умолчанию создаются заголовочный файл с заготовкой класса. Этот код можно убрать.
+
+
+### Подключение статической библиотеки в Qt Creator
+ПКМ на проекте > Add library > Выбрать "Внешняя библиотека" > Выбрать lib файл и папку с .h файлом
+
+См. как изменится .pro файл после добавления библиотеки
+
 ### Подключение статической библиотеки в VisualStudio
 1. Добавить пусть к заголовочнуму файлу библиотеки (если не в папке проекта): Project Properties > C/C++ > General > Additional Include Directories
 
