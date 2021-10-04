@@ -9,7 +9,7 @@
 - История развития C++, детальное сравнение C и C++
 - **
 - макросы (ну и хорошо)
-- преобразование типов (не явное, явное [https://ravesli.com/urok-56-yavnoe-preobrazovanie-tipov-dannyh-operatory-casts/]), сильная и слабая типизация [https://habr.com/ru/post/161205/]
+- преобразование типов (не явное, явное [https://ravesli.com/urok-56-yavnoe-preobrazovanie-tipov-dannyh-operatory-casts/]), сильная и слабая типизация [https://habr.com/ru/post/161205/], типобезопасность [https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BF%D0%BE%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C]
 - constexpr (https://docs.microsoft.com/ru-ru/cpp/cpp/constexpr-cpp?view=msvc-160) и другие вычисления во время компиляции
 - способы записи литералов [https://ravesli.com/urok-36-literaly-magicheskie-chisla/]
 - inlune функции [https://ravesli.com/urok-101-vstroennye-funktsii/]
