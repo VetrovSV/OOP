@@ -1,5 +1,5 @@
 # Лекция 5
-- Создание статической библиотеки 
+- Создание статической библиотеки
   - (https://github.com/VetrovSV/OOP/blob/master/C%2B%2B%20(part%201).pdf)
   - пример: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
 - Тест по C++
@@ -9,7 +9,7 @@
 - История развития C++, детальное сравнение C и C++
 - **
 - макросы (ну и хорошо)
-- преобразование типов, сильная и слабая типизация [https://habr.com/ru/post/161205/]
+- преобразование типов (не явное, явное [https://ravesli.com/urok-56-yavnoe-preobrazovanie-tipov-dannyh-operatory-casts/]), сильная и слабая типизация [https://habr.com/ru/post/161205/]
 - constexpr (https://docs.microsoft.com/ru-ru/cpp/cpp/constexpr-cpp?view=msvc-160) и другие вычисления во время компиляции
 - способы записи литералов [https://ravesli.com/urok-36-literaly-magicheskie-chisla/]
 - inlune функции [https://ravesli.com/urok-101-vstroennye-funktsii/]
