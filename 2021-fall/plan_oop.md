@@ -6,7 +6,9 @@
 # Лекция 9
 02 ноября? Онлайн?
 - Повторение. Программный интерфейс, класс - чёрный ящик.
-- TDD
+- TDD: сначала тест, потом код. 
+  - слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_unit_test.pdf
+  - пример: https://github.com/VetrovSV/OOP/tree/master/examples/simple_class/tests
 - дружественные функции
 - перегрузка операторов, бинарные операторы и порядок операндов
 - конструктор копирования, пример
