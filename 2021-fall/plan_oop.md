@@ -10,6 +10,7 @@
 - TDD: сначала тест, потом код. 
   - слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_unit_test.pdf
   - пример: https://github.com/VetrovSV/OOP/tree/master/examples/simple_class/tests
+  - интеграция Google Test и Visual Studio https://github.com/VetrovSV/OOP/blob/master/unit_test/unit_test.md
 - дружественные функции
 - перегрузка операторов, бинарные операторы и порядок операндов
 - конструктор копирования, пример
