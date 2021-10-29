@@ -439,11 +439,20 @@ float pizza_area = M_PI * 35*35;
 ```
 - https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/math-constants?view=msvc-160
 
-В стандарте С++20 введена библитека математических констант: https://en.cppreference.com/w/cpp/numeric/constants.
+**Математические констарнты в С++20**
+В стандарте С++20 введена библитека математических констант `numbers`: https://en.cppreference.com/w/cpp/numeric/constants.
+```C++
+#include <numbers>
+using std::numbers::pi;
 
-**Включить подержку С++20** в Visual Studio: свойства проекта > Свойства конфигурации | C\C++ | Язык : Стандарт языка = Стандарт ISO C++20 (/std:c++20)
+float pizza_area = pi * 35*35;
+```
 
-**Включить подержку С++20** в Qt Creator: Добавить в файл проекта .pro: `CONFIG += console c++20`
+**Включение поддержки С++20**
+
+- Visual Studio: свойства проекта > Свойства конфигурации | C\C++ | Язык : Стандарт языка = Стандарт ISO C++20 (/std:c++20)
+
+- Qt Creator: Добавить в файл проекта .pro: `CONFIG += console c++20`
 
 Не все версии компиляторов MSVC (Visual Studio) и MinGW (используется по-умолчанию в QtCreator) поддерживают стандарт С++20. В программе, копилируемой GCC (MinGW) можно вывести версию последнего самого нового поддерживаемого стандарта:
 ```
