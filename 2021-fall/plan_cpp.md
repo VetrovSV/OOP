@@ -170,6 +170,10 @@
 ### Домашнее задание
 - Создайте программу на QT с графическим интерфейсом пользователя рещающую задачи с массивами (создание и поиск суммы массива). Используйте ранее написанный код. Выводите данные в QPlainTextEdit
 
+### Создание приложений с графическим интерфейсом на С++ в Visual Studio
+- [Как создать Windows Forms проект на C++](https://programforyou.ru/poleznoe/how-to-create-windows-forms-cpp-project)
+- [stack overflow: Visual Studio 2017 and 2019 C++/CLI Missing](https://stackoverflow.com/questions/43298794/visual-studio-2017-and-2019-c-cli-missing)
+
 # Лекция 3. Файловые потоки
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%202).pdf
 - файловые потоки
