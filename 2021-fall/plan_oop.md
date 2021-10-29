@@ -18,6 +18,8 @@
 - отношения между лкассами?
 - наследование?
 
+# Лекция 9
+- интеграция Google Test и Visual Studio https://github.com/VetrovSV/OOP/blob/master/unit_test/unit_test.md
 
 # Занятие 8
 - Защита класса
