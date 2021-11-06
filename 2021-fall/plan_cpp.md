@@ -1,4 +1,4 @@
-# Лекция 6
+# Лекция 6. Введение в ООП
 - Разбор теста:
   - return 0 в функции с возвращаемым типом int*
   - проект (в IDE) vs include
@@ -12,7 +12,7 @@
 - Изучите задание 1: https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
 - Выберете тему. Согласуйте с преподавателем (напишите в дискорд).
 
-# Лекция 5
+# Лекция 5. Тест. Обзор оставшихся тем
 - Создание статической библиотеки
   - (https://github.com/VetrovSV/OOP/blob/master/C%2B%2B%20(part%201).pdf)
   - пример: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
@@ -59,7 +59,7 @@
 # Занятие 5
 - Защита работ?
 
-# Лекция 4
+# Лекция 4. Git
 - общий принцип построения приложений с ГИП, класс, обработчики событий. QT.
 - git
 - слайды: https://github.com/VetrovSV/Programming/blob/master/git_lec.pdf
@@ -71,7 +71,7 @@
   - *не обязательно:* Битовые операции
 
 
-# Занятие 4
+# Занятие 4. Введение в создание приложений с помощью Qt
 - общий принцип построения приложений с ГИП, класс, обработчики событий
 - Программы с ГИП в Qt
 - Защита работ?
@@ -170,7 +170,12 @@
 ### Домашнее задание
 - Создайте программу на QT с графическим интерфейсом пользователя рещающую задачи с массивами (создание и поиск суммы массива). Используйте ранее написанный код. Выводите данные в QPlainTextEdit
 
-# Лекция 3
+### Создание приложений с графическим интерфейсом на С++ в Visual Studio
+- [Как создать Windows Forms проект на C++](https://programforyou.ru/poleznoe/how-to-create-windows-forms-cpp-project)
+- [stack overflow: Visual Studio 2017 and 2019 C++/CLI Missing](https://stackoverflow.com/questions/43298794/visual-studio-2017-and-2019-c-cli-missing)
+- https://www.youtube.com/watch?v=DLX5bCEd6-4
+
+# Лекция 3. Файловые потоки
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%202).pdf
 - файловые потоки
 - git?
@@ -234,7 +239,7 @@
 - https://ravesli.com/urok-60-psevdonimy-tipov-typedef-i-type-alias/ -- typedef
 
 
-# Лекция 2
+# Лекция 2. Обработка исключений, двумерные массивы, динамический массив vector
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf
 - Исключительные ситуации
 - auto (кратко)
@@ -425,6 +430,37 @@ C++, структура программы, ввод и вывод, простр
 
 1. Решите первую задачу на языке C++ из задачника по программированию. Используйте среду разработки Visual Studio.
 2. Дополнительно: создайте динамический массив, заполните его случайными целыми числами, выведете на экран. Разбейте работу на функции. Поместите их в отдельные h и cpp файлы. Объявите своё пространство имён в этих файлах.
+
+**Математические константы**
+```C++
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+float pizza_area = M_PI * 35*35;
+```
+- https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/math-constants?view=msvc-160
+
+**Математические констарнты в С++20**
+В стандарте С++20 введена библитека математических констант `numbers`: https://en.cppreference.com/w/cpp/numeric/constants.
+```C++
+#include <numbers>
+using std::numbers::pi;
+
+float pizza_area = pi * 35*35;
+```
+
+**Включение поддержки С++20**
+
+- Visual Studio: свойства проекта > Свойства конфигурации | C\C++ | Язык : Стандарт языка = Стандарт ISO C++20 (/std:c++20)
+
+- Qt Creator: Добавить в файл проекта .pro: `CONFIG += console c++20`
+
+Не все версии компиляторов MSVC (Visual Studio) и MinGW (используется по-умолчанию в QtCreator) поддерживают стандарт С++20. В программе, копилируемой GCC (MinGW) можно вывести версию последнего самого нового поддерживаемого стандарта:
+```
+std::cout << __cplusplus << std::endl;
+```
+
+В MSVC `__cplusplus` = 119711 вне зависимости от поддеживаемого стандрта [https://docs.microsoft.com/en-us/cpp/build/reference/zc-cplusplus?view=msvc-160]
 
 ### Домашнее задание
 Установите на домашний компьютер:
