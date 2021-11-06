@@ -112,7 +112,8 @@ TEST(TestCaseName, TestName) {
   ```
 
 1. Откройте список тестов и запустите их: меню Тест > Обозреватель тестов
-![](img/gtest_vs.png)
+
+<img src="img/gtest_vs.png" alt="drawing" width="700"/>
 
 # Ссылки
 - https://doc.qt.io/qtcreator/creator-autotest.html -- тестирование в Qt Creator
