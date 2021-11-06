@@ -123,7 +123,7 @@
 1. Задайте ограничения для размеров элементов интерфейса (ПКМ > задать максимальный размер)
 Используйте компоновку элементов интерфейса для аккуратного их расположения и  создания интерфейса, отзывчивого на изменение размеров окна.
 
-Пример: https://github.com/VetrovSV/OOP/tree/master/examples/lec_5_qt-project
+Пример: https://github.com/VetrovSV/OOP/tree/master/examples/2020/lec_5_qt-project
 
 Во всех файлах исходного кода укажите автора программы.
 
@@ -280,7 +280,7 @@ try {
 - https://habr.com/ru/post/182920/
 - https://en.cppreference.com/w/cpp/error/exception -- типы данных стандартной библиотеки для исключений
 - http://mycpp.ru/cpp/book/c11.html -- подробнее об исключениях
-- https://github.com/VetrovSV/OOP/tree/master/examples/lec_2_1
+- https://github.com/VetrovSV/OOP/tree/master/examples/2020/lec_2_1
 - https://en.cppreference.com/w/cpp/language/range-for -- пример перебора элементов динамического массива vector с помощью совместного цикла и auto
 - https://ravesli.com/urok-94-vvedenie-v-std-array/ -- о типе std::array
 
