@@ -171,6 +171,7 @@
 - Создайте программу на QT с графическим интерфейсом пользователя рещающую задачи с массивами (создание и поиск суммы массива). Используйте ранее написанный код. Выводите данные в QPlainTextEdit
 
 ### Создание приложений с графическим интерфейсом на С++ в Visual Studio
+- [WPF, UWP, WinUI, MAUI, Windows App SDK](https://habr.com/ru/post/566352/) -- обзор фреимворков от Майкрософт для создания приложений с графическим интерфейсом 
 - [Как создать Windows Forms проект на C++](https://programforyou.ru/poleznoe/how-to-create-windows-forms-cpp-project)
 - [stack overflow: Visual Studio 2017 and 2019 C++/CLI Missing](https://stackoverflow.com/questions/43298794/visual-studio-2017-and-2019-c-cli-missing)
 - https://www.youtube.com/watch?v=DLX5bCEd6-4
