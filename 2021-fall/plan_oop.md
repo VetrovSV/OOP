@@ -1,6 +1,9 @@
 # Лекция 10
-09 ноября?
-- Повторение
+08 ноября
+- Отношения между классами:
+  - https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
+- Наследование:
+  - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 
 
 # Лекция 9
