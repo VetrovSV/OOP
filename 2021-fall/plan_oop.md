@@ -7,6 +7,7 @@
 - Абстрагирование, Инкапсуляция, Наследование, Полиморфизм.
 - Отношения между классами:
   - https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
+  - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/2020/lec_11_class_relations
 - Наследование:
   - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 
