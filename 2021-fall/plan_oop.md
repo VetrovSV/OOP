@@ -12,14 +12,14 @@
 - Правило пяти
 - Абстрагирование, Инкапсуляция, Наследование, Полиморфизм.
 - Отношения между классами:
-  - https://github.com/VetrovSV/OOP/blob/master/OOP_1.1.pdf
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.1_classes.pdf
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/2020/lec_11_class_relations
 - Наследование:
   - https://github.com/VetrovSV/OOP/blob/master/OOP_1.2.pdf
 
 
 ### Домашнее задание
-- Конспекты: 
+- Конспекты:
   - списки инициализации: инициализация (не присваивание) в конструкторе; brace initialization
   - explicit
 - *Дополнительно: задание 3 https://github.com/VetrovSV/OOP/blob/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf*
@@ -29,7 +29,7 @@
 01 ноября. Онлайн
 - Повторение. Программный интерфейс, класс - чёрный ящик.
   - Полезные методы классов: преобразование состояния в строку, сравнение ==   
-- TDD: сначала тест, потом код. 
+- TDD: сначала тест, потом код.
   - слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_unit_test.pdf
   - пример: https://github.com/VetrovSV/OOP/tree/master/examples/simple_class/tests
   - интеграция Google Test и Visual Studio https://github.com/VetrovSV/OOP/blob/master/unit_test/unit_test.md
@@ -54,12 +54,12 @@
 - Массивы из объектов, массивы из указателей на объекты, вызов конструкторов, доступ к членам. Пример: https://github.com/VetrovSV/OOP/blob/master/examples/simple_class/main.cpp
 - Запись [состояния] класса в файл, чтение из файла
 - Контроль постоянства
-- Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.1.pdf
-  
-  
+- Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.1_classes.pdf
+
+
 ## Домашнее задание
-- Конспекты: 
-  - static_cast; 
+- Конспекты:
+  - static_cast;
   - RAII, почему в C++ нет раздела finally в обработчике исключений?
   - правосторонние и левосторонние значения (rvalue, lvalue)
   - конструктор перемещения, функкция move, ссылки на правосторонние значения
@@ -81,8 +81,8 @@
   - Что такое АДТ?
   - Из чего состоит АДТ?
   - Что такое предусловие?
-  
-- Введение в ООП. 
+
+- Введение в ООП.
   - АДТ -> Класс в C++, UML диаграмма классов
   - Класс, поля, методы, объект (экземпляр класса)
   - Принцип сокрытия и области видимости
