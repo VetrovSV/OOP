@@ -90,3 +90,5 @@ int main() {
 ```
 
 ![](lec11_class_relations.drawio.png)
+
+(файл с картинкой можно открыть как редактируемую диаграмму в draw.io)
