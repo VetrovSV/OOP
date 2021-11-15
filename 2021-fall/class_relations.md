@@ -88,3 +88,5 @@ int main() {
     // Агрегация PrivateHouse в TrustCompany: после удаления company1 h не удалится
 }
 ```
+
+![](lec11_class_relations.drawio.png)
