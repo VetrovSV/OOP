@@ -8,6 +8,7 @@
 
 using namespace std;
 
+/* Базовый класс для любых работников */
 class AbstractWorker{
     unsigned char age_;
 

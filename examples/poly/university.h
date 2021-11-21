@@ -8,7 +8,7 @@
 class University
 {
 public:
-    University()=default; // реализация конструтора по-умолчанию компилятором.
+    University()=default; // реализация конструтора по умолчанию компилятором.
 
     AbstractWorker* graduate();
 };
