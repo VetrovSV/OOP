@@ -33,6 +33,7 @@
 - Приложения с GUI. Главный цикл приложения. MVC. 
 - Введение в Qt.
 - https://github.com/VetrovSV/OOP/blob/master/Qt_lec1.pdf
+- Примеры: https://github.com/VetrovSV/OOP/tree/master/examples/Qt
 
 **Литература**
 - Qt 5.10. Профессиональное программирование на C++. Макс Шлее
