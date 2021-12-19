@@ -45,3 +45,14 @@ void MainWindow::on_pushButton_sin_released()
 {
 
 }
+
+void MainWindow::on_pushButton_div_clicked()
+{
+    // TODO: calc.set_operand
+    try {
+        calc.div();
+    }  catch (const std::exception& e) {
+        ui->lineEdit->setText(e.what());
+    }
+
+}
