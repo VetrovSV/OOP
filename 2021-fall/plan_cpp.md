@@ -24,6 +24,8 @@
 - **
 - макросы (ну и хорошо)
 - преобразование типов (не явное, явное [https://ravesli.com/urok-56-yavnoe-preobrazovanie-tipov-dannyh-operatory-casts/]), сильная и слабая типизация [https://habr.com/ru/post/161205/], типобезопасность [https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D0%BF%D0%BE%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C]
+- оператор `,`
+- битовые операции
 - constexpr (https://docs.microsoft.com/ru-ru/cpp/cpp/constexpr-cpp?view=msvc-160) и другие вычисления во время компиляции
 - способы записи литералов [https://ravesli.com/urok-36-literaly-magicheskie-chisla/]
 - inlune функции [https://ravesli.com/urok-101-vstroennye-funktsii/]
@@ -32,7 +34,7 @@
 - **
 - продвинутая обработка исключений: генерация новых исключений во время обработки исключений, сложенные блоки try..catch, ограничения на исключения для функций, ... [Страуструп. Язык программирования С++]
 - **
-- статический массив array
+- тип данных array
 - почти вся стандартная библиотека (отдельные темы будут рассмотрены позже)
 - математическая часть (стандарты C++17 и поздние) стандартной библиотеки [https://en.cppreference.com/w/cpp/numeric, https://en.cppreference.com/w/cpp/numeric/constants ]
 - шаблоны (будут рассмотрены позже)
