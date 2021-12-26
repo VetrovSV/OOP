@@ -27,7 +27,7 @@
 - оператор `,`
 - битовые операции (bitwise operations)
 - constexpr (https://docs.microsoft.com/ru-ru/cpp/cpp/constexpr-cpp?view=msvc-160) и другие вычисления во время компиляции
-- способы записи литералов [https://ravesli.com/urok-36-literaly-magicheskie-chisla/]
+- способы записи литералов [https://ravesli.com/urok-36-literaly-magicheskie-chisla/, https://en.cppreference.com/w/cpp/language/integer_literal]
 - inlune функции [https://ravesli.com/urok-101-vstroennye-funktsii/]
 - определение типов во время компиляции, typeid, decltype, ...
 - auto в формальных параметрах и возвращаемом типе функций, распаковка в кортеж (tuple)
