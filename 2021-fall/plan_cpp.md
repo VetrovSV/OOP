@@ -543,8 +543,9 @@ std::cout << __cplusplus << std::endl;
 - Слайды: 1-75
 
 ## Дополнительные материалы
-https://ravesli.com/urok-49-globalnye-peremennye/#toc-6  -- о глобальных переменных, extern, static
-https://habr.com/ru/post/172091/ -- рекомендации по стилю
+- https://ravesli.com/urok-49-globalnye-peremennye/#toc-6  -- о глобальных переменных, extern, static
+- https://habr.com/ru/post/172091/ -- рекомендации по стилю
+- С. Макконелл. Совершенный код. §31 Форматирование и стиль. §32 Самодокументирующийся код.
 
 ### Домашнее задание
 Конспект на тему:
