@@ -543,7 +543,8 @@ std::cout << __cplusplus << std::endl;
 - Слайды: 1-75
 
 ## Дополнительные материалы
-https://ravesli.com/urok-49-globalnye-peremennye/#toc-6  -- о глобальных переменных, extern, static 
+https://ravesli.com/urok-49-globalnye-peremennye/#toc-6  -- о глобальных переменных, extern, static
+https://habr.com/ru/post/172091/ -- рекомендации по стилю
 
 ### Домашнее задание
 Конспект на тему:
