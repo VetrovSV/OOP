@@ -542,7 +542,8 @@ std::cout << __cplusplus << std::endl;
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf
 - Слайды: 1-75
 
-
+## Дополнительные материалы
+https://ravesli.com/urok-49-globalnye-peremennye/#toc-6  -- о глобальных переменных, extern, static 
 
 ### Домашнее задание
 Конспект на тему:
