@@ -21,9 +21,10 @@
 
 #### Дополнительно
 - https://stepik.org/course/187/ - Java. Базовый курс
-- https://www.jetbrains.com/ru-ru/idea/
+- https://www.jetbrains.com/ru-ru/idea/ - InteliJ IDEA
 - Г. Шилдт, Java Руководство для начинающих 7-е изд (2018)
 - https://soundcloud.com/podlodka/podlodka-172-java
+ 
  
  # Лекция 1
  - DRY,  KISS, единственная отвественность,
@@ -32,3 +33,8 @@
  - регулярные выражения
  - C#?
  - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+
+
+#### Источники
+- C# 7 и .NET Core. Кросс-платформенная разработка для профессионалов.
+3-е изд. — СПб.: Питер, 2018. — 640 с.
