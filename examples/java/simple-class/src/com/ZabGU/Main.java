@@ -1,8 +1,9 @@
-package com.ZabGU.oop;      // имя пакета определяет пространство имён
-                            // имя пакета = структура каталогов
+package com.ZabGU;      // имя пакета определяет пространство имён
+                        // имя пакета = структура каталогов
 
-// подключение пакета
-import com.ZabGU.student.Student;
+// подключение пакетов
+import com.ZabGU.simple_class.Seconds;
+import com.ZabGU.student.     Student;
 
 import java.util.*;         // * подключить всё сожрежимое модуля java.util
 // без * придётся писать полные имена классов. Например java.util.ArrayList

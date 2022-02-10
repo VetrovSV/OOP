@@ -1,4 +1,4 @@
-package com.ZabGU.oop;
+package com.ZabGU.simple_class;
 
 
 // todo: ...
