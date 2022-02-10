@@ -1,7 +1,7 @@
 # OOP
-**Осень 2021**\
-  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md) \
-  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
+[**Весна 2022**](2021-fall/plan_2.md)
+
+**Осень 2021**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md),  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
 
 ***
 Весна 2021: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md) \

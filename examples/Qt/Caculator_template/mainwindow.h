@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_sin_released();
 
+    void on_pushButton_div_clicked();
+
 private:
     Ui::MainWindow *ui;
     Calculator calc;

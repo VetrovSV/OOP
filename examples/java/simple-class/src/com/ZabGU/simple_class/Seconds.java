@@ -1,8 +1,13 @@
+package com.ZabGU.simple_class;
+
+
+// todo: ...
 public class Seconds {
+
     private int s;
 
 
-    Seconds(){
+    public Seconds(){
         s = 0; }
 
     public Seconds(int s1){
@@ -12,7 +17,7 @@ public class Seconds {
         return this.s;}
 
     public void setS(int s1){
-        if (s1 > 60 || s1 < 0){
+        if (s1 >= 60 || s1 < 0){
             throw new IllegalArgumentException("seconds must be in 0..59");
         }
         else {
