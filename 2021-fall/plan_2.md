@@ -23,7 +23,7 @@
 - https://stepik.org/course/187/ - Java. Базовый курс
 - https://www.jetbrains.com/ru-ru/idea/
 - Г. Шилдт, Java Руководство для начинающих 7-е изд (2018)
-  
+- https://soundcloud.com/podlodka/podlodka-172-java
  
  # Лекция 1
  - DRY,  KISS, единственная отвественность,
