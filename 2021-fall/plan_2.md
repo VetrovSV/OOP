@@ -24,7 +24,8 @@
 - https://www.jetbrains.com/ru-ru/idea/ - InteliJ IDEA
 - Г. Шилдт, Java Руководство для начинающих 7-е изд (2018)
 - https://soundcloud.com/podlodka/podlodka-172-java
- 
+- https://java-online.ru/java-javadoc.xhtml – документирование в Java
+- jUnit – библиотека для модульного тестирования
  
  # Лекция 1
  - DRY,  KISS, единственная отвественность,
