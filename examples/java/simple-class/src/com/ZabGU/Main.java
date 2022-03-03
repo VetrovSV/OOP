@@ -5,7 +5,7 @@ package com.ZabGU;      // имя пакета определяет простр
 import com.ZabGU.simple_class.Seconds;
 import com.ZabGU.student.     Student;
 
-import java.util.*;         // * подключить всё сожрежимое модуля java.util
+import java.util.*;         // * подключить всё содержимое модуля java.util
 // без * придётся писать полные имена классов. Например java.util.ArrayList
 
 // можно подключить только конкретный класс из модуля:
@@ -18,11 +18,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student stud;       // указатель на объект
 
         System.out.println("Hello World!");
 
-        Seconds s = new Seconds();  // создание объектов только чере оператор new
+        Seconds s = new Seconds();  // создание объектов только через оператор new
         s.setS(55);
 
         Seconds s1 = new Seconds(20);
@@ -63,6 +62,7 @@ public class Main {
         list.add( new Seconds(rand.nextInt(60) ));
 
         System.out.println("ArrayList of Seconds: ");
+
         for (Object si: list ) {
             System.out.print( si.toString() + " " );
         }
