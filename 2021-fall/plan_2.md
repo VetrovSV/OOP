@@ -2,7 +2,8 @@
 # Лекция 2
  - Повторение. Подходы к созданию приложений с GUI. Компиляция программы с Qt
  - C#?
-   - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+   - Слайды https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+   - Пример програмы на C# c XAML: https://github.com/VetrovSV/OOP/tree/master/examples/Csharp/XamlCsharpExample
  - Сигналы и слоты
    - https://github.com/VetrovSV/OOP/blob/master/Qt_lec3.pdf
 
