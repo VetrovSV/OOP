@@ -1,5 +1,6 @@
 
 # Лекция 2
+март 3
  - Повторение. Подходы к созданию приложений с GUI. Компиляция программы с Qt
  - C#?
    - Слайды https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
@@ -9,7 +10,9 @@
 
 
 ####  Домашнее задание
-1. Применение регулярных выражений
+1. *Задание 4 сигналы и слоты: https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf*
+
+
 
 # Лекция 1
  февраль 17
