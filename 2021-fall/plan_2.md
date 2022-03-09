@@ -10,9 +10,10 @@
 # Лекция 2
 март 3
  - Повторение. Подходы к созданию приложений с GUI. Компиляция программы с Qt
- - C#?
+ - C#
    - Слайды https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
    - Пример програмы на C# c XAML: https://github.com/VetrovSV/OOP/tree/master/examples/Csharp/XamlCsharpExample
+   - https://docs.microsoft.com/ru-ru/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0 - Создание нового приложения WPF с помощью .NET 
  - Сигналы и слоты
    - https://github.com/VetrovSV/OOP/blob/master/Qt_lec3.pdf
 
@@ -50,7 +51,7 @@
 # Практика 1
 - Введение в Java https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/simple-class (InteliJ IDEA)
-- ~Создание приложений с GUI в Java с помощью JavaFX~
+- Создание приложений с GUI в Java с помощью JavaFX
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/JavaFX
 
 
