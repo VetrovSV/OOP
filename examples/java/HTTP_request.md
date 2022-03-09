@@ -32,3 +32,6 @@ String output = br.lines().collect(Collectors.joining());
 System.out.println("Connection Response Body :    "+output);
 con.disconnect();
 ```
+
+### Ссылки
+https://www.baeldung.com/httpurlconnection-post
