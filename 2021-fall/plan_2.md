@@ -29,7 +29,8 @@
  - DRY,  KISS, единственная отвественность,
  - повторение: принципы ООП
  - тип данных словарь
-
+    - пример: https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
+ - слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
 
 
 ####  Домашнее задание
