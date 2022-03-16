@@ -1,14 +1,38 @@
+# Лекция 2
+март 17
+- Разбор задания Чат-Бот
+  - многооконные приложения (Qt)
+     - https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+  - горячие клавиши (Qt)
+  - ссылки на методы (C++)
+  - интерфейсы
+     - SOLID: dependency inversion
+        - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_SOLID.pdf
+
+# Практика 3
+####  Домашнее задание
+- Конспект: Стандарт документирования для вашего любимого языка программирования
+  - Опишите формат документирующих комментариве для файлов исходного кода, классов, функций (параметров, возвращаемых значений) и т.д.
+  - Приведите примеры
+  - Документирующие комментарии учитываются вашей любимой IDE?
+  - Как сгенерировать документацию на основе исходного кода
+- Конспект + отчёт: компиляция программы для языка программирования, выбранного в работе 1
 
 # Лекция 2
+март 3
  - Повторение. Подходы к созданию приложений с GUI. Компиляция программы с Qt
- - C#?
-   - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+ - C#
+   - Слайды https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+   - Пример програмы на C# c XAML: https://github.com/VetrovSV/OOP/tree/master/examples/Csharp/XamlCsharpExample
+   - https://docs.microsoft.com/ru-ru/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0 - Создание нового приложения WPF с помощью .NET 
  - Сигналы и слоты
    - https://github.com/VetrovSV/OOP/blob/master/Qt_lec3.pdf
 
 
 ####  Домашнее задание
-1. Применение регулярных выражений
+1. *Задание 4. Сигналы и слоты: https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf*
+
+
 
 # Лекция 1
  февраль 17
@@ -16,7 +40,8 @@
  - DRY,  KISS, единственная отвественность,
  - повторение: принципы ООП
  - тип данных словарь
-
+    - пример: https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
+ - слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
 
 
 ####  Домашнее задание
@@ -38,9 +63,13 @@
 # Практика 1
 - Введение в Java https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/simple-class (InteliJ IDEA)
-- ~Создание приложений с GUI в Java с помощью JavaFX~
+- Создание приложений с GUI в Java с помощью JavaFX
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/JavaFX
 
+##### Подсказки
+InteliJ IDEA
+- `Alt + Enter` - контекстное меню с действиями
+- `Alt + Enter` с курсором на подключении библиотеки > Add имя_библиотеки to classpath -- искать и скачать бибилиотеку
 
 #### Домашнее задание
 1. Класс в программе с GUI:

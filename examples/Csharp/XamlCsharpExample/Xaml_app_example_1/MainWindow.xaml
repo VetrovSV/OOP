@@ -1,0 +1,28 @@
+﻿<!-- Этот файл можно редактировать в дизайнере интерфесов VisualStudio и 
+    редактировать непосредственно как текстовый файл -->
+
+<Window x:Class="XamlCsharpAppExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XamlCsharpAppExample"
+        mc:Ignorable="d"
+        Title="Hello, XAML, C#" Height="158" Width="220">
+
+    <!-- компоновщик элементов интерфеса -->
+    <Grid Margin="0,0,10,-6">
+
+        <!-- элементы интерфеса -->
+
+        <!-- имя обработчика события (клика) - это имя метода в классе  MainWindow
+        имя обработчика и имя методы указаны здесь вручную -->
+        <Button x:Name="button_hello" Content="Hello" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="152" 
+                
+                Click="button_hello_Click"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="26,11,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox_name" HorizontalAlignment="Left" Margin="64,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="Label_hello" Content="" HorizontalAlignment="Center" Margin="13,78,0,0" VerticalAlignment="Top" Width="187" Height="49" FontSize="20"/>
+
+    </Grid>
+</Window>
