@@ -1,6 +1,7 @@
 # Лекция 4
 - Сылки на методы
-- StyleSheet
+  -  https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
+- Qt StyleSheet
 - ...
 
 # Лекция 3
@@ -9,8 +10,10 @@
   - см. пример в дискорде
   - многооконные приложения (Qt)
      - https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
+     - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/multy-window
   - горячие клавиши (Qt)
   - ~ссылки на методы (C++)~
+     - https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
   - интерфейсы
      - SOLID: dependency inversion
         - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_SOLID.pdf
