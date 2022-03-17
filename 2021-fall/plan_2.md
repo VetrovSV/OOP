@@ -1,15 +1,19 @@
-# Лекция 2
+# Лекция 4
+- Сылки на методы
+- StyleSheet
+- ...
+
+# Лекция 3
 март 17
 - Разбор задания Чат-Бот
   - см. пример в дискорде
   - многооконные приложения (Qt)
      - https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
   - горячие клавиши (Qt)
-  - ссылки на методы (C++)
+  - ~ссылки на методы (C++)~
   - интерфейсы
      - SOLID: dependency inversion
         - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_SOLID.pdf
-  - см. пример в дискорде
 
 # Практика 3
 ####  Домашнее задание
