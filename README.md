@@ -54,6 +54,8 @@
 
 **Qt_lec2.pdf** - создание приложений c GUI в Qt Creator
 
+[Пример](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md#%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-4-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-qt) 
+
 **Qt_lec3.pdf** - QObject, основнеы классы, отладочный вывод.
 
 **Qt_lec4.pdf** - Qt: меню, горчие клавишиы
