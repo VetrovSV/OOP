@@ -114,4 +114,5 @@ InteliJ IDEA
 
 
 [Осень 2021: ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
+
 [Осень 2021: С++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md)
