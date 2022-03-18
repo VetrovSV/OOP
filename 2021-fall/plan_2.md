@@ -21,8 +21,7 @@
 ###
 В QTextEdit можно использовать HTML для оформления текста
 ```cpp
-// добавить текст с выравниванием по правой стороне
-ui->textEdit_history->append("<p align=\"right\">  hello </p>");
+ui->textEdit->append("<p style=\" color:#ff0000;\"> some text </p>");
 ```
 
 # Практика 3
