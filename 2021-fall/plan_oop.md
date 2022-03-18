@@ -1,5 +1,5 @@
 [Весна 2022](../2021-fall/plan_2.md)\
-[Осень 2021: ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
+[Осень 2021: ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md)
 
 # Лекция 17
 27 Декабря
