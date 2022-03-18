@@ -111,3 +111,7 @@ InteliJ IDEA
 - https://soundcloud.com/podlodka/podlodka-172-java
 - https://java-online.ru/java-javadoc.xhtml – документирование в Java
 - jUnit – библиотека для модульного тестирования
+
+
+[Осень 2021: ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
+[Осень 2021: С++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md)
