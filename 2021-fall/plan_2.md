@@ -18,10 +18,14 @@
      - SOLID: dependency inversion
         - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_SOLID.pdf
 
-###
-В QTextEdit можно использовать HTML для оформления текста
+### Дополнительно
+
 ```cpp
+// В QTextEdit можно использовать HTML для оформления текста
 ui->textEdit->append("<p style=\" color:#ff0000;\"> some text </p>");
+
+// задать выравнивание последнего абзаца
+ui->textEdit_history->setAlignment(Qt::AlignRight);
 ```
 
 # Практика 3
