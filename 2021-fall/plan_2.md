@@ -29,7 +29,8 @@ ui->textEdit_history->setAlignment(Qt::AlignRight);
 ```
 
 - [Расстояние Дамерау — Левенштейна](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%94%D0%B0%D0%BC%D0%B5%D1%80%D0%B0%D1%83_%E2%80%94_%D0%9B%D0%B5%D0%B2%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0)
-- https://reqbin.com/ -- для проверки API запросов
+- https://github.com/public-apis/public-apis -- список сайтов с открытым програмным интерфейсом
+- https://reqbin.com/ -- сайт для проверки API запросов
 
 # Практика 3
 ####  Домашнее задание
@@ -46,7 +47,7 @@ ui->textEdit_history->setAlignment(Qt::AlignRight);
  - C#
    - Слайды https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
    - Пример програмы на C# c XAML: https://github.com/VetrovSV/OOP/tree/master/examples/Csharp/XamlCsharpExample
-   - https://docs.microsoft.com/ru-ru/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0 - Создание нового приложения WPF с помощью .NET 
+   - https://docs.microsoft.com/ru-ru/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0 - Создание нового приложения WPF с помощью .NET
  - Сигналы и слоты
    - https://github.com/VetrovSV/OOP/blob/master/Qt_lec3.pdf
 
