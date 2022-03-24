@@ -87,7 +87,7 @@ ui->textEdit_history->setAlignment(Qt::AlignRight);
 - Введение в Java https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/simple-class (InteliJ IDEA)
 - Создание приложений с GUI в Java с помощью JavaFX
-  - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/JavaFX
+  - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 
 ##### Подсказки
 InteliJ IDEA
