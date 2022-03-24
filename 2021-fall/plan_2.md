@@ -28,6 +28,9 @@ ui->textEdit->append("<p style=\" color:#ff0000;\"> some text </p>");
 ui->textEdit_history->setAlignment(Qt::AlignRight);
 ```
 
+- [Расстояние Дамерау — Левенштейна](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%94%D0%B0%D0%BC%D0%B5%D1%80%D0%B0%D1%83_%E2%80%94_%D0%9B%D0%B5%D0%B2%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0)
+- https://reqbin.com/ -- для проверки API запросов
+
 # Практика 3
 ####  Домашнее задание
 - Конспект: Стандарт документирования для вашего любимого языка программирования
