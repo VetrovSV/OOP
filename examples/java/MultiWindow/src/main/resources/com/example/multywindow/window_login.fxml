@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Этот файл добавлен вручную:
+    ПКМ на проекте (папка resources) > New > FXML файл
+    В результате автоматически создан fxml файл
+
+Вручную добавить класс с обработчиками:
+    Alt+Enter на WindowLogin (в fx:controller="com.example.multiwindow.WindowLogin") > Create class WindowLogin >
+     выбрать папку с другими исходниками (java\com\example\multiwindow) для сохранения
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.multywindow.WindowLogin">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Логин" textOrigin="CENTER" />
+      <TextField fx:id="TextField_login" onKeyPressed="#onTextField_login_key_pressed"/>
+      <Label fx:id="Label_status"/>
+      <Button onAction="#new_window" prefHeight="46.0" prefWidth="154.0" text="Войти"> </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
