@@ -1,4 +1,5 @@
 # Лекция 4
+- Повторение
 - Сылки на методы
   -  https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
 - Qt StyleSheet
