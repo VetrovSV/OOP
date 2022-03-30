@@ -2,7 +2,9 @@
 - Повторение
 - Сылки на методы
   -  https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
-- Qt StyleSheet
+- Solid
+  - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+- Qt StyleSheet??
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
 - ...
