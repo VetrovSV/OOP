@@ -9,6 +9,19 @@
   - https://doc.qt.io/qt-5/stylesheet-reference.html
 - ...
 
+HTTP запросы в QT
+```C++
+QNetworkAccessManager *manager = new QNetworkAccessManager();
+// запрос
+QNetworkReply *netReply = manager->get(QNetworkRequest(QUrl("https://icanhazip.com/")));
+
+QEventLoop loop;    // объект для ожидания
+QObject::connect(netReply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+loop.exec();
+
+string ip = netReply->readAll().toStdString();
+```
+
 # Лекция 3
 март 17
 - Разбор задания Чат-Бот
