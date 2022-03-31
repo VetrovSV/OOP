@@ -20,7 +20,10 @@
   - https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot (пример с занятия)
   - https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp (пример для самостоятельного изучения)
 - SOLID
-  - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+  - https://github.com/etrovSV/OOP/blob/master/OOP_SOLID.pdf
+- ООП-паттерны
+  - Фасад, Фабрика, Декоратор
+  - https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
 
 HTTP запросы в QT
 ```C++
