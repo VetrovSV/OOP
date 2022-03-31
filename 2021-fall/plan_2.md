@@ -14,11 +14,14 @@
   - CI/CD на github
 
 
-# Лекция 4. Ссылки на методы, SOLID, паттерны
+# Лекция 4. Ссылки на функции, SOLID, паттерны
 - Повторение
-- Сылки на методы
+- Дополнение примера для чат-бота:
+- Сылки на функции
   - https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot (пример с занятия)
   - https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp (пример для самостоятельного изучения)
+  - Java: https://github.com/VetrovSV/OOP/blob/master/examples/java/function-reference.md 
+  - C#: см. делегаты или тип Func
 - SOLID
   - https://github.com/etrovSV/OOP/blob/master/OOP_SOLID.pdf
 - ООП-паттерны
