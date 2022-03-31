@@ -1,8 +1,26 @@
 # Лекция 4
+- Повторение
 - Сылки на методы
   -  https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
-- Qt StyleSheet
+- Solid
+  - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+- Qt StyleSheet??
+  - https://doc.qt.io/qt-5/stylesheet-examples.html
+  - https://doc.qt.io/qt-5/stylesheet-reference.html
 - ...
+
+HTTP запросы в QT
+```C++
+QNetworkAccessManager *manager = new QNetworkAccessManager();
+// запрос
+QNetworkReply *netReply = manager->get(QNetworkRequest(QUrl("https://icanhazip.com/")));
+
+QEventLoop loop;    // объект для ожидания
+QObject::connect(netReply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+loop.exec();
+
+string ip = netReply->readAll().toStdString();
+```
 
 # Лекция 3
 март 17
@@ -31,6 +49,8 @@ ui->textEdit_history->setAlignment(Qt::AlignRight);
 - [Расстояние Дамерау — Левенштейна](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%94%D0%B0%D0%BC%D0%B5%D1%80%D0%B0%D1%83_%E2%80%94_%D0%9B%D0%B5%D0%B2%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0)
 - https://github.com/public-apis/public-apis -- список сайтов с открытым програмным интерфейсом
 - https://reqbin.com/ -- сайт для проверки API запросов
+- https://github.com/VetrovSV/OOP/blob/master/examples/java/HTTP_request.md -- HTTP запрос на Java
+- https://github.com/VetrovSV/OOP/tree/master/examples/java/MultyWindow -- многооконное приложение на JavaFX
 
 # Практика 3
 ####  Домашнее задание
@@ -87,7 +107,7 @@ ui->textEdit_history->setAlignment(Qt::AlignRight);
 - Введение в Java https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/simple-class (InteliJ IDEA)
 - Создание приложений с GUI в Java с помощью JavaFX
-  - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/JavaFX
+  - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 
 ##### Подсказки
 InteliJ IDEA
