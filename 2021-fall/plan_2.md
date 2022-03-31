@@ -1,28 +1,54 @@
-# Лекция 4
-- Повторение
-- Сылки на методы
-  -  https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
-- Solid
-  - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
+# Лекция 5. 
+- Повторение. SOLID. Паттерны проектирования. MVC.
+- Развёртывание приложений
 - Qt StyleSheet??
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
-- ...
+- Классы модели и представления
+
+
+### Домашнее задание
+- Конспект: Создание установочных файлов приложений (ваш любимый способ)
+- Конспекты (бонус): 
+  - DevOps
+  - CI/CD на github
+
+
+# Лекция 4. Ссылки на методы, SOLID, паттерны
+- Повторение
+- Сылки на методы
+  - https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot (пример с занятия)
+  - https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp (пример для самостоятельного изучения)
+- SOLID
+  - https://github.com/etrovSV/OOP/blob/master/OOP_SOLID.pdf
+- ООП-паттерны
+  - Фасад, Фабрика, Декоратор
+  - https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
 
 HTTP запросы в QT
 ```C++
-QNetworkAccessManager *manager = new QNetworkAccessManager();
-// запрос
-QNetworkReply *netReply = manager->get(QNetworkRequest(QUrl("https://icanhazip.com/")));
+    // Объект для выполнения сетевых запросов
+    // для работы с сетевыми запросами нужно подключить модуль network в pro файле: QT += network
+    QNetworkAccessManager *manager = new QNetworkAccessManager();
+    // QNetworkRequest(QUrl("https://icanhazip.com/")) -- конструктор HTTP запроса
+    // netReply -- указатель на объект, который: умеет ждать ответа на запрос, умеет хранить запрос
+    QNetworkReply *netReply = manager->get(QNetworkRequest(QUrl("https://icanhazip.com/")));
+    // Ответ на запрос может занимать заметное количество времени
+    // Реализуем простой вариант -- ожидание ответа
+    QEventLoop loop;    // Объект, который умеет ждать (содержит в себе бесконечный цикл)
+    // Соединим сигнал о получении ответа с заверением бесконечного цикла ожидания
+    QObject::connect(netReply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    // Запуск бесконечного цикла, пока не будет получен сигнал от netReply
+    loop.exec();
+    // readAll() возвращает QString с содержимым
 
-QEventLoop loop;    // объект для ожидания
-QObject::connect(netReply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
-loop.exec();
-
-string ip = netReply->readAll().toStdString();
+    delete netReply;
+    string ip = netReply->readAll().toStdString();
+    
+    // https://icanhazip.com -- сайт который показывает IP посетителя и больше ничего
 ```
 
-# Лекция 3
+# Лекция 3. Разбор задания Чат-Бот, абстрактные классы, Dependency Inversion, многооконные приложения, горячие клавиши
 март 17
 - Разбор задания Чат-Бот
   - см. пример в дискорде
@@ -61,7 +87,7 @@ ui->textEdit_history->setAlignment(Qt::AlignRight);
   - Как сгенерировать документацию на основе исходного кода
 - Конспект + отчёт: компиляция программы для языка программирования, выбранного в работе 1
 
-# Лекция 2
+# Лекция 2. C#. Сигналы и слоты в Qt
 март 3
  - Повторение. Подходы к созданию приложений с GUI. Компиляция программы с Qt
  - C#
