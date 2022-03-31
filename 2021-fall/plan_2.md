@@ -5,7 +5,6 @@
 - Solid
   - https://github.com/VetrovSV/OOP/blob/master/OOP_SOLID.pdf
 - Qt StyleSheet??
-  - stylesheet.qss
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
 - ...
