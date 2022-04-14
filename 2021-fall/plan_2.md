@@ -19,9 +19,10 @@
   - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database 
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
   - в Java см. TableView и ObservableList
-- Qt StyleSheet??
+- Qt StyleSheet
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
+  - Пример: https://github.com/VetrovSV/OOP/blob/master/examples/Qt/database/style.qss
  
 
 
