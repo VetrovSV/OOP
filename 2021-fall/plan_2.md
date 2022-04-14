@@ -1,4 +1,15 @@
-# Лекция 5. 
+# Лекция 6.
+апрель 28
+- Развёртывание приложений
+
+### Домашнее задание
+- Конспект: Создание установочных файлов приложений (ваш любимый способ)
+- Конспекты (бонус): 
+  - DevOps
+  - CI/CD на github
+
+
+# Лекция 5.
 апрель 14
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
@@ -6,7 +17,6 @@
   - Пример: 
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
   - в Java см. TableView и ObservableList
-- Развёртывание приложений
 - Qt StyleSheet??
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
@@ -15,10 +25,7 @@
 
 ### Домашнее задание
 - Здание 3 БД из файла https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf
-- Конспект: Создание установочных файлов приложений (ваш любимый способ)
-- Конспекты (бонус): 
-  - DevOps
-  - CI/CD на github
+
 
 
 # Лекция 4. Ссылки на функции, SOLID, паттерны
