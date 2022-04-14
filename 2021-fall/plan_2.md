@@ -2,6 +2,7 @@
 апрель 14
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
   - Пример
 - Развёртывание приложений
 - Qt StyleSheet??
