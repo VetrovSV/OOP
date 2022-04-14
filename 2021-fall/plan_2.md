@@ -1,6 +1,6 @@
 # Лекция 6.
 апрель 28
-- ...
+- Таймер
 - Развёртывание приложений
 
 ### Домашнее задание
@@ -16,7 +16,7 @@
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
-  - Пример: 
+  - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database 
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
   - в Java см. TableView и ObservableList
 - Qt StyleSheet??
