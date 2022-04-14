@@ -3,7 +3,9 @@
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
-  - Пример
+  - Пример: 
+  - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
+  - в Java см. TableView и ObservableList
 - Развёртывание приложений
 - Qt StyleSheet??
   - https://doc.qt.io/qt-5/stylesheet-examples.html
