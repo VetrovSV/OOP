@@ -31,27 +31,30 @@ void ModelStuds::add_random_row_simple(){
 }
 
 
-/// добавляет строку со случайными данными
+/// добавляет строку со случайными данными; задаёт свойства отображения некоторых ячеек
 void ModelStuds::add_random_row(){
-    const unsigned n = 3;
-    static QString surnames[n] = {"Ivanov", "Petrov", "Sidorov"};
-    QList<QStandardItem*> *row = new QList<QStandardItem*>();
+    static QString surnames[] = {"Ivanov", "Petrov", "Sidorov"};
+    QList<QStandardItem*> row;
 
-    *row << new QStandardItem( surnames[rand()%n] );
+    row << new QStandardItem( surnames[rand()%3] );
+
+    // настройка отдельного QStandardItem, чтобы превратить его в чекбокс
     QStandardItem *uml_checkbox = new QStandardItem();
     uml_checkbox->setCheckable(true);
-    uml_checkbox->setCheckState( rand()%2 ? Qt::Checked : Qt::Unchecked );
-    *row << uml_checkbox;
-    QString ss;
-    *row << new FloatNumberItem( QString::number(1.0*(rand()%1000)/1000));       // model
-    *row << new QStandardItem( QString::number(1.0*(rand()%10)/10) );       // ui
-    *row << new QStandardItem( QString::number(1.0*(rand()%10)/10) );       // contr
+    uml_checkbox->setCheckState( rand()%2 ? Qt::Checked : Qt::Unchecked );      // случайное состояние
+    row << uml_checkbox;
 
-    row->at(2)->setTextAlignment(Qt::AlignRight);
-    row->at(2)->setData("балл", Qt::ToolTipRole);
-    row->at(3)->setData(QColor(255,0,0), Qt::BackgroundRole);
+    // FloatNumberItem -- производный от QStandardItem; умеет раскрашивать себя в зависимости от значения
+    row << new FloatNumberItem( QString::number(1.0*(rand()%10)/10) );       // model
+    row << new QStandardItem(   QString::number(1.0*(rand()%10)/10) );       // ui
+    row << new QStandardItem(   QString::number(1.0*(rand()%10)/10) );       // contr
 
-    this->appendRow( *row );
+
+    row.at(2)->setTextAlignment(Qt::AlignRight);                    // настройка выравнивания
+    row.at(2)->setData("балл", Qt::ToolTipRole);                    // всплывающая подсказка
+    row.at(3)->setData(QColor(210,210,255), Qt::BackgroundRole);    // настройка фона
+
+    this->appendRow( row );
 }
 
 

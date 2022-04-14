@@ -3,13 +3,14 @@
 
 #include <QStandardItem>
 
+/// Ячейка с цветом зависящим от содержимого
 class FloatNumberItem : public QStandardItem
 {
 public:
     FloatNumberItem();
     FloatNumberItem(const QString &text );
 
-    QVariant data(int role = Qt::UserRole + 1) const override;
+    void setData(const QVariant &value, int role = Qt::UserRole + 1) override;
 };
 
 #endif // FLOATNUMBERITEM_H

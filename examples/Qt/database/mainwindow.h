@@ -26,6 +26,8 @@ private slots:
     /// загрузка данных из CSV файла в модель
     void on_actionOpen_triggered();
 
+    void on_pushButton_add_rnd_simple_clicked();
+
 private:
     Ui::MainWindow *ui;
 

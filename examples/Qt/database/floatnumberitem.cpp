@@ -1,22 +1,30 @@
 #include "floatnumberitem.h"
 
-FloatNumberItem::FloatNumberItem()
+FloatNumberItem::FloatNumberItem(){
+
+}
+
+FloatNumberItem::FloatNumberItem(const QString &text):
+    QStandardItem(text)                                 // вызов конструктора базового класса
 {
-
 }
 
-FloatNumberItem::FloatNumberItem(const QString &text):QStandardItem(text){
+/// переопределённый метод изменения данных: при изменении меняет цвет фона в зависимости от значения
+void FloatNumberItem::setData(const QVariant &value, int role){
+
+    // вызов метода базовго класса
+    this->QStandardItem::setData(value, role);
+
+    // проверка значения (Qt::EditRole -- значение отображаемое при редактировании)
     if (this->data(Qt::EditRole).toFloat() < 0.5)
-    this->QStandardItem::setData(QColor(255,0,0), Qt::BackgroundRole);
+        // раскраска фона
+        this->QStandardItem::setData(QColor(255,0,0), Qt::BackgroundRole);
     else
-    this->QStandardItem::setData(QColor(0,255,0), Qt::BackgroundRole);
+        // раскраска фона
+        this->QStandardItem::setData(QColor(0,255,0), Qt::BackgroundRole);
+
+    // вызов сигнала об изменении данных; нужно чтобы элементы интерфеса перерисовали ячейку
+    emit emitDataChanged();
 }
 
-QVariant FloatNumberItem::data(int role) const{
-//    if (role == Qt::DecorationRole){
-//        if (this->data().toFloat() < 0.5)
-//        return (QColor(Qt::red));
-//        else return (QColor(Qt::green));
-//    }
-    return this->QStandardItem::data(role);
-}
+

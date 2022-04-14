@@ -23,9 +23,15 @@ MainWindow::~MainWindow()
 }
 
 /// добавление случайной строки в таблицу
-void MainWindow::on_pushButton_add_rnd_clicked()
-{   // после добавления таблица автоматически отобразит новые данные
+void MainWindow::on_pushButton_add_rnd_clicked(){
+    // после добавления таблица автоматически отобразит новые данные
+    model.add_random_row();
+}
+
+void MainWindow::on_pushButton_add_rnd_simple_clicked(){
+    // после добавления таблица автоматически отобразит новые данные
     model.add_random_row_simple();
+
 }
 
 /// сохранение данных в файл (CSV)
@@ -40,3 +46,5 @@ void MainWindow::on_actionOpen_triggered(){
     // после загрузки таблица автоматически отобразит новые данные
     model.open( dialog.getOpenFileName(this) );
 }
+
+
