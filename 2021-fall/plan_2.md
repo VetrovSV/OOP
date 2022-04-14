@@ -1,14 +1,17 @@
 # Лекция 5. 
 апрель 14
 - Повторение. SOLID. Паттерны проектирования. MVC.
+- Классы модели и представления
+  - Пример
 - Развёртывание приложений
 - Qt StyleSheet??
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
-- Классы модели и представления
+ 
 
 
 ### Домашнее задание
+- Здание 3 БД из файла https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf
 - Конспект: Создание установочных файлов приложений (ваш любимый способ)
 - Конспекты (бонус): 
   - DevOps
