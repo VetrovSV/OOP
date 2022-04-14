@@ -1,11 +1,7 @@
-# Лекция 5. 
-- Повторение. SOLID. Паттерны проектирования. MVC.
+# Лекция 6.
+апрель 28
+- ...
 - Развёртывание приложений
-- Qt StyleSheet??
-  - https://doc.qt.io/qt-5/stylesheet-examples.html
-  - https://doc.qt.io/qt-5/stylesheet-reference.html
-- Классы модели и представления
-
 
 ### Домашнее задание
 - Конспект: Создание установочных файлов приложений (ваш любимый способ)
@@ -13,12 +9,37 @@
   - DevOps
   - CI/CD на github
 
+<br>
 
-# Лекция 4. Ссылки на методы, SOLID, паттерны
+# Лекция 5. Модель и представление в БД
+апрель 14
+- Повторение. SOLID. Паттерны проектирования. MVC.
+- Классы модели и представления
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
+  - Пример: 
+  - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
+  - в Java см. TableView и ObservableList
+- Qt StyleSheet??
+  - https://doc.qt.io/qt-5/stylesheet-examples.html
+  - https://doc.qt.io/qt-5/stylesheet-reference.html
+ 
+
+
+### Домашнее задание
+- Здание 3 БД из файла https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf
+
+
+<br>
+
+# Лекция 4. Ссылки на функции, SOLID, паттерны
+март 31
 - Повторение
-- Сылки на методы
+- Дополнение примера для чат-бота:
+- Сылки на функции
   - https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot (пример с занятия)
   - https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp (пример для самостоятельного изучения)
+  - Java: https://github.com/VetrovSV/OOP/blob/master/examples/java/function-reference.md 
+  - C#: см. делегаты или тип Func
 - SOLID
   - https://github.com/etrovSV/OOP/blob/master/OOP_SOLID.pdf
 - ООП-паттерны
