@@ -1,0 +1,56 @@
+/* файл с описанием стилей (stylesheet) элементов интерфейса 
+этот файл упомянут в файле ресурсов (res.qrc), поэтому будет включён в исполняемый файл после компиляции
+стили из этого файла применяются в main.cpp
+*/
+
+
+/* с решётки начинаются стили для конкретных объектов */
+#centralwidget{
+  background-color: #edfaff;  /* цвет фона */
+}
+
+
+
+/* для всех кнопок */
+QPushButton{
+  background-color: #fdfdfd;
+
+  border-radius: 15px;        /* радиус скругления углов; должен быть <= половины ширины и высоты */
+
+  font: 1 31pt "Manjari";     /* толщина размер шрифт*/
+  padding: 5px 0 0 0px;       /* отступы: сверху, справа, снизу, слева */
+  text-align: center;         /* горизонтальное выравнивание текста */
+
+}
+
+/* :hover -- стиль при наведении */
+QPushButton:hover{
+border: 2px solid #ffe7a3;  /*подрисовать границу толщиной 2px цвета #ffe7a3*/
+}
+
+/* :hover -- стиль при нажатии */
+QPushButton:pressed{
+  background-color: #e7e7e7;
+}
+
+
+
+/* стили для кнопки с именем pushButton_add_rnd*/
+#pushButton_add_rnd{
+  background-color: #d3ffbf;
+}
+
+#pushButton_add_rnd:pressed{
+  background-color: #c9e6bc;
+}
+
+/*
+Выбор цвета:
+https://www.google.com/search?channel=fs&q=%23edfaff
+
+Примеры стилей в Qt
+https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qpushbutton
+
+Документация
+https://doc.qt.io/qt-5/stylesheet-reference.html
+*/
