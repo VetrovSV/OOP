@@ -8,6 +8,7 @@
   - сжатие исполняемых файлов
   - программы для создания установочных файлов
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2_7_lib_and_deploy.pdf
+- https://github.com/VetrovSV/OOP/tree/master/examples/java/java-compile-n-run -- создание jar файла
 
 ### Домашнее задание
 - Конспект: Создание установочных файлов приложений (ваш любимый способ)
