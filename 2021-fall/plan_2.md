@@ -29,7 +29,8 @@
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
-  - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database 
+  - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database (QTableView и QStandardItemModel)
+  - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database-sqlite (QTableView и QSqlTableModel)
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
   - в Java см. TableView и ObservableList
 - Qt StyleSheet
