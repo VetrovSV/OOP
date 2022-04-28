@@ -1,3 +1,7 @@
+# Лекция 7
+- Языки описания UI. QML
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2_8_UI_markup_language.pdf
+
 # Лекция 6.
 апрель 28
 - Таймер (пример в Qt, [Java](../examples/java/timer.md))
