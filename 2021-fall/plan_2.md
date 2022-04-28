@@ -1,6 +1,9 @@
 # Лекция 7
 - Языки описания UI. QML
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2_8_UI_markup_language.pdf
+- Защита работ
+
+<br>
 
 # Лекция 6.
 апрель 28
