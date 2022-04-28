@@ -1,3 +1,10 @@
+# Лекция 7
+- Языки описания UI. QML
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2_8_UI_markup_language.pdf
+- Защита работ
+
+<br>
+
 # Лекция 6.
 апрель 28
 - Таймер (пример в Qt, [Java](../examples/java/timer.md))
@@ -9,6 +16,13 @@
   - программы для создания установочных файлов
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2_7_lib_and_deploy.pdf
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/java-compile-n-run -- создание jar файла
+
+### Ссылки
+- https://www.dependencywalker.com/ -- программа для анализа зависимостей exe файла
+- https://upx.github.io/ -- упаковщик exe файлов
+- https://wixtoolset.org/ -- программа для создания установочных файлов
+- `makecert.exe` -- программа из VS для создания сертификатов цифровых подписей
+
 
 ### Домашнее задание
 - Конспект: Создание установочных файлов приложений (ваш любимый способ)
@@ -23,7 +37,8 @@
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
-  - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database 
+  - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database (QTableView и QStandardItemModel)
+  - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database-sqlite (QTableView и QSqlTableModel)
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
   - в Java см. TableView и ObservableList
 - Qt StyleSheet
