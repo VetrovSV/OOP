@@ -10,6 +10,12 @@
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2_7_lib_and_deploy.pdf
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/java-compile-n-run -- создание jar файла
 
+### Ссылки
+- https://www.dependencywalker.com/ -- программа для анализа зависимостей exe файла
+- https://upx.github.io/ -- упаковщик exe файлов
+
+
+
 ### Домашнее задание
 - Конспект: Создание установочных файлов приложений (ваш любимый способ)
 - Конспекты (бонус): 
