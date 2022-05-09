@@ -5,7 +5,7 @@
 
 <br>
 
-# Лекция 6.Таймер. Развёртывание
+# Лекция 6. Таймер. Развёртывание
 апрель 28
 - Таймер (пример в Qt, [Java](../examples/java/timer.md))
 - Развёртывание приложений
@@ -41,6 +41,7 @@
   - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database-sqlite (QTableView и QSqlTableModel)
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
   - в Java см. TableView и ObservableList
+    - https://github.com/VetrovSV/OOP/tree/master/examples/java/database_tableview_observablelist
 - Qt StyleSheet
   - https://doc.qt.io/qt-5/stylesheet-examples.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
