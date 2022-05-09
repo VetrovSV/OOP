@@ -5,7 +5,7 @@
 
 <br>
 
-# Лекция 6.
+# Лекция 6.Таймер. Развёртывание
 апрель 28
 - Таймер (пример в Qt, [Java](../examples/java/timer.md))
 - Развёртывание приложений
@@ -36,7 +36,7 @@
 апрель 14
 - Повторение. SOLID. Паттерны проектирования. MVC.
 - Классы модели и представления
-  - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf#Outline0.2.3.50
   - Пример на Qt: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database (QTableView и QStandardItemModel)
   - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database-sqlite (QTableView и QSqlTableModel)
   - DataGrid и BindingList в C#: https://github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
