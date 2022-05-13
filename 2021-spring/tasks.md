@@ -2,30 +2,32 @@
 май 26
 - Повторение
 - Некоторые паттерны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
-   - декоратор
-   - фасад
-- Библиотеки и модули, развёртывание приложений: https://github.com/VetrovSV/OOP/blob/master/OOP_2_7_lib_and_deploy.pdf
 
 
-# Лекция 7
+
+# Лекция 7. Языки для описания интерфейса пользователя
 май 12
 - Повторение
-- Языки для описания интерфейса пользователя: https://github.com/VetrovSV/OOP/blob/master/OOP_2_8_UI_markup_language.pdf
+- : https://github.com/VetrovSV/OOP/blob/master/OOP_2_8_UI_markup_language.pdf
 
-# Лекция 6
+
+# Лекция 6.  Пример создания БД
 апрель 28
 - Повторение
 - Пример создания БД, связь таблицы и класса хранения табличных данных
+- [examples/Qt/database](examples/Qt/database)
+- [examples/Qt/database-sqlite](examples/Qt/database-sqlite)
+- Библиотеки и модули, развёртывание приложений: https://github.com/VetrovSV/OOP/blob/master/OOP_2_7_lib_and_deploy.pdf
 
 
-# Лекция 5
+# Лекция 5. Пример создания чат-бота
 апрель 14
 - Вопросы
 - Пример создания чат-бота
 - шаблоны проектирования: https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
 - модель и представление: https://github.com/VetrovSV/OOP/blob/master/Qt_lec2.pdf
 
-# Лекция 4
+# Лекция 4. SILID. Многооконные приложения
 март 31
 - Вопросы
 - Повторение: сигналы и слоты в Qt; SOLID: принцип инверсии зависимостей, принцип подстановки.
@@ -35,7 +37,7 @@
   - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
 
 
-# Лекция 3
+# Лекция 3. Java Extends, Implements. Dependency inversion. Qt:signals and slots
 март 17
 - Повторение: ссылочные типы в Java и C#, словарь, регулярные выражения, абстрактный класс, MVC.
 - Наследование в Java и C#. Абстрактный класс.
@@ -52,7 +54,7 @@
   - Слайды: https://github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf
   - Пример Qt: https://github.com/VetrovSV/OOP/tree/master/examples/multy-window
 
-# Лекция 2
+# Лекция 2. JUnit. JavaFX. Regex.
 март 03
 - Создание и запуск тестов в InteliJ IDEA (JUnit)
 - Загрузка дополнительных пакетов для вашего проекта в InteliJ IDEA
@@ -74,12 +76,12 @@
 - Второй конспект можно дополнить готовым примером проекта
 
 
-# Лекция 1
+# Лекция 1. Java
 февраль 17
 - https://github.com/VetrovSV/OOP/blob/master/OOP_2.pdf
 - Классы в Java
 
-Дополнительно: 
+Дополнительно:
 - https://soundcloud.com/podlodka/podlodka-172-java
 - https://stepik.org/course/187/syllabus
 
