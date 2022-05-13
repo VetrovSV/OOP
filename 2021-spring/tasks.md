@@ -78,7 +78,7 @@
 
 # Лекция 1. Java
 февраль 17
-- https://github.com/VetrovSV/OOP/blob/master/OOP_2.pdf
+- https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
 - Классы в Java
 
 Дополнительно:

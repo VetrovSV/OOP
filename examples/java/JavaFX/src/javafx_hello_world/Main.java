@@ -24,21 +24,40 @@ import javafx_hello_world.tests.*;
 
 public class Main extends Application {
 
+    /** Создание главного окна приложения */
     @Override
     public void start(Stage primaryStage) throws Exception{
-        // Создание окна по его XML описании
+        // Stage -- JavaFX контейнер верхнего уровня, построен на основе javafx.stage.Window
+        // Может содержать в себе несколько экземпляров Scene.
+        // Scene -- контейнер для элементов UI, составляющих сцену.
+        // Отдельные элементы сцены называют узлами (nodes). Кнопка, лейбл и т.п. -- узлы
+        // Узлы могут содержать в себе другие узлы
+        // +----- Stage -----+
+        // |                 |
+        // |  +-- Scene --+  |
+        // |  | root node |  |
+        // |  +-----------+  |
+        // |                 |
+        // +-----------------+
+
+        // Создание корневого элемента сцены по его описанию из fxml файла
         Parent root = FXMLLoader.load(getClass().getResource("resources/sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        
         Scene scene = new Scene(root, 600, 450);
         scene.getStylesheets().add(getClass().getResource("resources/style.css").toExternalForm());
+
+        primaryStage.setTitle("Hello World");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
-//        MyRndNumberTest.setMax();
-//        MyRndNumberTest.setMin();
+
+        // запуск главного цикла приложения
+        // launc запускает методы init(), start() класса Application
         launch(args);
     }
 }
+
+
