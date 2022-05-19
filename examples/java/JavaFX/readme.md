@@ -16,7 +16,9 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
 
 
 # ***
-**Аннотация `@FXML` перед полями котроллёра** [SO](https://stackoverflow.com/questions/30210170/is-fxml-needed-for-every-declaration)
+#### Аннотация `@FXML` перед полями котроллера
+
+[SO](https://stackoverflow.com/questions/30210170/is-fxml-needed-for-every-declaration)
  
 ```Java
  public class MainWindowController {
@@ -41,7 +43,7 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
 
 
 
-**Получить stage из контроллера окна.**
+#### Получить stage из контроллера окна
 
 Stage -- это окно (построен на основе javafx.stage.Window)
 
@@ -65,7 +67,7 @@ Stage -- это окно (построен на основе javafx.stage.Window
 ```
 
 
-## Файл выбора имени файла для содания или открытия
+#### Диалог выбора имени файла для содания или открытия
 ```java
   // получить Stage (окно) через любой экземпляр класса, представляющего элемент интерфеса
   Stage window = (Stage)label_status.getScene().getWindow();
