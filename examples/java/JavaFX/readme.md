@@ -13,3 +13,28 @@
 
 # Ссылки
 https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инструкция на сайте JetBrains
+
+
+# ***
+**Получить stage из котроллёра окна.**
+
+Stage -- это окно (построен на основе javafx.stage.Window)
+
+
+```Java
+обращение через любой экземпляр класса, представляющего элемент интерфейса
+
+ 
+ 
+ public class Controller {
+    @FXML
+    public Label label_status;
+    
+    @FXML
+    protected void onButtonClick(){
+    
+      Stage window = (Stage)label_status.getScene().getWindow();
+      
+      }
+}
+```
