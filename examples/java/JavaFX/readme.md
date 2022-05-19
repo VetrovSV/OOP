@@ -44,7 +44,6 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
 
 
 #### Получить stage из контроллера окна
-
 Stage -- это окно (построен на основе javafx.stage.Window)
 
 
@@ -76,6 +75,7 @@ Stage -- это окно (построен на основе javafx.stage.Window
   
   // Диалог выбора файла для открытия
   File f = dialog.showOpenDialog(window);
+  // вернёт null, если файл не выбран
   
   // Диалог выбора файла для сохранения
   File f = dialog.showSaveDialog(window);
