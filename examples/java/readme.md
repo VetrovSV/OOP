@@ -46,7 +46,7 @@ public class Main {
 }
 ```
 
-**Компиляция**
+**Компиляция** \
 Для компиляции должен быть установлен Java Development Kit (JDK).
 ```bash
 javac Main.java
