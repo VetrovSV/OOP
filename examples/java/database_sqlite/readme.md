@@ -85,5 +85,6 @@ try {
 
 
 # Ссылки
-- https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html -- Документация по пакету SQL
-- https://habr.com/ru/post/564390/ -- Памятка/шпаргалка по SQL
+- Документация по пакету SQL https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html
+- Памятка/шпаргалка по SQL https://habr.com/ru/post/564390/
+- JDBC драйвер (jar файл) для sqlite: https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
