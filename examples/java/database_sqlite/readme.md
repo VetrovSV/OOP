@@ -1,4 +1,4 @@
-# SQLite + Java + JavFX
+# SQL (SQLite) + Java
 
 Необходимые пакеты и файлы
 ```java
