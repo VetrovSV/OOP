@@ -13,3 +13,70 @@
 
 # Ссылки
 https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инструкция на сайте JetBrains
+
+
+# ***
+#### Аннотация `@FXML` перед полями котроллера
+
+[SO](https://stackoverflow.com/questions/30210170/is-fxml-needed-for-every-declaration)
+ 
+```Java
+ public class MainWindowController {
+    
+    @FXML
+    public Label label_status;
+    
+    // соответствующий fxml файл:
+      // Корневой элемент окна содержит название класса- контроллера
+      // <VBox alignment="CENTER" ...  fx:controller="com.example.my_javafx_program.MainWindowController">
+      // ...
+      // <Label fx:id="label_status"/>
+    
+}
+```
+В классе MainWindowController объект label_status не создаётся (нет оператора new) и не инициализируется. 
+Аннотация @FXML заставляет экземпляр загрузчика fxlm файлов (FXMLLoader) создать объект и инициализировать его в методе load().
+```java
+  FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+  Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+```
+
+
+
+#### Получить stage из контроллера окна
+Stage -- это окно (построен на основе javafx.stage.Window)
+
+
+```Java
+обращение через любой экземпляр класса, представляющего элемент интерфейса
+
+ 
+ 
+ public class Controller {
+    @FXML
+    public Label label_status;
+    
+    @FXML
+    protected void onButtonClick(){
+    
+      Stage window = (Stage) label_status.getScene().getWindow();
+      
+      }
+}
+```
+
+
+#### Диалог выбора имени файла для открытия или сохранения
+```java
+  // получить Stage (окно) через любой экземпляр класса, представляющего элемент интерфеса
+  Stage window = (Stage)label_status.getScene().getWindow();
+  
+  FileChooser dialog = new FileChooser();
+  
+  // Диалог выбора файла для открытия
+  File f = dialog.showOpenDialog(window);
+  // вернёт null, если файл не выбран
+  
+  // Диалог выбора файла для сохранения
+  File f = dialog.showSaveDialog(window);
+```

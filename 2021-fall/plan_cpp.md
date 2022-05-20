@@ -545,11 +545,13 @@ std::cout << __cplusplus << std::endl;
 7. Как выводить данные в консоль? Как запрашивать ввод с клавиатуры?
 8. Где посмотреть справочную информацию по языку C++ (включая стандартную библиотеку)?
 
+<br>
 
 # Лекция 1. C++
 - Краткие сведения о синтаксисе C++
 - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf
 - Слайды: 1-75
+- Дорожная карта изучения C++: https://salmer.github.io/CppDeveloperRoadmap/Russian/
 
 ## Дополнительные материалы
 - https://ravesli.com/urok-49-globalnye-peremennye/#toc-6  -- о глобальных переменных, extern, static
