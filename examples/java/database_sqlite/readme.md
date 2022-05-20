@@ -32,7 +32,7 @@ String con_str = "jdbc:sqlite:my_sqlite.db";
 try {
     // подключение
     db_con = DriverManager.getConnection(con_str);
-    // если sqlite файла не существует, то он будет создан (полностью путысм) 
+    // если sqlite файла не существует, то он будет создан 
     
 } catch (SQLException e) {
     System.out.println(e.toString());
@@ -86,5 +86,14 @@ try {
 
 # Ссылки
 - Документация по пакету SQL https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html
-- Памятка/шпаргалка по SQL https://habr.com/ru/post/564390/
+- Памятка/шпаргалка по SQL https://habr.com/ru/post/564390
 - JDBC драйвер (jar файл) для sqlite: https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+- DataGrip (SQL IDE): https://www.jetbrains.com/ru-ru/datagrip
+  - инстркменты работы с СУБД встроены в InteliJ IDEA Ultimate (достпна по студентческой лицензии) 
+***
+
+- How to fill up a TableView with database data https://stackoverflow.com/questions/18941093/how-to-fill-up-a-tableview-with-database-data
+
+
+**Дополнительно**
+- https://www.baeldung.com/ormlite
