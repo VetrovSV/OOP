@@ -11,7 +11,7 @@
 ## Примерная стуктура курса
 1. Введение в С++ ( [C++ (part 1).pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf), 
 [C++ (part 2).pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%202).pdf), [дорожная карта изучения C++](https://salmer.github.io/CppDeveloperRoadmap/Russian/) )
-   * отличия от C
+   * отличия от C [wiki](https://ru.wikibooks.org/wiki/%D0%A1%D0%B8%2B%2B/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5_%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F_%D0%A1%D0%B8%2B%2B_%D0%BE%D1%82_%D0%A1%D0%B8)
    * hello world [pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation15)
    * типы данных и операторы
    * ссылки, указатели, rvalue reference
