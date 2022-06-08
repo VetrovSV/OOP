@@ -12,10 +12,11 @@
 1. Введение в С++ ( [C++ (part 1).pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf), 
 [C++ (part 2).pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%202).pdf) )
    * отличия от C
+   * hello world [pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation15)
    * типы данных и операторы
    * ссылки, указатели, rvalue reference
    * управление памятью
-   * компиляция, заголовочные файлы и файлы исходного кода
+   * компиляция [pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation92), заголовочные файлы и файлы исходного кода [pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation78)
    * пространства имён
    * ссылки на функции
    * лямбда-выражения
