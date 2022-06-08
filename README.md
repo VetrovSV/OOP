@@ -16,7 +16,7 @@
    * типы данных и операторы
    * ссылки, указатели, rvalue reference
    * управление памятью
-   * компиляция ([g++](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation92), [MSVC](https://docs.microsoft.com/ru-ru/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-170)), заголовочные файлы и файлы исходного кода [pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation78)
+   * компиляция ([g++](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation92), [MSVC](https://docs.microsoft.com/ru-ru/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-170), [VisualStudio](https://docs.microsoft.com/ru-ru/cpp/build/vscpp-step-1-create?view=msvc-170)), заголовочные файлы и файлы исходного кода [pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation78)
    * пространства имён
    * ссылки на функции
    * лямбда-выражения
