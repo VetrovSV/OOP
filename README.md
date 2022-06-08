@@ -25,6 +25,7 @@
    * обработка исключительных ситуаций
    * документирование кода Doxygen [ [habr](https://habr.com/ru/post/252101/) ]
    * [assert](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md#%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-2-assert-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B5)
+1. Git
 2. Введение в ООП. \
 [OOP_1.0.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.0.pdf) -- введение в ООП \
 [OOP_1.1.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.1.pdf) -- подробнее об ООП и с примерами на C++
