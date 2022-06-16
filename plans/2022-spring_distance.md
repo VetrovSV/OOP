@@ -56,10 +56,22 @@ g++ имя-файла-с-иходным-кодом -o имя-exe-файла
 
 # Занятие 2. 
 
-0. Повторение.
+### Лекция
+0. Повторение. 
 0. Разработка через тестирование. assert. Ошибки округления вещественного типа. [[пример](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md#%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-2-assert-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B5)]
 1. Проверка предусловий. Исключительные ситуации. throw, try ... catch. [[слайды](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%201).pdf#Navigation110)]
 2. Класcы и объекты. Поля и методы. Модификаторы доступа. Инкапсуляция. Проверка предусловий. Геттеры и сеттеры. Конструктор. [[слайды1](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.0.pdf), [слайды2](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.1.pdf), [пример](https://github.com/VetrovSV/OOP/tree/master/examples/simple_class)]
 2. UML диаграмма классов.
 2. Модульное тестирование. [[подробнее](https://github.com/VetrovSV/OOP/blob/master/unit_test/unit_test.md)]
 3. Наследование?
+
+
+### Практика
+Продолжение
+1. Режимы запуска и компиляции в VS. Отладчик.
+2. Создайте отдельный файл с тестом функции, созданной на предыдущем занятии.
+3. Поставьте точку останова. В главной программе. Посмотрите локальные переменные. Разберитесь, как можно выполнят ьпрограмму в режиме отладки.
+
+Классы
+
+См. установочные задания
