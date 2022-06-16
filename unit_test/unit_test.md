@@ -125,6 +125,18 @@ TEST(TestCaseName, TestName) {
 
 <img src="img/gtest_vs.png" alt="drawing" width="700"/>
 
+Проверка брошенного исключения
+```C++
+Seconds s;
+try {
+        s.setSeconds(100);
+        FAIL() << "Expected InvalidValue";
+    }
+    catch(SecondsException & err) {
+        EXPECT_EQ(err, InvalidValue);
+    }
+```
+
 # Ссылки
 - https://doc.qt.io/qtcreator/creator-autotest.html -- тестирование в Qt Creator
 - [youtube: Настройка и использование Google Test в Qt Creator](https://www.youtube.com/watch?v=6pp8S56sS2Y)
