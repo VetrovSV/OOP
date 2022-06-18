@@ -76,10 +76,15 @@ g++ имя-файла-с-иходным-кодом -o имя-exe-файла
 
 
 # Занятие 3
-1. Наследование
-2. Задание 2.
+1. Наследование [ [слайды](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.2.pdf) ]
+2. Создание приложений с GUI с помощью фреимворка Qt
 
 
-# Занятие N
-1. Managed C++ -> C++/CLI
-1. Приложения с графическим интерфейсом на C++/CLI с UWP (и XAML)
+### Практика
+1. Задание 2 (см. установочные материалы)
+2. Создайте приложение с графическим ПИ на основе задания 1 [(пример похожего задания)[https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md#%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-4-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-qt], [пример программы](https://github.com/VetrovSV/OOP/tree/master/examples/Qt/example_qt0)]
+
+
+# Занятие 4
+Защита работ.
+
