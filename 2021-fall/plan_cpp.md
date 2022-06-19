@@ -429,7 +429,7 @@ int main(){
   https://www.cplusplus.com/reference/iomanip/setprecision/
 
   # include <string>
-  // преобразование числа в строку с помошью функция форматирования строки
+  // преобразование числа в строку с помошью функции форматирования строки
   string s = format("{:.3f}", 3000000.14159265);    // {:.3f} - формат вывода вещественного (f) числа с 3 знаками после запятой
   // https://en.cppreference.com/w/cpp/utility/format/format
   ```
