@@ -1,0 +1,11 @@
+/// Файл для связи кода класса на C++ и XAML файла главного окна MainPage
+
+namespace CppWinRTUWP
+{
+    [default_interface]
+    runtimeclass MainPage : Windows.UI.Xaml.Controls.Page
+    {
+        MainPage();
+        Int32 MyProperty;
+    }
+}

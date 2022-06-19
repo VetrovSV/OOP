@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="CppWinRTUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CppWinRTUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Margin="0"
+    
+   Width="283" Height="205"
+    
+    >
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Сумма"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Срок (годы)"/>
+        <TextBlock HorizontalAlignment="Left" Margin="210,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Процент"/>
+
+        <TextBox x:Name="textbox_sum"  HorizontalAlignment="Left" Margin="010,30,0,0" TextWrapping="Wrap" Text="100000" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox_time" HorizontalAlignment="Left" Margin="110,30,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox_perc" HorizontalAlignment="Left" Margin="210,30,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top"/>
+
+        <Button x:Name="Button_calc" Click="ClickHandler" Margin="10,90,0,0" VerticalAlignment="Top" Content="Вычислить"/>
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Итого"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Доход"/>
+
+        <TextBlock x:Name="textblock_result" HorizontalAlignment="Left" Margin="10,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="1007000"/>
+        <TextBlock x:Name="textblock_profit" HorizontalAlignment="Left" Margin="110,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="7000"/>
+
+    </Grid>
+</Page>
