@@ -426,9 +426,15 @@ int main(){
   cout << 3000000.14159265 << ";";			// вывод:3e+06;
   cout << setw(12) << fixed << setprecision(2);		// 12 позиций на всё число; человекочитаемый формат (без e); два знака после запятой
   cout << 3000000.14159265 << ";";			// вывод:  3000000.14; (2 пробела в начале)
+  https://www.cplusplus.com/reference/iomanip/setprecision/
+
+  # include <string>
+  // преобразование числа в строку с помошью функция форматирования строки
+  string s = format("{:.3f}", 3000000.14159265);    // {:.3f} - формат вывода вещественного (f) числа с 3 знаками после запятой
+  // https://en.cppreference.com/w/cpp/utility/format/format
   ```
 
-https://www.cplusplus.com/reference/iomanip/setprecision/
+
 
 #### Вопросы
   1. Для чего нужна переменная среды окружения Path? Как её изменить? Как посмотреть содержимое?
