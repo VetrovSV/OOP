@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/other_files">
+        <file>formula.png</file>
+    </qresource>
+</RCC>

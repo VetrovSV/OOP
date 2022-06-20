@@ -3,7 +3,7 @@
 #include <QMainWindow>
 
 
-// Пространство имён описывается ещё и в автоматически генерируемом
+// Пространство имён Ui описывается ещё и в автоматически генерируемом
 // при компиляции файле ui_mainwindow.h.
 // Этот файл создаётся из mainwindow.ui
 namespace Ui {
@@ -17,6 +17,7 @@ class MainWindow;
 // отображению виджетов (элементов интерфейса)
 class MainWindow : public QMainWindow
 {
+    // метка, говорящая компилятору MOC сгенерировать метаобъектный код для этого класса
     Q_OBJECT
 
 public:
@@ -27,16 +28,11 @@ private slots:
 
     // метод - обработчик собития "нажатие на кнопку" pushButton_add
     //  создаётся в дизайнере форм: ПКМ на кнопке -> перейти к слоту -> cliked()
-    void on_pushButton_add_clicked();
-
-
-    // обработчик собития "нажатие на кнопку" pushButton_clear
-    void on_pushButton_clear_clicked();
-
+    void on_pushButton_calc_clicked();
 
     // обработчик собития "изменение состояния" флажка (чекбокса) checkBox
     // в arg1 записано новое состояние чекбокса
-    void on_checkBox_stateChanged(int arg1);
+    void on_checkBox_read_only_stateChanged(int arg1);
 
 private:
     // Тут обычно описываются данные программы...
