@@ -52,6 +52,11 @@ using std::numbers::pi;
 float pizza_area = pi * 35*35;
 ```
 
+**Компиляция с указанием версии языка**
+```bash
+g++ main.cpp -o main.exe -std=c++20
+```
+
 
 
 ### Ссылки
