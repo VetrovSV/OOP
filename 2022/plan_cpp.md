@@ -10,7 +10,8 @@
   
 
 # Лекция 3
-- Обработка исключительных ситуаций.
+- Обработка исключительных ситуаций: https://github.com/VetrovSV/OOP/blob/master/C%2B%2B%20(part%201).pdf
+  - см. пример в Discord
 - git: https://raw.githubusercontent.com/VetrovSV/Programming/master/git_lec.pdf
 
 
