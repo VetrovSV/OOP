@@ -15,7 +15,7 @@
 сентябрь 24
 - Git и GitHub
 - Двумерные массивы
-  - пример ...
+  - пример [2darray.cpp](2darray.cpp)
 - Vector
   - пример [vector.cpp](vector.cpp)
 - Файловые потоки (начало)
