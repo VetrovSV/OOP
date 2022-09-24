@@ -25,6 +25,7 @@
 **Дополнительно**
 - Компиляция статической библиотеки: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
 - Компиляция с помошью MSVC: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
+- Спецификация `noexcept`: https://learn.microsoft.com/ru-ru/cpp/cpp/exception-specifications-throw-cpp?view=msvc-170
 
 
 # Практика 4
@@ -34,7 +35,7 @@
 
 ### Домашнее задание
 Конспекты:
-- синонимы типов с помошью using и typedef
+- синонимы типов с помощью using и typedef
 - ключевое слово static
 - rvalue и lvalue
 
@@ -147,7 +148,7 @@ int main(){
 
 
 # Практика 1. Компиляция в командной строке
-3 сенятбря
+3 сентября
 
 1. Запустите PowerShell. Изучите переменную окружения Path: выполните команду для отображения переменной среды окружения:
   ```$env:path```\
