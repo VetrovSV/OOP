@@ -22,6 +22,10 @@
   - пример [vector.cpp](vector.cpp)
 - Файловые потоки (начало)
 
+**Дополнительно**
+- Компиляция статической библиотеки: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
+- Компиляция с помошью MSVC: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
+
 
 # Практика 4
 - реализуйте функции работы с массивом, но используйте vector вместо классических массивов
