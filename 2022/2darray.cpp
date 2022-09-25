@@ -15,9 +15,7 @@ void print_matr(int** arr, unsigned rows, unsigned cols){
 			cout << "\n";}
 }
 
-int main()
-{
-	
+int main(){
 	const unsigned N = 10;				// число строк
 	const unsigned M = 4;				// число столбцов
 
