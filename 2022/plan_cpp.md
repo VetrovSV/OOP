@@ -71,7 +71,7 @@
 
 **Дополнительно**
 - Компиляция статической библиотеки: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
-- Компиляция с помошью MSVC: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
+- Компиляция с помощью MSVC: https://github.com/VetrovSV/OOP/tree/master/examples/example_libs/simple_lib
 - Спецификация `noexcept`: https://learn.microsoft.com/ru-ru/cpp/cpp/exception-specifications-throw-cpp?view=msvc-170
 
 
@@ -286,7 +286,7 @@ cout << 3000000.14159265 << ";";			// вывод:  3000000.14; (2 пробела
 https://www.cplusplus.com/reference/iomanip/setprecision/
 
 # include <string>
-// преобразование числа в строку с помошью функции форматирования строки
+// преобразование числа в строку с помощью функции форматирования строки
 string s = format("{:.3f}", 3000000.14159265);    // {:.3f} - формат вывода вещественного (f) числа с 3 знаками после запятой
 // https://en.cppreference.com/w/cpp/utility/format/format
 ```
