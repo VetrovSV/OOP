@@ -12,7 +12,7 @@
 октябрь 01
 - Передача анонимных функций в другие функции [ [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.2.2) ]
 - Файловые потоки [ [C++(part2).pdf ](https://raw.githubusercontent.com/VetrovSV/OOP/master/C%2B%2B%20(part%202).pdf#Navigation8) ]
-- Константные параметры [ [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.2.2) ] ]
+- Константные параметры [ [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.1.5) ]
 - sizeof [ [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.1.6.1) ]
 - Защита от повторного подключения
 
