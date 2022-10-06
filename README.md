@@ -1,5 +1,5 @@
 # OOP
-**Осень 2022**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md)
+**Осень 2022**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md)
 
 [**Заочное 2022. Весна**](plans/2022-spring_distance.md)
 
