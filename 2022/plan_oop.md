@@ -1,6 +1,6 @@
 # Лекция 7
 - Повторение. Git. Github. Markdown.
-- Классы в С++
+- Классы в С++. Объекты. Идентичность и равенство. Области видимости внутри класса. Поля и методы. Инкапсуляция. Предусловия. Операторы `.` и `->`
   - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_1.0.pdf
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/simple_class
 
