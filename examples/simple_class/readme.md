@@ -30,4 +30,4 @@ class Seconds
 @enduml
 ```
 
-![](seconds-plantuml.png)
+![](Seconds_plantuml.png)
