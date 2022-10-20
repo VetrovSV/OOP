@@ -2,7 +2,11 @@
 29 октября
 
 # Практика 10.
-- Модульные тесты в VS. TDD.
+TDD: сначала тест, потом код.
+- слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_unit_test.pdf
+- пример: https://github.com/VetrovSV/OOP/tree/master/examples/simple_class/tests
+- интеграция Google Test и Visual Studio https://github.com/VetrovSV/OOP/blob/master/unit_test/unit_test.md
+
 
 # Лекция 9. Классы в С++
 15 октября.
