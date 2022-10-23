@@ -130,7 +130,9 @@
 - синонимы типов с помощью using и typedef
 - ключевое слово static
 - rvalue и lvalue
+-Отчёт по Git: https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf
 
+Сохраняйте исходные коды в универсальной кодировке Unicode: Visual Studio: Tools > Options > Environment > Documents > Save documents as Unicode when data cannot be saved in codepage. Иначе GitHub некорректно отобразит кириллицу. 
 
 ### Ссылки
 - https://en.cppreference.com/w/cpp/container/vector
@@ -160,7 +162,7 @@
 1. Отчёт о создании [скомпилированной] библиотеки из cpp файла
 1. Дополните отчёт о компиляции: как использовать компилятор MSVC?
 2. Обработка исключительных ситуаций. Несколько catch, catch(...), указание типов бросаемых исключений в функции.
-3. ~~~Отчёт по Git~~~
+
 
 
 
