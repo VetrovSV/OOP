@@ -9,6 +9,7 @@
 - Шаблонные [функции](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.2.3) и [классы](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.4)). 
 
 ### Домашнее задание
+- Изучите разные приёмы работы с экхемплярами класса: [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2)
 - Конспект: умные указатели: unique_ptr, функция make_unique
 - *Бонус: реализуйте Метод Куайна—Мак-Класки для минимизации булевых функций. Используйте фугкциональную или объектно-ориентированныую декоменпозицию.*
 - *Бонус: создайте шаблонную функцию в задании с классическими массивами*
