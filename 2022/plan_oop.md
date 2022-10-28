@@ -5,7 +5,8 @@
   - Представление данных: строка vs класс
   - Запись состояния класса в файл
 - Git. Повторение. Вопросы?
-- Классы и функции.
+- Возврат объектов из функций и методов. [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2)
+- Шаблонные [функции](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.2.3) и [классы](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.4)). 
 
 ### Домашнее задание
 - Конспект: умные указатели: unique_ptr, функция make_unique
