@@ -1,3 +1,11 @@
+# Лекция 11
+- Отношения между классами: агрегация и композиция [studbook]
+- Наследование
+
+
+### Домашнее задание
+- Наследование
+
 # Лекция 10. Классы в С++
 29 октября
 - Разбор теста: include, указатели, массивы, return, throw без try. Вопросы?
@@ -7,10 +15,9 @@
 - Git. Повторение. Вопросы?
 - Возврат объектов из функций и методов. [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2)
 - Шаблонные [функции](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.2.3) и [классы](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.4). 
-- Отношения между классами: агрегация и композиция [studbook]
 
 ### Домашнее задание
-- Изучите разные приёмы работы с экхемплярами класса: [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2)
+- Изучите разные приёмы работы с экземплярами класса: [studbook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2)
 - Конспект: умные указатели: unique_ptr, функция make_unique
 - *Бонус: реализуйте Метод Куайна—Мак-Класки для минимизации булевых функций. Используйте фугкциональную или объектно-ориентированныую декоменпозицию.*
 - *Бонус: создайте шаблонную функцию в задании с классическими массивами*
