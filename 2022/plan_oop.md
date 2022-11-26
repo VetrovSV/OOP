@@ -120,7 +120,14 @@ https://www.qt.io: кнопка: `Download. Try` >> Downloads for open source us
  - используйте готовые файлы из существующей программы
  - напишите коментарии, поясняющие код
 
-### Создание приложений с графическим интерфейсом на С++ в Visual Studio
+### Ссылки на слайды:
+- https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec1.pdf
+- https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
+- https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec3.pdf
+
+### Дополнительно. Создание приложений с графическим интерфейсом на С++ с помщью библиотек Microsoft Visual Studio
+- Создание приложений на основе фреимворка WPF: 
+https://github.com/VetrovSV/OOP/blob/master/examples/Cpp_WinRT_UWP/readme.md
 - [WPF, UWP, WinUI, MAUI, Windows App SDK](https://habr.com/ru/post/566352/) -- обзор фреимворков от Майкрософт для создания приложений с графическим интерфейсом
 - [Как создать Windows Forms проект на C++](https://programforyou.ru/poleznoe/how-to-create-windows-forms-cpp-project)
 - [stack overflow: Visual Studio 2017 and 2019 C++/CLI Missing](https://stackoverflow.com/questions/43298794/visual-studio-2017-and-2019-c-cli-missing)
@@ -131,8 +138,7 @@ https://www.qt.io: кнопка: `Download. Try` >> Downloads for open source us
 
 
 
-Создание приложений на основе фреимворка WPF: 
-https://github.com/VetrovSV/OOP/blob/master/examples/Cpp_WinRT_UWP/readme.md
+
 
 # Лекция 12
 12 ноября
