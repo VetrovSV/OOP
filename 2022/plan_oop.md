@@ -4,7 +4,7 @@
 Скопируйте фреимворк Qt и IDE Qt Creator. На компьютерах уадиторий 400, 401, 404 см. папку: `C:\Qt`
 
 Или используйте онлайн-инталлятор OpenSource версии через с VPN с IP вне РФ. 
-https://www.qt.io: кнопка: `Download. Try` >> Downloads for open source users | Go Open Source >> Download the Qt online installer
+https://www.qt.io: кнопка: `Download. Try` >> Downloads for open source users | `Go Open Source` >> `Download the Qt online installer` >> Download
 
 
 **Программа с графическим пользовательским интерфейсом на Qt**
