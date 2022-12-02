@@ -1,6 +1,11 @@
 # Занятие 14
 - Разбор теста
+- Повторение: MVC
 - Программы с GUI на Qt
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec1.pdf
+
+
+Примеры: https://github.com/VetrovSV/OOP/tree/master/examples
 
 # Занятие 13
 26 ноября
