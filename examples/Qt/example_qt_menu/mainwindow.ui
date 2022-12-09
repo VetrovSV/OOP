@@ -49,6 +49,7 @@
      <string>edit</string>
     </property>
     <addaction name="actionclear"/>
+    <addaction name="actionlorem_ipsum"/>
     <addaction name="actionread_only"/>
    </widget>
    <widget class="QMenu" name="menuhelp">
@@ -71,6 +72,7 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionclear"/>
+   <addaction name="actionlorem_ipsum"/>
   </widget>
   <action name="actionopen">
    <property name="text">
@@ -105,6 +107,11 @@
   <action name="action_exit">
    <property name="text">
     <string>exit</string>
+   </property>
+  </action>
+  <action name="actionlorem_ipsum">
+   <property name="text">
+    <string>lorem ipsum</string>
    </property>
   </action>
  </widget>

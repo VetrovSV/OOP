@@ -26,6 +26,8 @@ private slots:
 
     void on_actionclear_triggered();
 
+    void on_actionlorem_ipsum_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
