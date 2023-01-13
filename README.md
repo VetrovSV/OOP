@@ -1,7 +1,7 @@
 # OOP
 **Осень 2022**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md)
 
-[**Заочное 2022. Весна**](plans/2022-spring_distance.md)
+[**Заочное 2022. Семестр 1.**](plans/2022-spring_distance.md), [**Заочное 2023. Семестр 2.**](plans/2023-fall_distance.md)
 
 [**Весна 2022**](2021-fall/plan_2.md) \
 **Осень 2021**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md),  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
