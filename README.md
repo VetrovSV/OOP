@@ -58,6 +58,7 @@
 9. ООП в Java и C#
 
 # Ссылки и материалы
+0. Черновик учебного пособия по ООП и C++ [OOP_StudBook.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf)
 1. Язык программирования C++ (с описанием C++11 и c++14). Страуструп Бьёрн. 2016 г. 1100+ стр. 2-е или более новые издания (4-е издание самое новое на момент 2021 года)
 2. https://en.cppreference.com/w -- документация по C++ и примеры
 3. Руководство по использованию С++: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
