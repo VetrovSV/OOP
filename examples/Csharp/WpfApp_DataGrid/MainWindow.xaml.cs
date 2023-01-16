@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,16 +20,25 @@ namespace WpfApp_DataGrid
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {   
+
         DataBase data;
 
         public MainWindow()
         {
             InitializeComponent();
             data = new DataBase();
+
+            // связывание данных и табличного предствления (datagrid)
             datagrid.ItemsSource = data.data;
+            // названия столбцов в datagrid определятся автоматически, 
+            // на основе названий свойств элементов привезанной коллекции данных (Customer)
+
+
         }
 
+
+        /// Добавляет новую случайныю строку в таблицу
         private void button_add_row_Click(object sender, RoutedEventArgs e)
         {
             data.add_random_data();

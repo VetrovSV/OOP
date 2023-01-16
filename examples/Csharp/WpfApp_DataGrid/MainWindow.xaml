@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
         xmlns:local="clr-namespace:WpfApp_DataGrid"
         mc:Ignorable="d"
         Title="Пример: модель (BindingList) + представление (DataGrid)" Height="450" Width="800">
@@ -10,5 +11,8 @@
         <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="352" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
         <Button x:Name="button_add_row" Content="добавить строку" HorizontalAlignment="Left" Margin="318,367,0,0" VerticalAlignment="Top" Width="131" Height="42" Click="button_add_row_Click"/>
 
+        
+
     </Grid>
+    
 </Window>
