@@ -32,6 +32,7 @@ https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno
   - Регулярные выражения в C++: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
   - https://regex101.com/ -- сайт для проверки регулярных выражений
   - Шпаргалка по регулярным выражениям: https://www.exlab.net/files/tools/sheets/regexp/regexp.pdf
+  - Применение регулярных выражений в C#: https://metanit.com/sharp/tutorial/7.4.php
 
 
 # Занятие 2. 
