@@ -73,6 +73,33 @@ assert 4 == 2 + 2;
 см. также junit
 
 
+# Преобразования типов
+Java язык со строгой типизацией. Например
+```Java
+int x = 3.5;    // ошибка!
+// правильно:
+int x = (int)3.5;
+```
+
+Число в строку, использя метод toString класса Double. Такой метод есть у многих классов.
+```Java
+double d = 123.45d;
+String str = Double.toString(d);
+```
+
+В строку с форматированием
+```Java
+double d = 36.98d;
+String s = String.format("%f", d);
+System.out.println(s); //36.980000
+```
+
+Строка в число
+```Java
+double d=Double.parseDouble("23.6");  
+```
+
+
 # Лямбда-выражения и ссылки на методы
 
 ```Java
