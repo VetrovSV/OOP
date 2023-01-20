@@ -41,8 +41,7 @@ https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno
 Пример модели и представления дл БД на C#: https://github.com/VetrovSV/OOP/tree/master/examples/Csharp/WpfApp_DataGrid
 
 
-# Занятие 3
-
-# Занятие 4
+# Занятие 3, 4
 Защита работ.
 
+Экзамен.
