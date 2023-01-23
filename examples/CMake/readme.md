@@ -54,6 +54,8 @@ my_project
 ```bash
 cmake -B ../my_build .
 ```
+- `../my_build` путь из папки с файлом CMakeLists.txt к папке, где будет происходить сборка
+
 Сборка:
 ```bash
 cmake --build ../my_build 
