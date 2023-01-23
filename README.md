@@ -57,6 +57,11 @@
    * многоконные приложения, горячие клавиши
    * модель и представление (табличные данные и списки)
 9. ООП в Java и C#
+   * [Коротко о Java](https://github.com/VetrovSV/OOP/tree/master/examples/java)
+     * [Указатели на методы](https://github.com/VetrovSV/OOP/blob/master/examples/java/function-reference.md)
+     * [Таймер](https://github.com/VetrovSV/OOP/blob/master/examples/java/timer.md)
+     * [HTTP запросы](https://github.com/VetrovSV/OOP/blob/master/examples/java/HTTP_request.md)
+     * [JavaFX](https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX)
 
 # Ссылки и материалы
 0. Черновик учебного пособия по ООП и C++ [OOP_StudBook.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf)
