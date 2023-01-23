@@ -10,8 +10,20 @@
 
 
 ```Java
-import static org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;       // assertEquals
+
+class MyTest {
+    // @Test -- аннотация, помечает метод как тест
+    // @DisplayName -- аннотация, задающая понятное, текстовое название теста
+    @Test
+    @DisplayName("Add two numbers")
+    void test_sum(){
+        assertEquals(4, 2+2);
+    }
+}
 ```
 
 # Ссылки
