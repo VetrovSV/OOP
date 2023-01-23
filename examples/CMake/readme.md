@@ -42,16 +42,6 @@ add_executable(
 
 **Сборка**
 
-src
-   |-- main
-   |   |-- java
-   |   |   |-- com
-   |   |   |   |-- foxguardsolutions
-   |   |   |   |   |-- jonavon
-   |   |   |   |   |   |-- AbstractFile.java
-   |   |   |   |   |   |-- roman
-   
-
 Структура проекта:
 ```
 my_project
