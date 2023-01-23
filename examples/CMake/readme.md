@@ -42,12 +42,22 @@ add_executable(
 
 **Сборка**
 
+src
+   |-- main
+   |   |-- java
+   |   |   |-- com
+   |   |   |   |-- foxguardsolutions
+   |   |   |   |   |-- jonavon
+   |   |   |   |   |   |-- AbstractFile.java
+   |   |   |   |   |   |-- roman
+   
+
 Структура проекта:
-```bash
+```
 my_project
---src
-----main.cpp
-----CMakeLists.txt
+   |-- src
+   |   |-- main.cpp
+   |   |-- CMakeLists.txt
 ```
 
 Подготовка сборки, временные файлы сборки и исполняемый файл будут сохранены в папку build, находящуюся на одном уровне с папкой src
@@ -60,14 +70,14 @@ cmake --build ../my_build
 ```
 
 В результате получится структура проекта
-```bash
+```
 my_project
---src
-----main.cpp
-----CMakeLists.txt
---my_build
----- ...служебные файлы и папки ...
----- my_project.exe
+   |-- src
+   |   |-- main.cpp
+   |   |--CMakeLists.txt
+   |-- my_build
+   |   |-- ...служебные файлы и папки ...
+   |   |-- my_project.exe
 ```
 
 
@@ -98,13 +108,14 @@ add_executable(
 )
 ```
 В результате получится структура проекта
-```bash
+```
 my_project
---src
-----main.cpp
-----CMakeLists.txt
---my_build
----- ...служебные файлы и папки ...
-----bin
--------my_project.exe
+   |-- src
+   |   |-- main.cpp
+   |   |--CMakeLists.txt
+   |-- my_build
+   |   |-- ...служебные файлы и папки ...
+   |   |-- my_project.exe
+   |   |-- bin
+   |   |   |-- my_project.exe
 ```
