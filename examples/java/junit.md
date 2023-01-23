@@ -1,4 +1,7 @@
-# Общая информация 
+# JUnit
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/JUnit_5_Banner.png/440px-JUnit_5_Banner.png" width="200"  />
+
+
 **JUnit** -- фреимворк для автоматического модульного тестирования.
 - Последняя версия: 5.9.2
 - [junit.org/junit5](https://junit.org/junit5/)
