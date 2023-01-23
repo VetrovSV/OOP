@@ -97,3 +97,14 @@ add_executable(
   main.cpp                               # Список файлов исходного кода
 )
 ```
+В результате получится структура проекта
+```bash
+my_project
+--src
+----main.cpp
+----CMakeLists.txt
+--my_build
+---- ...служебные файлы и папки ...
+----bin
+-------my_project.exe
+```
