@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 
-# название проекта my_project и его версия
+# название проекта my_project
 project(hello_world)
 
 # настроки компилятора
@@ -29,7 +29,7 @@ add_executable(
 # cmake -B ../hello_world_build .
 # cmake --build ../hello_world_build
 
-# исполняемый фал появится в папке simple_executable\hello_world_build\bin
+# исполняемый файл появится в папке simple_executable\hello_world_build\bin
 
 # -B      - указать путь к каталогу сборки
 # .       - имя текущей папки (где находится CMakeLists.txt)
