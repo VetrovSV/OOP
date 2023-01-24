@@ -23,12 +23,11 @@ add_executable(
 
 
 
-# сборку вызывать из каталога simple_executable\src:
-# но указать каталог сборки в каталоге simple_executable
-# чтобы отделить исходный код от файлов сборки
+# сборку вызывать из каталога simple_executable:
+# указать каталог сборки hello_world_build, чтобы отделить исходный код от файлов сборки
 
-# cmake -B ../hello_world_build .
-# cmake --build ../hello_world_build
+# cmake -B hello_world_build .
+# cmake --build hello_world_build
 
 # исполняемый файл появится в папке simple_executable\hello_world_build\bin
 
