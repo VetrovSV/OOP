@@ -39,6 +39,12 @@ CMake используется средами разработки Qt Craetor, C
 
 Наконец можно указать **папку для сохранения выходных файлов**: `set (CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)`
 
+Если необходимо, можно скопировать файлы из папки с исходниками в папку сборки. Например
+```CMake
+configure_file(data/my_data.txt ${CMAKE_CURRENT_BINARY_DIR}/bin/data/my_data.txt)
+```
+копирует файл `data/my_data.txt` в каталог сборки (`${CMAKE_CURRENT_BINARY_DIR}`). Если необходимо, в новом месте создаётся папка.
+
 Рекомендуется разделять как минимум папку с файлами исходного кода и папку сборки, где будет создан, например, исполняемый файл проекта. 
 
 ## Hello, World
@@ -93,7 +99,7 @@ my_project
 ```
 
 
-
+## Расширенный пример
 Более сложный файл конфигурации сборки `CMakeLists.txt`
 ```cmake
 cmake_minimum_required(VERSION 3.24)			# требуемая версия CMake
@@ -139,6 +145,9 @@ my_project
    |   |   |-- my_project.exe
 ```
 
+
+## См. также
+Папки с примерами в этом каталоге
 
 # Ссылки
 - https://cliutils.gitlab.io/modern-cmake/
