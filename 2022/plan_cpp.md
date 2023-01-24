@@ -24,7 +24,7 @@
 - бинарные файлы [https://github.com/VetrovSV/OOP/blob/master/2021-fall/bin-files.md]
 - **
 - обработка аргументов командной строки (argc, argv) [https://ru.stackoverflow.com/questions/6866/%D0%9A%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-argc-%D0%B8-argv]
-- системы автоматизации сборки (например cmake)
+- системы автоматизации сборки (например [cmake](https://github.com/VetrovSV/OOP/tree/master/examples/CMake))
 - менеджеры пакетов
 - возможности средств разработки: навигация по коду, рефакторинг, списки задач, интеграция с git, ...
 - системы документирования (например doxygen)
