@@ -1,14 +1,15 @@
 # OOP
-**Осень 2022**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md)
+**Курс 22-23**: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md); [Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
+
 
 [**Заочное 2022. Семестр 1.**](plans/2022-spring_distance.md), [**Заочное 2023. Семестр 2.**](plans/2023-fall_distance.md)
 
-[**Весна 2022**](2021-fall/plan_2.md) \
-**Осень 2021**:  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md),  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md)
 
-***
-Весна 2021: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md) \
-Осень 2020: [Текущие задания](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md)
+**Курс 21-22**:
+Осень:  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md),  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md), [**Весна**](2021-fall/plan_2.md)
+
+
+**Курс 20-21**: [Осень](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md), [Весна](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md) 
 
 
 
@@ -56,6 +57,11 @@
    * многоконные приложения, горячие клавиши
    * модель и представление (табличные данные и списки)
 9. ООП в Java и C#
+   * [Коротко о Java](https://github.com/VetrovSV/OOP/tree/master/examples/java)
+     * [Указатели на методы](https://github.com/VetrovSV/OOP/blob/master/examples/java/function-reference.md)
+     * [Таймер](https://github.com/VetrovSV/OOP/blob/master/examples/java/timer.md)
+     * [HTTP запросы](https://github.com/VetrovSV/OOP/blob/master/examples/java/HTTP_request.md)
+     * [JavaFX](https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX)
 
 # Ссылки и материалы
 0. Черновик учебного пособия по ООП и C++ [OOP_StudBook.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf)
