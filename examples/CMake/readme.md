@@ -21,6 +21,8 @@ g++ main.cpp unit.cpp -o my_program
 
 
 
+
+
 ## Hello, World
 
 Рассмотрим простую программу **main.cpp**
@@ -112,3 +114,7 @@ my_project
    |   |-- bin
    |   |   |-- my_project.exe
 ```
+
+
+# Ссылки
+- https://cliutils.gitlab.io/modern-cmake/
