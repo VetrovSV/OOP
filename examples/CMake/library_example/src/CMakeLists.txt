@@ -16,7 +16,7 @@ set (CMAKE_LIBRARY_OUTPUT_DIRECTORY lib)
 
 # add_library -- цель -- создание библиотеки
 add_library(                         
-  ${PROJECT_NAME} SHARED
+  ${PROJECT_NAME}
   hello_unit.cpp 
   )
 
@@ -30,7 +30,7 @@ add_library(
 # cmake -B ../HW_lib_build .
 # cmake --build ../HW_lib_build
 
-# файл библиотеки (.so в Linux или .a в Windows) появится в папке library_example\HW_lib_build\lib
+# файл библиотеки (.so в Linux или .lib в Windows) появится в папке library_example\HW_lib_build\lib
 
 # -B      - указать путь к каталогу сборки
 # .       - имя текущей папки (где находится CMakeLists.txt)
