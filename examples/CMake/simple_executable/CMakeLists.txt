@@ -16,7 +16,8 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
 # add_executable -- цель -- создание исполняемого файла
 add_executable(                         
   ${PROJECT_NAME}
-  main.cpp hello_unit.cpp 
+  src/main.cpp 
+  src/hello_unit.cpp 
   )
 
 
