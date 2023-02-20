@@ -1,4 +1,16 @@
+# Лекция 2
+февраль 21
+- Повторение. Вопросы.
+  - Абстрактные классы. 
+- Тип данных Словарь, Стек, регулярные выражения.
+  - https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+**Домашнее задание**
+- Начните выполнять работу 2. Можно выбрать язык программирования C++, С#, Java или другой (по предварительному) согласованию.
+  -  https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf
+
+
 # Лекция 1
+февраль 07
 - Повторение
 - Обзор (заданий)[https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf]
 - Java и C#
