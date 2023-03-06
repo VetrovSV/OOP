@@ -1,3 +1,9 @@
+# Лекция 3
+Разбор примеров:
+- Меню и горячие клавиши, панель инструментов, стили текста в QTextEdit, диалоговые окна (домашняя папка, фильтры)
+  - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/example_qt_menu
+- Многооконные приложения с общими данными: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/multy-window
+
 # Лекция 2
 февраль 21
 - Повторение. Вопросы.
