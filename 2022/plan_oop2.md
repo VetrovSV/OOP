@@ -30,6 +30,7 @@
 ### Источники
 1. https://regex101.com/ -- для экспериментов с регулярными выражениями
 1. https://www.rexegg.com/regex-quickstart.html -- шпаргалка по регулярным выражениям
+1. [https://regexper.com/](https://regexper.com/#%5B%D0%90-%D0%AF%5D%5B%D0%B0-%D1%8F%5D%7B1%2C10%7D%5Cs%3F%5B%D0%90-%D0%AF%5D%5C.%5B%D0%90-%D0%AF%5D%5C.) -- визуализация регулярных выражений
 1. Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
 1. Заготовка для ЧатБота на С++: https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot
 1. Пример словаря с адресами функций: https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
