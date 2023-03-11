@@ -28,7 +28,8 @@
    - использование в вашем любимом языке программирования
 
 ### Источники
-1. https://regex101.com/
+1. https://regex101.com/ -- для экспериментов с регулярными выражениями
+1. https://www.rexegg.com/regex-quickstart.html -- шпаргалка по регулярным выражениям
 1. Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
 1. Заготовка для ЧатБота на С++: https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot
 1. Пример словаря с адресами функций: https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
