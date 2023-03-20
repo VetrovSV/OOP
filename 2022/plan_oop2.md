@@ -1,4 +1,7 @@
-# Лекция 3
+# Лекция 4. Таблицы и модели
+- 
+
+# Лекция 3. Многооконные приложения и др.
 Разбор примеров:
 - Меню и горячие клавиши, панель инструментов, стили текста в QTextEdit, диалоговые окна (домашняя папка, фильтры)
   - https://github.com/VetrovSV/OOP/tree/master/examples/Qt/example_qt_menu
@@ -7,7 +10,7 @@
   - https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
   
 # Лекция 2
-февраль 21
+февраль 21. Словарь. Регулярные выражения.
 - Повторение. Вопросы.
   - github и git
   - markdown и изображения
@@ -37,7 +40,7 @@
 ****
 
 
-# Лекция 1
+# Лекция 1. Java. C#
 февраль 07
 - Повторение
 - Обзор (заданий)[https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20II.pdf]
