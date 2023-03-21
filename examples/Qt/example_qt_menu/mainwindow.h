@@ -28,6 +28,8 @@ private slots:
 
     void on_actionlorem_ipsum_triggered();
 
+    void on_actionabout_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

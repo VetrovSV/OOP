@@ -20,7 +20,7 @@ private:
 public:
     ChatBot();
 
-    std::string answer(const std::string& );
+    std::string answer(const std::string& ) override;
 
     /// Добавление нового обработчика(функции) на запрос пользователя
     void add_answer(const std::regex &regex, AnswerFunc func);

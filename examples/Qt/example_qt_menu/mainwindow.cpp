@@ -1,5 +1,6 @@
 #include <QFileDialog>          // библиотека для создания диалоговых окон
 #include <QTextStream>
+#include <QMessageBox>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -29,6 +30,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_actionopen_triggered(){
     // получение пути к домашней папке пользователя
     QString home = QDir::homePath();
+
     
     // функция getOpenFileName создаёт диалоговое окно для открытия существующего файла
     // Параметры: 
@@ -113,3 +115,11 @@ void MainWindow::on_actionlorem_ipsum_triggered()
 
     ui->textEdit->insertHtml(text);         // вставка html в позицую курсора
 }
+
+void MainWindow::on_actionabout_triggered()
+{
+    QMessageBox msgBox;
+    msgBox.setText("The document has been modified.");
+    msgBox.exec();
+}
+
