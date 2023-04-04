@@ -1,6 +1,30 @@
 # Лекция 6. Классы модели и представления. Таймер. QFile, QDir, ...
 До 10 мая полностью выполните задание База данных.
 
+
+Пример работы с таймером в C#
+```c#
+        //using System.Timers;
+        Timer t = new Timer(2000);      // таймер с интервалом 2000 мс.
+
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            t.Enabled = true;      
+            t.AutoReset = true;     // таймер будет срабатывать многократно
+            t.Start();
+
+            // адрес метода, который будет вызван при срабатывании таймера
+            // метод должен принимать параметры Object source, ElapsedEventArgs e
+            t.Elapsed += do_something;
+        }
+
+        public void do_something(Object source, ElapsedEventArgs e)
+        {
+            MessageBox.Show("Hello!");
+        }
+```
 # Лекция 4. SOLID. Сигналы и слоты
 
 
