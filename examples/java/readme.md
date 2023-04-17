@@ -1,5 +1,5 @@
 # Java
-- Слайды https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+- Слайды [https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf](https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU/edit#slide=id.g20e70e069b8_0_780)
 - Появился в 1995 г.
 - Входят в пятёрку самых популярных языков программирования (по [оценке TIOBE](https://www.tiobe.com/tiobe-index/))
 - Объектно-ориентированный язык программирования общего назначения
