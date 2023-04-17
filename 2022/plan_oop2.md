@@ -37,6 +37,12 @@
             MessageBox.Show("Hello!");
         }
 ```
+
+
+#### Ссылки
+- https://metanit.com/sharp/adonetcore/4.1.php - работа с SQLite в C#
+
+
 # Лекция 4. SOLID. Сигналы и слоты
 
 
