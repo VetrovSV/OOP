@@ -1,5 +1,6 @@
 //#include <QCheckBox>
 #include <QFile>
+#include <QTextStream>
 
 #include "floatnumberitem.h"
 #include "modelstuds.h"

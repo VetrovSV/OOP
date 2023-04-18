@@ -30,7 +30,10 @@ int main(int argc, char *argv[])
 
     // Можно соединсять не только методы, но и метод с любой функцией.
     // в том числе с лямбда функцией
-    QObject::connect(b, &QPushButton::clicked, [=](){qDebug() << "label is hide";});
+    QObject::connect(b, &QPushButton::clicked,
+                     [=](){ qDebug() << "label is hide"; } );
+
+    QObject::connect(b, &QPushButton::clicked, &w, &QWidget::close );
 
 
     w.show();
