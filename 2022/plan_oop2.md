@@ -82,6 +82,7 @@
 1. Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
 1. Заготовка для ЧатБота на С++: https://github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot
 1. Пример словаря с адресами функций: https://github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp
+1. Сайт выдающий прогноз погоды в текстовом (plain text) формате: https://github.com/chubin/wttr.in#usage
 ****
 
 
