@@ -3,3 +3,12 @@
 - https://github.com/VetrovSV/OOP/blob/master/C%2B%2B%20(part%201).pdf
 - https://github.com/VetrovSV/OOP/blob/master/OOP_StudBook.pdf
 
+### Задание 1. Основы С++
+Используйте язык С++
+1. Решите задачу  из строки 3 [задачника](https://ivtipm.github.io/Programming/Files/spisocall.htm) согласно вашему варианту
+2. Разбейте код на функции, модули (h и cpp файл); 
+3. Создайте тесты с помощью функции `assert`
+
+- соблюдайте принцип единственной ответственности
+- документируйте код
+- пишите поясняющие комментарии для себя
