@@ -1,4 +1,6 @@
 # OOP
+[**Заочное 2023: Весна**](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md)
+
 **Курс 22-23**: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md); [Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
 
 
