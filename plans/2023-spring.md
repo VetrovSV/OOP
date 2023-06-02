@@ -46,3 +46,6 @@
 
 ## Задание 3 - класс
 https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno-orientirovannoe_programmirovanie.pdf
+
+## Задание 4 - наследование
+https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno-orientirovannoe_programmirovanie.pdf
