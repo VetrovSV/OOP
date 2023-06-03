@@ -53,6 +53,11 @@
 
 ## Задание 3 - класс
 https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno-orientirovannoe_programmirovanie.pdf
+- создайте объект динамически, вызовите методы 
+- создайте динамический массив из объектов, вызовите методы 
+- создайте статической массив из объектов, вызовите методы 
+- 
+
 
 ## Задание 4 - наследование
 https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno-orientirovannoe_programmirovanie.pdf
