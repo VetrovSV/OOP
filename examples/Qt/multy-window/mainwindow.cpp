@@ -36,7 +36,7 @@ void MainWindow::on_pushButton_newwindow_clicked(){
         // второму окну даём доступ к данным этого (главного) окна
         this->form->data = this->data;
 
-        // с помошью механизма Qt для связывания методов,
+        // с помощью механизма Qt для связывания методов,
         // задаём второй метод show как обработчик первого back_clicked
         // когда на втором окне нажата кнопка back показать главное окно
         connect(form, &Form::back_clicked, this, &MainWindow::show);
