@@ -318,7 +318,70 @@ int main() {
 # Пример: матрицы
 
 # Пример: файлы
+```c
+#include <stdio.h>
+#include <math.h>       // математический модуль
+#include <stdlib.h>
+#include <time.h>
+
+/*
+ * Автор:
+ * Задача: Дан файл f, компоненты которого - целые числа x1, x2, x3, ...
+ * Записать в новый файл числа, образованную по закону экспоненциального сглаживания:
+ * y1 = x1, y2 = y1 * (1 - alpha) + alpha * x2 и т.д. alpha = 0.9.
+ * Исходный файл может быть любого размера, в том числе превышающего размер оперативной памяти.
+ * Разбить задачу на функции.
+ */
 
 
+/// заполняет текстовый файл с именем fname n случайными числами
+void file_rand_fill(char fname[], unsigned long n){
+    FILE *f = fopen(fname, "w");        // открыть файл в режиме записи; если файл уже существует, он будет перезаписан.
+
+    for (unsigned long i = 0; i < n; ++i) {;
+        fprintf(f, "%d ", rand() );
+    }
+    fclose(f);          // Закрытие файла, в т.ч. запись файлового буфера на диск
+}
+
+/// читает числа из файла fname_in, применяет экспоненциальное сглаживание (y1 = x1, y2 = y1 * (1 - alpha) + alpha * x2),
+/// где x - входные данные, записывает результат в файл fname_out
+void exp_smooth(char fname_in[], char fname_out[], float alpha){
+    FILE *f_in  = fopen( fname_in, "r");        // открыть файл в режиме записи; если файл уже существует, он будет перезаписан.
+    FILE *f_out = fopen( fname_out, "w");        // открыть файл в режиме записи; если файл уже существует, он будет перезаписан.
+    float y, y_;
+    int x;
+    // первый член последовательности
+    if ( !feof(f_in) ){                 // feof(f_in) вернёт true, если достигнут конец файла
+        fscanf(f_in, "%d ", &x);
+        y = x;
+        fprintf(f_out, "%0.2f ", y);    }
+    // остальные члены последовательности
+    while ( !feof(f_in)){
+        fscanf(f_in, "%d ", &x);
+        y_ = y * (1 - alpha) + alpha * x;
+        fprintf(f_out, "%0.2f ", y_);
+        y = y_;
+    }
+    fclose(f_in); fclose(f_out);
+}
+
+
+int main() {
+
+    srand( time( NULL) );                 // инициализация генератора случайных чисел текущим временем в секундах
+
+    char file_in[] = "raw_data.txt";
+    char file_out[] = "smooth_data.txt";
+
+    // заполнение исходного файла случайными числами
+    file_rand_fill(file_in, 1e8);     // 1e8 = 10^8 = 100'000'000
+
+    // перезапись данных из первого файла во второй с преобразованием
+    exp_smooth(file_in, file_out, 0.9);
+
+    return 0;
+}
+```
 # Задачник
 https://ivtipm.github.io/Programming/Files/spisocall.htm
