@@ -151,3 +151,4 @@ my_project
 
 # Ссылки
 - https://cliutils.gitlab.io/modern-cmake/
+- Учебник: Ситсема построения проектов CMake, Д. В. Дубровов
