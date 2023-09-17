@@ -206,7 +206,34 @@ include(GoogleTest)
 gtest_discover_tests(main_test)
 ```
 
+main.cpp
+```C++
+int main() {
+    return 0; }
+```
+
+main_test.cpp
+```c++
+#include <gtest/gtest.h>
+
+// Пример тестовой функции
+TEST(HelloTest, BasicAssertions) {
+
+	EXPECT_STRNE("hello", "world");		// проверка неравенства строк
+	EXPECT_EQ(7 * 6, 42);				// проверка равенства чисел
+}
+```
+
 **Сборка**
+```bash
+# подготовка к сборке в каталог build
+cmake -B build .
+# сборка в каталог build
+cmake --build build
+
+# запуск тестов
+cmake -B build .
+```
 
 
 ## См. также
