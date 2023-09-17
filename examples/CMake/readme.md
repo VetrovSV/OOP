@@ -146,6 +146,26 @@ my_project
 ```
 
 
+# Зарузка зависимостей
+
+Пример:
+```
+# Подключает модуль FetchContent для CMake
+# FetchContent используется для загрузки внешних зависимостей, входит в состав CMake 3.11+
+include(FetchContent)
+
+# Объявление зависимости
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+
+# Загрузка зависимости
+FetchContent_MakeAvailable(googletest)
+```
+
+
+
 ## См. также
 Папки с примерами в этом каталоге
 
