@@ -60,18 +60,24 @@ int main() {
 # Некоторые типы данных
 В C размеры некоторых типов зависят от реализации. Типичные размеры:
 ```c
-// #include <limits.h>
-printf("char  %lu байт     от %22d до %22d\n", sizeof(char),       CHAR_MIN, CHAR_MAX);
-printf("short %lu байт     от %22d до %22d\n", sizeof(short),      SHRT_MIN, SHRT_MAX);
-printf("int   %lu байт     от %22d до %22d\n", sizeof(int),        INT_MIN,  INT_MAX);
-printf("long  %lu байт     от %22li до %22li\n", sizeof(long),     LONG_MIN, LONG_MAX);
+    // #include <limits.h>
+    printf("char   %lu байт    от %22d до %22d\n", sizeof(char),       CHAR_MIN, CHAR_MAX);
+    printf("short  %lu байт    от %22d до %22d\n", sizeof(short),      SHRT_MIN, SHRT_MAX);
+    printf("int    %lu байт    от %22d до %22d\n", sizeof(int),        INT_MIN,  INT_MAX);
+    printf("long   %lu байт    от %22li до %22li\n", sizeof(long),     LONG_MIN, LONG_MAX);
+
+    // #include <float.h>
+    printf("float  %lu байт    от %22e до %22e  с точностью %e\n",   sizeof(float),      FLT_MIN,  FLT_MAX, FLT_EPSILON);
+    printf("float  %lu байт    от %22e до %22e  с точностью %e\n",   sizeof(double ),    DBL_MIN,  DBL_MAX, DBL_EPSILON);
 ```
 
 ```
-char  1 байт     от                   -128 до                    127
-short 2 байт     от                 -32768 до                  32767
-int   4 байт     от            -2147483648 до             2147483647
-long  8 байт     от   -9223372036854775808 до    9223372036854775807
+char   1 байт    от                   -128 до                    127
+short  2 байт    от                 -32768 до                  32767
+int    4 байт    от            -2147483648 до             2147483647
+long   8 байт    от   -9223372036854775808 до    9223372036854775807
+float  4 байт    от           1.175494e-38 до           3.402823e+38  с точностью 1.192093e-07
+float  8 байт    от          2.225074e-308 до          1.797693e+308  с точностью 2.220446e-16
 ```
 
 # Пример: ввод, вывод, вычисления
