@@ -104,7 +104,9 @@ int main() {
 - [2], Глава 4, Исследование и эксплуатация функций `printf` и `scanf`.
 - справка по математическим функциям https://en.cppreference.com/w/c/numeric/math
 - справка по стандартным модулям https://en.cppreference.com/w/c/header
+- числовые типы данных https://en.cppreference.com/w/c/language/arithmetic_types
 - на случай, если возникают ошибки компиляции при обращении к математическим функциям  https://stackoverflow.com/questions/12824134/undefined-reference-to-pow-in-c-despite-including-math-h
+
 
 # Пример: условный оператор
 ```c
