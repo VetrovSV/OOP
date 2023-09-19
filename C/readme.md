@@ -634,8 +634,8 @@ int main() {
 "w+" 	create a file for read/write,чтение и запись, но существующее содержимое будет стёрто
 "a+" 	open a file for read/write, чтение и запис в конец файла
 ```
-- https://en.cppreference.com/w/c/io/fopen
-
+- https://en.cppreference.com/w/c/io/fopen — документация fopen
+- https://en.cppreference.com/w/c/io — документация по файловому вводу\выводу
 
 
 # Ссылки
