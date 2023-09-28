@@ -76,11 +76,11 @@ my_project
    |   |-- CMakeLists.txt
 ```
 
-Подготовка сборки, временные файлы сборки и исполняемый файл будут сохранены в папку build, находящуюся на одном уровне с папкой src
+Подготовка сборки, `.` - имя текущего кеталога.
 ```bash
 cmake -B ../my_build .
 ```
-- `../my_build` путь из папки с файлом CMakeLists.txt к папке, где будет происходить сборка
+- `-B ../my_build` - путь из папки с файлом CMakeLists.txt к папке, где будет происходить сборка. Если не указать, то большое количество служеюных файлов сборки будут созданны прямо в текущем катологе.
 
 Сборка:
 ```bash
@@ -146,8 +146,100 @@ my_project
 ```
 
 
+# Зарузка зависимостей
+
+Пример:
+```
+# Подключает модуль FetchContent для CMake
+# FetchContent используется для загрузки внешних зависимостей, входит в состав CMake 3.11+
+include(FetchContent)
+
+# Объявление зависимости
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+
+# Загрузка зависимости
+FetchContent_MakeAvailable(googletest)
+```
+
+# Тестирование
+Пример проекта из двух файлов `main_test.cpp` (основная программа) и `main_test.cpp` (файл с тестом). Тест использует фреимворк GoogleTest.
+```cmake
+cmake_minimum_required(VERSION 3.24)    # требование к минимальной версии CMake
+
+project(executable_with_test)           # название проекта
+
+set(CMAKE_CXX_STANDARD 23)                          # Стандарт С++23
+
+# Указание цели сборки: исполняемый файл
+# executable_with_test -- имя цели = имя исполняемого файла
+# main.cpp -- список файлов исходного кода, необходимых для компиляции
+add_executable(executable_with_test main.cpp)
+
+
+# ========================================================================================  Настройка тестирования
+# Подключает модуль FetchContent для CMake
+# FetchContent используется для загрузки внешних зависимостей, входит в состав CMake 3.11+
+include(FetchContent)
+# Объявление зависимости
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+# Загрузка зависимости
+FetchContent_MakeAvailable(googletest)
+
+
+# добавление ещё одной цели -- исполняемый файл main_test для теста
+add_executable(main_test main_test.cpp)
+# для компиляции файла с тестами нужна дополнительная библиотека GoogleTest,
+# добавим её как составную часть цели main_test
+target_link_libraries( main_test  GTest::gtest_main)
+
+# сделать тест частью проекта
+enable_testing()
+# Подключает модуль GoogleTest для CMake
+include(GoogleTest)
+# Запустить файл main_test чтобы получить имена тестов (но не выполнить тесты)
+gtest_discover_tests(main_test)
+```
+
+main.cpp
+```C++
+int main() {
+    return 0; }
+```
+
+main_test.cpp
+```c++
+#include <gtest/gtest.h>
+
+// Пример тестовой функции
+TEST(HelloTest, BasicAssertions) {
+
+	EXPECT_STRNE("hello", "world");		// проверка неравенства строк
+	EXPECT_EQ(7 * 6, 42);				// проверка равенства чисел
+}
+```
+
+**Сборка**
+```bash
+# подготовка к сборке в каталог build
+cmake -B build .
+# сборка в каталог build
+cmake --build build
+
+# запуск тестов
+cmake -B build .
+```
+
+Как правило для тестов создаётся отдельный файл конфугурации CMake, который потом включается в основной файл проекта. 
+
 ## См. также
 Папки с примерами в этом каталоге
 
 # Ссылки
 - https://cliutils.gitlab.io/modern-cmake/
+- Учебник: Ситсема построения проектов CMake, Д. В. Дубровов
