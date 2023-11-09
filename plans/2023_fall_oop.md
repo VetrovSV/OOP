@@ -1,13 +1,20 @@
+# Лекция 8. Отношения между классами.
+- Наследование. Композиция\агрегация. Ассоциация.
+- Представление отношений на UML диаграммах классов.
+- https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#chapter.5
+
+
 # Лекция 7. 
-октябрь 02
+ноябрь 02
 - Разбор теста
-- Наследование?
+- Массивы из объектов. Массивы из указателей на объекты. [ [StudBook4.3.2](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2) ]
+- Выравнивание памяти в объектах. [ [StudBook4.3.2](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.2), Простая структура данных ]
+- Конструктор преобразования. Конструктор с параметрами. [ [StudBook4.3.1](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.1) ]
 
 
 ### Домашнее задание. Конспекты
 1. Стандарт оформления кода
 2. Замена switch case на массив
-
 
 
 # Лекция 6.5. 
