@@ -1,11 +1,21 @@
-# Лекция N
-- Указатели на функции, методы.
-- Шаблонные классы.
-- Дружественные функции, классы.
+# Лекция N+1.
+30 ноября
+- Тест по ООП
+- Дружественные функции, классы. [ [StudBook]https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.4]
 - Вложенные классы.
-- Статические члены классов.
+- Статические члены классов. [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.4.3.3) ]
+- Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.5] ]
+
+# Лекция N
+23 ноября
+- Указатели на функции, методы. [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.2.2.3) ]
+- Шаблонные классы. [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.4) ]
+- Вложенные классы.
 
 
+# Лекция 9. Полиморфизм
+
+  
 
 # Лекция 8. Отношения между классами.
 09 ноября
@@ -15,7 +25,7 @@
 
 ### Домашнее задание. 
 - Наследование.
-- Конспект: умные указатели: unique_ptr, функция make_unique
+- Конспект: умные указатели: unique_ptr, shared_ptr, функция make_unique, make_shared
 - Изучите раздел: Статические члены класса черновика учебного пособия.
 
 # Лекция 7. 
@@ -50,5 +60,5 @@
 ### Домашнее задание
 - АТД, UML, класс (поля, геттеры, сеттеры);
   Задание 1: https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf \
-  Для создания диграммы класса можно использовать PlantUML или DrawIO.
+  Для создания диаграммы класса можно использовать PlantUML или DrawIO.
 - Бонус: реализуйте алгоритм минимизации булевых функций???
