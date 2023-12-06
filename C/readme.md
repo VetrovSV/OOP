@@ -71,7 +71,7 @@ gcc main.c -o my_progr
 gcc main.c -lm -o my_progr
 ```
 Иначе линковка завершиться с ошибкой undefined reference, например: 
-`Source.c:(.text+0x219): undefined reference to `exp'`
+`Source.c:(.text+0x219): undefined reference to `exp`.
 
 Чтобы не показывать предупрежения (warnings) добавьте ключ `-w`. Используйте эту опцию с осторожностью, т.к. предупреждения могут помочь обнаружить логическую ошибку в программе.
 
