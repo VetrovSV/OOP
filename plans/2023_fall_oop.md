@@ -1,5 +1,7 @@
 # Лекция N+2.
 7 декабря
+- Повторение: динамический полиморфизм. Статический полиморфизм.
+- Вопросы по тесту.
 - Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.5] ]
 - Managed C++, C++\CLI [https://github.com/VetrovSV/OOP/blob/master/managed_cpp/managed_cpp.md]
 - Создание приложений с GUI на C++
