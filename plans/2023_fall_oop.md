@@ -1,3 +1,12 @@
+# Лекция N+2.
+7 декабря
+- Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.5] ]
+- Manageg C++, C++\CLI [https://github.com/VetrovSV/OOP/blob/master/managed_cpp/managed_cpp.md]
+- Создание приложений с GUI на C++
+  - Введение, Qt: https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec1.pdf
+  - UWP: https://github.com/VetrovSV/OOP/tree/master/examples/Cpp_WinRT_UWP
+
+
 # Лекция N+1.
 30 ноября
 - Тест по ООП
