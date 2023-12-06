@@ -1,10 +1,15 @@
 # Лекция N+2.
 7 декабря
 - Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.5] ]
-- Manageg C++, C++\CLI [https://github.com/VetrovSV/OOP/blob/master/managed_cpp/managed_cpp.md]
+- Managed C++, C++\CLI [https://github.com/VetrovSV/OOP/blob/master/managed_cpp/managed_cpp.md]
 - Создание приложений с GUI на C++
   - Введение, Qt: https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec1.pdf
   - UWP: https://github.com/VetrovSV/OOP/tree/master/examples/Cpp_WinRT_UWP
+ 
+
+### Домашнее задание. Программа с GUI
+1. Создайте оконный интерфейс для программы из задания.
+2. Напишите комментарии.
 
 
 # Лекция N+1.
@@ -33,7 +38,7 @@
 - Порядок вызова конструкторов и деструкторов
 
 ### Домашнее задание. 
-- Наследование.
+- Наследование [https://raw.githubusercontent.com/VetrovSV/OOP/master/%D0%9E%D0%9E%D0%9F.%20%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20I.pdf]
 - Конспект: умные указатели: unique_ptr, shared_ptr, функция make_unique, make_shared
 - Изучите раздел: Статические члены класса черновика учебного пособия.
 
