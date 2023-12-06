@@ -3,6 +3,7 @@
 - Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.5] ]
 - Managed C++, C++\CLI [https://github.com/VetrovSV/OOP/blob/master/managed_cpp/managed_cpp.md]
 - Создание приложений с GUI на C++
+  - Подходы к построению программ с GUI. Главный цикл приложений. Понятие фреимворка. Диаграмма классов приложения.
   - Введение, Qt: https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec1.pdf
   - UWP: https://github.com/VetrovSV/OOP/tree/master/examples/Cpp_WinRT_UWP
  
