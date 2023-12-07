@@ -3,6 +3,7 @@
 Некоторые фреимворки для чистого C++ для создания приложений с GUI
 -  Qt (кроссплатформенный: Linux, Windows, MacOS, Android) [https://raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec1.pdf]
 -  wxWidgets (кроссплатформенный: Linux, Windows, MacOS)
+-  WinUI (Windows)
 -  UWP (Windows)
 -  WindowsForms (устарел, Windows)
 
