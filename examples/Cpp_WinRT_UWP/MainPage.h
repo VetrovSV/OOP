@@ -14,6 +14,7 @@ namespace winrt::CppWinRTUWP::implementation
         int32_t MyProperty();
         void MyProperty(int32_t value);
 
+        // Обработчик события - нажатие на кнопку. Создан в дизайнере интерфейса
         void ClickHandler(Windows::Foundation::IInspectable const& sender, Windows::UI::Xaml::RoutedEventArgs const& args);
     };
 }
