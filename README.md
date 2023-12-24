@@ -1,5 +1,5 @@
 # OOP
-**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md), [ООП](plans/2023_fall_oop.md)
+**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md)
 
 [**Заочное 2023: Весна**](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md)
 
