@@ -13,3 +13,5 @@
 
 
 # День 2. GUI в Java. Регулярные выражения.
+- https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA/edit?pli=1#slide=id.g28ea101f73f_0_0
+- https://regex101.com/
