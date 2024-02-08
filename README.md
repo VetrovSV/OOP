@@ -6,7 +6,7 @@
 Курс 22-23: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md); [Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
 
 
-[Заочное 2022. Семестр 1.**](plans/2022-spring_distance.md), [Заочное 2023. Семестр 2.](plans/2023-fall_distance.md)
+[Заочное 2022. Семестр 1.](plans/2022-spring_distance.md), [Заочное 2023. Семестр 2.](plans/2023-fall_distance.md)
 
 
 Курс 21-22:
