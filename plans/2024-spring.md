@@ -15,6 +15,7 @@
 
 
 # Занятие 1. Обзор курса. Введение в Java
+## Лекция 1. Обзор курса. Введение в Java
 Слайды:
 - https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
 - https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
@@ -24,6 +25,10 @@
 - https://github.com/VetrovSV/OOP/tree/master/examples/java - все примеры
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/simple-class - пример простого класса
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX - приложение с GUI
+
+### Лекция 1. Дополнение: Создание приложений с графическим интерфейсом в Java.
+9 февраля, 18:00. 
+Смотрите ссылку на запись в чате группы.
 
 ## Задание 0. Литература. IDE
 1. Раздобудьте 2 или больше книги по выбранному для задания 1 языку программирования. Литература должна быть не старее 5 лет, содержать сведения об основах языка программирования, фреимворка для создания приложений с графическим интерфейсом.
