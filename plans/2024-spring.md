@@ -59,6 +59,19 @@
 
 # Занятие 2. Введение в C#??
 29 февраля
+- Повторение. Опрос.
+    - MVC; Понятие ссылочного типа. Особенности Java (типизация, пакеты, классы, );
+    - Структура и состав проекта приложения с GUI на JavaFX.
+- Наследование в Java; Перегрузка и переопределение методов.
+- Модельное тестирование. Фреимворк JUnnit;
+    Слайды:
+    - https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
+    - https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
+- Основы C#
+    - Слайды: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_2.pdf
+    - Обзор фреимворков для создания приложений с GUI.
+    - Структура и состав проекта приложения с GUI на С#.
+    - Модульное тестирование.
 
 # Занятие 3. Регулярные выражения. Многооконные приложения.
 14 марта
