@@ -22,7 +22,7 @@
 
 
 Примеры:
-- https://github.com/VetrovSV/OOP/tree/master/examples/java - все примеры
+- https://github.com/VetrovSV/OOP/tree/master/examples/java - короткая шпаргалка по языку, примеры
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/simple-class - пример простого класса
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX - приложение с GUI
 
@@ -57,7 +57,7 @@
 
 До 29 февраля выполните задание полностью.
 
-# Занятие 2. Введение в C#??
+# Занятие 2. Введение в C#
 29 февраля
 - Повторение. Опрос.
     - MVC; Понятие ссылочного типа. Особенности Java (типизация, пакеты, классы, );
