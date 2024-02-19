@@ -156,6 +156,10 @@ Project Structure... > Project Settings | Libraries | + > From Maven | Иска�
 
 
 # Ссылки
+- Слайды: 
+  - https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU/edit#slide=id.g205b655ab26_0_52
+  - https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA/edit#slide=id.g20e6f19f99c_0_1285
+
 - JavaFX пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 - Java: руководство для начинающих, 7-е и зд .: Пер. с англ. — С П б .: ООО “Диалектика”, 2019. — 816 с.
 - JavaFX, Прохоренок Н.А., 2020
