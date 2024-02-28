@@ -40,6 +40,13 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
   FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
   Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 ```
+#### Основные свойства\методы элементов интерфейса
+`.getText();   // -> String`\
+`.setText("Some text");`\
+`.appendText( "этот текст будет добавлен к содержимому");`\
+`.clear();`\
+`.setEditable( false );`
+
 
 #### Обработка событий
 
