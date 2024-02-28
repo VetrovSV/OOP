@@ -75,7 +75,7 @@
     - MVC; Понятие ссылочного типа. Особенности Java (типизация, пакеты, классы, );
     - Структура и состав проекта приложения с GUI на JavaFX.
 - Наследование в Java; Перегрузка и переопределение методов.
-- Модельное тестирование. Фреимворк JUnit;
+- Модульное тестирование. Фреимворк JUnit;
     Слайды:
     - https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
     - https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
