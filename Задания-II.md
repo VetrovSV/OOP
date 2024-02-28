@@ -45,6 +45,7 @@
 - https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
 - plantuml.com/ru — создание диаграмм из plain text
 
+
 # Задание 2. Чат-бот.
 Создайте программу с графическим интерфейсом пользователя. Реализуйте логику в отдельном модуле. 
 
@@ -75,6 +76,11 @@
 3. Старайтесь сделать эти классы гибкими. В них должно просто добавлять новые методы обработки сообщений или реакции на сообщения.
 4. Используйте абстрактные классы для описания программного интерфейса.
 
+**См. также**
+- Расстояние Левенштейна
+- Word2vec, готовые словари word2vec (https://rusvectores.org/ru/models/)
+
+
 
 #### Вопросы
 1. Изобразите диаграмму классов для приложения.
@@ -86,15 +92,22 @@
 7. Что такое регулярное выражение?
 
 #### Ссылки
-- github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot – шаблон для программы на C++
-- многооконные приложения в Qt:
+**Примеры**
+1. github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot – шаблон для программы на C++
+1. многооконные приложения в Qt:
     - github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf	
     - github.com/VetrovSV/OOP/tree/master/examples/Qt/multy-window 
-- github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp – тип данных словарь (С++)
-- stackoverflow.com/questions/46943134/how-do-i-write-a-qt-http-get- request
-- Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
-- regex101.com – сайт для проверки регулярных выражений
+1. github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp – тип данных словарь (С++)
+1. stackoverflow.com/questions/46943134/how-do-i-write-a-qt-http-get- request
+**регулярные выражения**
+1. Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
+1. regex101.com – сайт для проверки регулярных выражений
+1. https://www.rexegg.com/regex-quickstart.html -- шпаргалка (eng) по регулярным выражениям
+1. [https://regexper.com/](https://regexper.com/#%5B%D0%90-%D0%AF%5D%5B%D0%B0-%D1%8F%5D%7B1%2C10%7D%5Cs%3F%5B%D0%90-%D0%AF%5D%5C.%5B%D0%90-%D0%AF%5D%5C.) -- визуализация регулярных выражений
 
+1. Сайт выдающий прогноз погоды в текстовом (plain text) формате: https://github.com/chubin/wttr.in#usage
+1. https://reqbin.com тестирование web-API
+1. https://github.com/public-apis/public-apis - Каталог сайтов с открытым API
 
 # Задание 3. Простая БД
 Создайте клиентское приложение для работы с БД (СУБД).
