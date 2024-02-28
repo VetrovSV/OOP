@@ -1,6 +1,6 @@
 # Пример JavaFX приложения.
 
-1. Создание проекта в intelij IDEA: File > New > Project: Шаблон JavFX\
+1. Создание проекта в intelij IDEA (2020): File > New > Project: Шаблон JavFX\
   Для компиляции и запуска нужен фреимворк JavaFX. Он не входит в стандартную библиотеку Java. Нужно скачать отдельно.
 2. Скачать JavaFX SDK: https://gluonhq.com/products/javafx/. Разархивировать. Например, в папку проекта.
 3. Указать путь к JavaFX SDK в настройках проекта: File > Project Structure > Libraries: "+", указать путь к папке lib JavaFX \
@@ -41,6 +41,34 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
   Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 ```
 
+#### Обработка событий
+
+- `onAction` - основной обработчик события для многих элементов интерфейса, чаще всего привязан к нажатию на клавишу Enter или клику на элемент.
+- `onKeyPressed`,`onKeyReleased` - обработчики нажатия и отпускания клавиши соответственно.
+  ```java
+    // Обработчик нажатия клавиши, вызывается когда элемент в фокусе и нажата любая клавиша,
+    // в том числе для ввода данных
+    @FXML
+    public void area_key_released(KeyEvent keyEvent) {
+        System.out.println( keyEvent.getCode() );       // -> KeyCode - код клавиши
+        System.out.println( keyEvent.getText() );       //  -> String - строковое обозначение клавиши
+        keyEvent.isControlDown();                       // -> True, если нажата клавиша Control
+    }```
+
+##### Обработчик нажатия на Enter для однострочного поля ввода TextField.
+Описание поля ввода в fxml файле:
+```fxml
+<TextField fx:id="Text_input" onAction="#on_input_done"/>
+```
+
+
+Реализация обработчика события для поля ввода в файле контролера окна:
+```java
+    @FXML
+    protected void on_input_done(){
+        Text_input.clear();   // для примера, очистка содержимого поля ввода 
+        }
+```
 
 
 #### Получить stage из контроллера окна
