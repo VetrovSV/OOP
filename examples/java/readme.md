@@ -24,6 +24,9 @@
 
 ![](https://miro.medium.com/max/1400/1*dAQJ-UDP3altoQKThbQs_w.jpeg)
 
+
+Шпаргалка по основам Java: https://introcs.cs.princeton.edu/java/11cheatsheet/
+
 Отдельные понятия:
 - Обобщения (generic) — внешне похожий аналог шаблонов С++
 - Пакет (package) — набор классов (файлов), способ организации пространств имён;
