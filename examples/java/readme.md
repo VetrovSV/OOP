@@ -41,6 +41,7 @@ JDK и JRE
 
 
 # Hello, World!
+[[слайды](https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU/edit#slide=id.g205b655ab26_0_421)]
 ```Java
 // неявное подключение всего содержимого пакета java.lang, в том числе класса System
 // java.lang содержит классы общего назначения
@@ -61,17 +62,33 @@ javac Main.java
 
 **Выполнение**
 ```bash
-java -jar My_program.jar
+java Main
+```
+java – название исполняемого файла JRE.
+
+Так можно запускать или одиночный .class файл с именем Main или jar файл с именем Main.jar. В обоих случаях имя главного класса (содержащего функцию main) должно совпадать с именем файла. Иначе придётся указать его отдельно.
+
+
+**jar файлы**
+Создание jar файла из скомпилированных .class файлов
+```bash
+jar cfe MyProgram.jar MyProgram *.class
 ```
 
-java – название исполняемого файла JRE
+- `cfe`: с –создать новый jar файл, f – далее указано имя это файла, e – далее указана точка входа
+	в программу (главный класс)
+- `MyProgram.jar` – имя выходного файла
+- `MyProgram` – имя главного класса
+- `*.class` – входные файлы (все файлы с расширение class в текущей папке)
 
+
+См. также про Manifest File.
 
 
 
 ### Системы сборки
 - Ant
-- Maven
+- Maven [[короткая шпаргалка](https://github.com/ivtipm/BigDataLanguages/tree/main/Java/Maven)]
 - Gradle
 
 
