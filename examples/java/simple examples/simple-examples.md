@@ -21,7 +21,7 @@ public class Example1{
         Scanner con_in = new Scanner(System.in);
  
         // Объявление переменных
-        double a, b;     // катететы
+        double a, b;     // катеты
         double c;        // гипотенуза
 
         // Ввод длины первого катета
