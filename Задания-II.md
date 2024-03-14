@@ -99,6 +99,7 @@
     - github.com/VetrovSV/OOP/tree/master/examples/Qt/multy-window 
 1. github.com/VetrovSV/OOP/blob/master/examples/cpp_map/main.cpp – тип данных словарь (С++)
 1. stackoverflow.com/questions/46943134/how-do-i-write-a-qt-http-get- request
+1. https://mkyong.com/java/java-how-to-download-web-page-from-internet  – Интернет-запросы в Java
 **регулярные выражения**
 1. Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
 1. regex101.com – сайт для проверки регулярных выражений
@@ -108,6 +109,8 @@
 1. Сайт выдающий прогноз погоды в текстовом (plain text) формате: https://github.com/chubin/wttr.in#usage
 1. https://reqbin.com тестирование web-API
 1. https://github.com/public-apis/public-apis - Каталог сайтов с открытым API
+
+
 
 # Задание 3. Простая БД
 Создайте клиентское приложение для работы с БД (СУБД).
