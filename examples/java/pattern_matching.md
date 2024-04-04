@@ -22,7 +22,7 @@ private static void printGreetingBasedOnInput(String input){
  ```
 Классическая форма switch является оператором (statement), новая - выражением (expression). Выражение, в отличии от оператора, выдаёт значение.
 
-Поэтому можно записать switch после оператора return: 
+Поэтому можно записать switch в составе любого допустимого выражения, присвоить переменной или, например, после оператора return:
 ```java
     private static String printGreetingBasedOnInput(String input){
         return switch (input){
@@ -79,14 +79,21 @@ private static void printType(Object input){
     }
 ```
 
-**См. также проверку записей (record)**
+## См. также 
+- проверку записей (record)
 record - особый вид неизменяемых классов. Он может быть использован как образец, при успешной проверке на соответствие образцу можно из проверяемого значениия извлекать отдельные поля [2].
+- Обработку подклассов (Ordering Subclasses)
+- Проверку на null
+- Обработку массивов
+- ключевое слово yield
 
-# См. также
+
+
+В других языках
 - Сопоставление с образцом в Python (match case)
 - Сопоставление с образцом в С++23 https://dev.to/sbalasa/top-c23-features-4ibj
 
 # Ссылки
-1. https://javarush.com/groups/posts/6494-kofe-breyk-260-tradicionnoe-i-sovremennoe-sopostavlenie-s-obrazcom-kak-obhhedinitjh-sopostavlen 
+1. Документация: https://docs.oracle.com/en/java/javase/17/language/switch-expressions.html 
 2. https://dev.java/learn/pattern-matching/
 - Сопоставление с образцом в Scala: https://ivtipm.github.io/BigDataLanguages/Scala/slides/Scala_introdution.html#/10
