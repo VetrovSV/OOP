@@ -86,9 +86,36 @@ jar cfe MyProgram.jar MyProgram *.class
 - `MyProgram` – имя главного класса
 - `*.class` – входные файлы (все файлы с расширение class в текущей папке)
 
-
 См. также про Manifest File.
 
+#### Создание Jar файлов в intelij IDEA
+1. Открыть окно: Project Structure из меню File
+2. В разделе настроек проекта (Project Settings) выбрать подраздел Artifacts
+3. Нажать на кнопку добавления `+`, выбрать тип артефакта: *JAR* > *From modules with dependencies*
+4. В окне настроек JAR файла указать имя главного класса приложения (Main Class). Будет автоматичеки создан файл MANIFEST.MF - файл описания Jar фрхива. 
+5. [ОК]
+
+<img src="assets/IDEA_artifacts_jar.png" height=300 alt="Project Structure">
+
+<img src="assets/create_jar.png" height=300 alt="JAR settinngs">
+
+Инструкция IDEA: https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar
+
+6. Создание JAR файла: Build > Build Artifacts.\
+Файл должен появится в указанной папке (обычно это `out\artifacts\имя_проекта`)
+
+
+#### Создание Jar файлов в intelij IDEA для проектов на основе JavaFX
+1. Открыть окно: Project Structure из меню File
+2. В разделе настроек проекта (Project Settings) выбрать подраздел Artifacts
+3. Нажать на кнопку добавления `+`, выбрать тип артефакта: *JavaFX Application* > *From module...*
+4. Справа на панели настроек артефакта, во вкладке JavaFX указать имя главого класса приложения в поле Application class.\
+ Будет автоматичеки создан файл MANIFEST.MF - файл описания Jar фрхива. 
+5. [ОК]
+
+<img src="assets/IDEA_artifatcs_JavaFX_jar.png" height=300 alt="JavaFX JAR">
+
+Инструкция IDEA: https://www.jetbrains.com/help/idea/packaging-javafx-applications.html#java_fx_build_artifact
 
 
 ### Системы сборки
