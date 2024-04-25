@@ -95,7 +95,7 @@ public class Controller_mainwin implements Initializable {
             System.out.println("table created");
 
             Statement schema = db_con.createStatement();
-            schema.
+//            schema.
 
         } catch (SQLException e) {
             e.printStackTrace();
