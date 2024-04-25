@@ -152,9 +152,10 @@
 
 # Занятие 6. Языки описание пользовательского интерфейса
 11 апреля
-
-Pattern mathcing Java
+- https://docs.google.com/presentation/d/1BJOtQ5QKtVrGhgpWPkrYao29krP4iNMsJj93BD_Gmu0/edit?usp=sharing
 
 
 # Занятие 7. Паттерны проектирования 
 25 апреля
+- https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
+- Pattern mathcing Java?
