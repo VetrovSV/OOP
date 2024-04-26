@@ -74,7 +74,7 @@ java – название исполняемого файла JRE.
 Так можно запускать или одиночный .class файл с именем Main или jar файл с именем Main.jar. В обоих случаях имя главного класса (содержащего функцию main) должно совпадать с именем файла. Иначе придётся указать его отдельно.
 
 
-**jar файлы**
+### jar файлы
 Создание jar файла из скомпилированных .class файлов
 ```bash
 jar cfe MyProgram.jar MyProgram *.class
@@ -87,6 +87,21 @@ jar cfe MyProgram.jar MyProgram *.class
 - `*.class` – входные файлы (все файлы с расширение class в текущей папке)
 
 См. также про Manifest File.
+
+#### Запуск
+
+**Запуск в консоли**
+```bash
+java -jar MyProgram.jar
+```
+
+Виртуальная машина Java (JRE), файл `java` из команды выше, должен быть доступен для вызова.
+
+**Запуск в Ubuntu**\
+Заупстить jar файл можно непостредственно, как и любой другой исполняемый файл - по двойному клику.
+
+Если запуск недоступен, то можно выбрать вариант запуска из контекстного меню:
+<img src="assets/Ubuntu_run_jar.png" width=300>
 
 #### Создание Jar файлов в intelij IDEA
 1. Открыть окно: Project Structure из меню File
@@ -106,6 +121,27 @@ jar cfe MyProgram.jar MyProgram *.class
 
 
 #### Создание Jar файлов в intelij IDEA для проектов на основе JavaFX
+
+В intelij IDEA создание JAR файлов на основе специального шаблона JavaFX приложений не работает по уммолчанию.
+
+Решение: Создать новый главный класс, в котором явно вызывать метод статический метода `launch` из стандартного JavaFX класса Application.
+```java
+package zabgu.javafx_fxml_css;
+import javafx.application.Application;
+// новый главный класс
+public class Launcher {
+    public static void main(String[] args){
+        Application.launch(MainApplication.class, args);
+    }
+}
+```
+
+Далее создать JAR файл обычным способом.
+
+Инструкция: https://www.youtube.com/watch?v=kQaE2HlFeWY
+
+<details>
+*Ниже приведён фрагмент инструкции IDEA, но без указания дополнительных действия для настройки JAR файла*
 1. Открыть окно: Project Structure из меню File
 2. В разделе настроек проекта (Project Settings) выбрать подраздел Artifacts
 3. Нажать на кнопку добавления `+`, выбрать тип артефакта: *JavaFX Application* > *From module...*
@@ -115,8 +151,16 @@ jar cfe MyProgram.jar MyProgram *.class
 
 <img src="assets/IDEA_artifatcs_JavaFX_jar.png" height=300 alt="JavaFX JAR">
 
+Ошибка при сборке: 
+`Java FX Packager: Can't build artifact - fx:deploy is not available in this JDK`
+
+Решение:
+https://www.jetbrains.com/help/idea/packaging-javafx-applications.html#troubleshoot
+
+<br>
 Инструкция IDEA: https://www.jetbrains.com/help/idea/packaging-javafx-applications.html#java_fx_build_artifact
 
+</details>
 
 ### Системы сборки
 - Ant
