@@ -25,7 +25,7 @@
 
 /* Селектор для элемента с именем LabelPi*/
 #LabelPi{
-    -fx-font-size: 18pt;
+    -fx-font-size: 16pt;
     /* Задание системного шрифта*/
     -fx-font-family: 'Source Code pro', 'monospace';
     /*Рекомендуется приводить несколько шрифтов,
