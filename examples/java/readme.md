@@ -73,6 +73,22 @@ java – название исполняемого файла JRE.
 
 Так можно запускать или одиночный .class файл с именем Main или jar файл с именем Main.jar. В обоих случаях имя главного класса (содержащего функцию main) должно совпадать с именем файла. Иначе придётся указать его отдельно.
 
+**Версии JDK и JRE**\
+Узнать весрию JRE
+```bash
+java --version
+```
+
+Узнать весрию class file у скомпилированного файла (любого .class файла):
+```bash
+file MyProg.class
+```
+Пример вывода:
+```
+MyProg.class: compiled Java class data, version 65.0
+```
+
+[Таблица соответствия версий Java и class file](https://javaalmanac.io/bytecode/versions/)
 
 ### jar файлы
 Создание jar файла из скомпилированных .class файлов
