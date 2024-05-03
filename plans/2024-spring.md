@@ -160,3 +160,8 @@
 25 апреля
 - https://github.com/VetrovSV/OOP/blob/master/OOP_patterns.pdf
 - Pattern mathcing Java?
+
+
+# Экзамен
+ИВТ. 30 мая, 9.00, ауд. 401\
+ВМК. 4 июня, 15.00, ауд. 404
