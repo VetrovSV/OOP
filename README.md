@@ -1,4 +1,7 @@
 # OOP
+
+**Заочное, часть 1, курс для группы 22**: [С++ и ООП](plans/2024_spring_distance.md)
+
 **Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md), [Весна 2024](/plans/2024-spring.md)
 
 [Заочное 2023: Лето](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md); [Заочное 2024: Зима](https://github.com/VetrovSV/OOP/blob/master/plans/dist2024-fall.md)
