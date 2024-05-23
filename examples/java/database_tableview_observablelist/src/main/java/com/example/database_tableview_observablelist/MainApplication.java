@@ -35,7 +35,7 @@ public class MainApplication extends Application {
         Scene scene = new Scene(root);
         // Создание окна, добавление в него 
         stage.setScene(scene);
-        stage.setTitle("Hello JavaFX");
+        stage.setTitle("Пример работы с таблицей и ObservableList");
         stage.setWidth(500);
         stage.setHeight(400);
         stage.show();
