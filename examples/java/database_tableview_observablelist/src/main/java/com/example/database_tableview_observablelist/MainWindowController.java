@@ -18,7 +18,7 @@ public class MainWindowController implements Initializable {
     // Будут отображать отдельные поля класса Student в ячейки соответствующих строк
     // <Student, String> - из какого класса брать данные, в каком типе представлять в TableView
     // см. связывание метода из Student и колонки, добавление колонки в таблицу ниже
-    private TableColumn<Student, String> col_name = new TableColumn<>("Name");
+    private TableColumn<Student, String> col_name = new TableColumn<>("Имя");
     private TableColumn<Student, Double> col_score1 = new TableColumn<>("Task1");;
     private TableColumn<Student, Double> col_score2 = new TableColumn<>("Task2");;
     private TableColumn<Student, Double> col_score3 = new TableColumn<>("Task3");;
