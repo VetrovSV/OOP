@@ -1,5 +1,7 @@
 package zabgu.javafx_fxml_css;
 
+import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -16,6 +18,9 @@ public class MainController {
     protected void onCalcButtonClick() {
         int n = Integer.valueOf( Edit_n.getText() );
         LabelPi.setText( String.format("%.5f", PiCalculator.calc_pi(n) ) );
+    }
 
+    public void open_link(ActionEvent actionEvent) {
+//        Application.getInstance().getHostServices().showDocument("http://www.yahoo.com");
     }
 }

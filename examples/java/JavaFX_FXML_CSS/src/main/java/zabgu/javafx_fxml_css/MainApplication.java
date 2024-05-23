@@ -24,7 +24,7 @@ public class MainApplication extends Application {
         // Открытие FXML файла с описанием главного окна
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
         // Создание сцены (scene) на основе FXML файла
-        Scene scene = new Scene(fxmlLoader.load(), 510, 410);
+        Scene scene = new Scene(fxmlLoader.load(), 510, 450);
 
         // Загрузка и применение файла стилей (для примера)
         /* String stylesheet = getClass().getResource("style.css").toExternalForm();

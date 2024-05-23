@@ -25,11 +25,11 @@ public class MainApplication extends Application {
 //        stage.setScene(scene);
 //        stage.show();
 
-        // загрузка файла Main.fxml, описывающего окно
-        // Main.fxml может находится в папке resources, а не java.
-        // но имя пакета должно быть такое же как и у текущего класса
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
-        // root - корневой элемент UI, содрежащий все остальные элементта UI
+        // Загрузка файла Main.fxml, описывающего окно
+        // main_window.fxml может находиться в папке resources, а не java.
+        // но имя пакета должно быть такое же, как и у текущего класса
+        Parent root = FXMLLoader.load(getClass().getResource("main_window.fxml"));
+        // root - корневой элемент UI, содержащий все остальные элементы UI
 
         // Создание сцены для всеъ элементов интерфейса
         Scene scene = new Scene(root);
