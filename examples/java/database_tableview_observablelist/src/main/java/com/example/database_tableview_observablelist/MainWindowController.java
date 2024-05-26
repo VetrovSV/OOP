@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 
 public class MainWindowController implements Initializable {
     @FXML
-    private TableView<Student> table;            /** представление данных: будет показывать данные из ObservableList; */
+    private TableView<Student> table;            /** Представление данных: будет показывать данные из ObservableList; */
 
     // Будут отображать отдельные поля класса Student в ячейки соответствующих строк
     // <Student, String> - из какого класса брать данные, в каком типе представлять в TableView
@@ -27,7 +27,7 @@ public class MainWindowController implements Initializable {
     @FXML
     private Label welcomeText;
 
-    private DataBase db = new DataBase();       /** содержит модель данных (ObservableList) */
+    private DataBase db = new DataBase();       /** Содержит модель данных (ObservableList) */
 
     /** Вызывается после того как форма создана. Можно обращаться к её содержимому */
     @Override

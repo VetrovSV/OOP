@@ -1,19 +1,22 @@
 # OOP
-**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md)
 
-[**Заочное 2023: Лето**](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md); [**Заочное 2024: Зима**](https://github.com/VetrovSV/OOP/blob/master/plans/dist2024-fall.md)
+**Заочное, часть 1, курс для группы 22**: [С++ и ООП](plans/2024_spring_distance.md)
 
-**Курс 22-23**: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md); [Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
+**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md), [Весна 2024](/plans/2024-spring.md)
 
+[Заочное 2023: Лето](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md); [Заочное 2024: Зима](https://github.com/VetrovSV/OOP/blob/master/plans/dist2024-fall.md)
 
-[**Заочное 2022. Семестр 1.**](plans/2022-spring_distance.md), [**Заочное 2023. Семестр 2.**](plans/2023-fall_distance.md)
-
-
-**Курс 21-22**:
-Осень:  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md),  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md), [**Весна**](2021-fall/plan_2.md)
+Курс 22-23: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md); [Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
 
 
-**Курс 20-21**: [Осень](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md), [Весна](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md)
+[Заочное 2022. Семестр 1.](plans/2022-spring_distance.md), [Заочное 2023. Семестр 2.](plans/2023-fall_distance.md)
+
+
+Курс 21-22:
+Осень:  [C++](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_cpp.md),  [ООП](https://github.com/VetrovSV/OOP/blob/master/2021-fall/plan_oop.md), [Весна](2021-fall/plan_2.md)
+
+
+Курс 20-21: [Осень](https://github.com/VetrovSV/OOP/blob/master/2020-fall/tasks.md), [Весна](https://github.com/VetrovSV/OOP/blob/master/2021-spring/tasks.md)
 
 
 
