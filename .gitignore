@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+target/
+streams/
+*.class
+*.o
+*.log
+*.out
+*.make
+*-pre*
+*.user
+*.user.*
+build-*Debug/
+CMakeFiles/
+javafx-sdk(linux)/

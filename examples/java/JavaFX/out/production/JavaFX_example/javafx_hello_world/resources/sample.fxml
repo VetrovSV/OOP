@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/15.0.1" fx:controller="javafx_hello_world.controllers.MainController">
+<!--    в fx:controller нужно указать, какой класс будет содержать обработчики событий       -->
+<!--    имя класса указывается полностью, включая имя пакета (папки), в котором он находится    -->
+
+   <children>
+<!--      ко всем элементам в окне можно обращаться из Java кода по их x:id-->
+      <Button fx:id="button_rnd" layoutX="36.0" layoutY="34.0" mnemonicParsing="false" onMouseClicked="#onBtnClicked"
+              prefHeight="332.0" prefWidth="529.0" text="rnd number" AnchorPane.bottomAnchor="35.0"
+              AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
