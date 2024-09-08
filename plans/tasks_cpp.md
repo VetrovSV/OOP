@@ -131,7 +131,7 @@ int main(){
 Подробнее: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook_upd.pdf#subsection.2.2.6
 
 
-# Работа с массивами, файлами, исключительными ситуациями
+# 2. Работа с массивами, файлами, исключительными ситуациями
 1. Сделайте задачу из 15 строки задачника:
     - https://ivtipm.github.io/Programming/Files/spisocall.htm
     - можно предложить свою задачу с массивами (согласуйте с преподавателем)
