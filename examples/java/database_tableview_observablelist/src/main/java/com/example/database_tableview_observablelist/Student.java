@@ -6,10 +6,10 @@ package com.example.database_tableview_observablelist;
 public class Student {
 
     private String name;    /** ФИО */
-    private Double score_t1;   /** оценка за задание 1 */
-    private Double score_t2;   /** оценка за задание 2 */
-    private Double score_t3;   /** оценка за задание 3 */
-    private Byte exam;      /** оценка за экзамен */
+    private Double score_t1;   /** Оценка за задание 1 */
+    private Double score_t2;   /** Оценка за задание 2 */
+    private Double score_t3;   /** Оценка за задание 3 */
+    private Byte exam;      /** Оценка за экзамен */
 
     public Student() {
     }

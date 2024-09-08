@@ -12,7 +12,7 @@ public class DataBase {
     private ObservableList<Student> list_studs = FXCollections.observableArrayList();
     // FXCollections.observableArrayList() -- метод, создающий экземпляр класса ObservableArrayList
 
-    /** Добавляет случаного студента в конец списка */
+    /** Добавляет случайного студента в конец списка */
     public void add_random_student(){
         Random rand = new Random();
         Student s = new Student("Ivanov" + String.valueOf(rand.nextInt()),

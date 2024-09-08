@@ -1,6 +1,5 @@
 package com.example.database_tableview_observablelist;
 
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -18,16 +17,17 @@ public class MainWindowController implements Initializable {
     // Будут отображать отдельные поля класса Student в ячейки соответствующих строк
     // <Student, String> - из какого класса брать данные, в каком типе представлять в TableView
     // см. связывание метода из Student и колонки, добавление колонки в таблицу ниже
-    private TableColumn<Student, String> col_name = new TableColumn<>("Name");
-    private TableColumn<Student, Double> col_score1 = new TableColumn<>("Task1");;
-    private TableColumn<Student, Double> col_score2 = new TableColumn<>("Task2");;
-    private TableColumn<Student, Double> col_score3 = new TableColumn<>("Task3");;
-    private TableColumn<Student, Byte> col_exam = new TableColumn<>("Exam");;
+    private TableColumn<Student, String> col_name = new TableColumn<>("ФИО");
+    private TableColumn<Student, Double> col_score1 = new TableColumn<>("Task1");
+    private TableColumn<Student, Double> col_score2 = new TableColumn<>("Task2");
+    private TableColumn<Student, Double> col_score3 = new TableColumn<>("Task3");
+    private TableColumn<Student, Byte> col_exam = new TableColumn<>("Exam");
 
     @FXML
     private Label welcomeText;
 
-    private DataBase db = new DataBase();       /** Содержит модель данных (ObservableList) */
+    /** Содержит модель данных (ObservableList) */
+    private DataBase db = new DataBase();
 
     /** Вызывается после того как форма создана. Можно обращаться к её содержимому */
     @Override

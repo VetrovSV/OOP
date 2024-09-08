@@ -19,7 +19,7 @@
 **Критерии оценки**
 - корректные идентификаторы, 
 - понятный пользовательский интерфейс, 
-- указан автор программы, есть комментарии и документация (см. примеры документации функции: [StudBook.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.1.4.6))
+- указан автор программы, есть комментарии и документация (см. примеры документации функции: [StudBook.pdf](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook_upd.pdf#subsection.1.4.6))
 
 ### Настройка компилятора и компиляция
 1. Запустите PowerShell. Изучите переменную окружения Path: выполните команду для отображения переменной среды окружения:
@@ -45,7 +45,7 @@ int main(){
 ```g++ имя-файла-с-иходным-кодом -o имя-exe-файла```\
 ```./имя-exe-файла```
 
-Подробнее: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.1.10
+Подробнее: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook_upd.pdf#section.1.10
 
 ### Дополнительно
 
@@ -128,10 +128,10 @@ int main(){
 
 ```
 
-Подробнее: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#subsection.2.2.6
+Подробнее: https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook_upd.pdf#subsection.2.2.6
 
 
-# Работа с массивами, файлами, исключительными ситуациями
+# 2. Работа с массивами, файлами, исключительными ситуациями
 1. Сделайте задачу из 15 строки задачника:
     - https://ivtipm.github.io/Programming/Files/spisocall.htm
     - можно предложить свою задачу с массивами (согласуйте с преподавателем)
@@ -164,4 +164,4 @@ int main(){
 ### Ссылки
 1. https://en.cppreference.com/w/cpp/container/vector
 2. https://en.cppreference.com/w/cpp/language/range-for -- пример перебора элементов динамического массива vector с помощью совместного цикла и auto
-1. Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook.pdf#section.4.5] ]
+1. Модульное тестирование (Google Test + VS) [ [StudBook](https://raw.githubusercontent.com/VetrovSV/OOP/master/OOP_StudBook_upd.pdf#section.4.5] ]

@@ -31,13 +31,13 @@ public class MainApplication extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("main_window.fxml"));
         // root - корневой элемент UI, содержащий все остальные элементы UI
 
-        // Создание сцены для всеъ элементов интерфейса
+        // Создание сцены для всех элементов интерфейса
         Scene scene = new Scene(root);
         // Создание окна, добавление в него 
         stage.setScene(scene);
-        stage.setTitle("Hello JavaFX");
-        stage.setWidth(250);
-        stage.setHeight(200);
+        stage.setTitle("Пример работы с таблицей и ObservableList");
+        stage.setWidth(500);
+        stage.setHeight(400);
         stage.show();
     }
 
