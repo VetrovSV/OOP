@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--корневой элемент-->
+
+<AnchorPane prefHeight="430.0" prefWidth="510.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zabgu.javafx_fxml_css.MainController">
+<!--  stylesheets="@style.css": @ означает, что используется относительный (относительно fxml файла) путь к файлу-->
+
+   <children>
+       <Label text="Вычисление числа Пи методом Монте-Карло" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+       <Label layoutX="10.0" layoutY="58.0" text="Количество точек" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="58.0" />
+       <TextField fx:id="Edit_n" layoutX="237.0" layoutY="51.0" prefHeight="26.0" prefWidth="63.0" text="100" AnchorPane.leftAnchor="237.0" AnchorPane.topAnchor="51.0" />
+       <Button layoutX="10.0" layoutY="99.0" onAction="#onCalcButtonClick" text="Вычислить" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="99.0" />
+
+       <Label layoutX="198.0" layoutY="106.0" text="Пи" AnchorPane.leftAnchor="198.0" AnchorPane.topAnchor="106.0" />
+       <Label fx:id="LabelPi" layoutX="248.0" layoutY="106.0" prefHeight="31.0" prefWidth="127.0" text="-" AnchorPane.leftAnchor="248.0" AnchorPane.topAnchor="106.0" />
+       <ImageView fitHeight="238.0" fitWidth="284.0" layoutX="146.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sector_area.png" />
+<!--             Изображение находится в папке Resources -->
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="14.0" layoutY="421.0" text="https://habr.com/ru/articles/128454/" onAction="#open_link">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+
+   </children>
+</AnchorPane>
