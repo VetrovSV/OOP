@@ -26,7 +26,7 @@
 ```$env:path```\
 Есть ли там путь к компилятору MinGW (GCC)? Если нет, то добавьте через программу настройки "Изменение переменных среды окружения текущего пользователя".
 Если установлен фреимвок Qt, то компилятор MinGW (GCC) можно найти по адресу: `C:\Qt\Tools\mingw810_64\bin`. Если нет, то компилятор MinGW64 можно скачать здесь: https://www.mingw-w64.org/downloads/: MingW-W64-builds > Installation: GitHub >
-x86_64-XX.X.X-release-posix-xxxxxx.7z
+x86_64-XX.X.X-release-posix-xxxxxx.7z ( https://github.com/niXman/mingw-builds-binaries/releases )
 
 2. Определите версию С++ компилятора из GCC:\
 ```g++ --version```
