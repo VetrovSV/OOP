@@ -4,4 +4,14 @@
 .idea/
 target/
 streams/
-.class
+*.class
+*.o
+*.log
+*.out
+*.make
+*-pre*
+*.user
+*.user.*
+build-*Debug/
+CMakeFiles/
+javafx-sdk(linux)/

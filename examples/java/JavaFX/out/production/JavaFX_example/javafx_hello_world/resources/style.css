@@ -1,0 +1,15 @@
+/* это не обязательный файл.
+в нём описываются стили элементов интерфейса
+его нужно добавить в SceneBuilder: выбрать коревой элемент формы > свойство Stylesheet <- выбрать этот CSS файл
+*/
+
+.button {
+    -fx-font-size: 42px;
+}
+
+/* нажатая кнопка */
+.button:pressed {
+    -fx-background-color: #fff;
+    -fx-border-color: red;
+    -fx-border-radius: 3px;
+}
