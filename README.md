@@ -1,6 +1,6 @@
 # OOP
 
-**Курс 24-25**: Осень 2024:  [C++](plans/2024_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2024_fall_oop.md)
+**Курс 24-25**: Осень 2024:  [C++](plans/2024_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2024_oop_1.md)
 
 **Заочное, часть 1, курс для группы 22**: [С++ и ООП](plans/2024_spring_distance.md)
 
