@@ -18,7 +18,7 @@
 // Здесь тестируется класс Seconds, конструктор
 TEST( SecondsTest, constructor ){
   {   // отдельные проверки должны быть в отдельных блоках,
-      // чтобы исклюить влияние одних проверок на другие
+      // чтобы исключить влияние одних проверок на другие
       Seconds s;
       ASSERT_EQ(s.seconds(), 0);   }
 
@@ -39,7 +39,7 @@ TEST( SecondsTest, constructor ){
   {   Seconds s(59);
       ASSERT_EQ(s.seconds(), 59);  }
 
-      // Ожидать искоючение: Seconds s(60) должен бросить исключение типа SecondsException
+      // Ожидать исключение: Seconds s(60) должен бросить исключение типа SecondsException
       ASSERT_THROW ( Seconds s(60), SecondsException);
 
       ASSERT_THROW( Seconds s(100), SecondsException);
@@ -146,7 +146,7 @@ TEST( SecondsTest, plus_increment ){
 int main(int argc, char *argv[])
 {
     ::testing::InitGoogleTest();
-    // Будут запущены все тесты которые хдесь объявлены
+    // Будут запущены все тесты которые здесь объявлены
     return RUN_ALL_TESTS();
 }
 
