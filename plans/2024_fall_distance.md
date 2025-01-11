@@ -13,7 +13,7 @@
 
 
 # Задание 1. Чат-бот
-https://zabgu.ru/files/html_document/pdf_files/fixed/IVT_2020_god_nabora/Obektno-orientirovannoe_programmirovanie.pdf
+https://docs.google.com/document/d/1BRhxX3SMg2heaX7OJUobi9nLOt-dT5uYGSHjjydPUHo/edit?usp=sharing
 
 ### Ссылки
 - Слайды по Java:
