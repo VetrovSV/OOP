@@ -1,6 +1,6 @@
 # OOP
 
-**Заочное, часть 2, курс для группы 22**: [С++ и ООП](plans/2024_fall_distance.md)
+**[Заочное, часть 2, курс для группы 22](plans/2024_fall_distance.md)**
 
 **[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
 
