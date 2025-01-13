@@ -34,7 +34,7 @@ https://docs.google.com/document/d/1BRhxX3SMg2heaX7OJUobi9nLOt-dT5uYGSHjjydPUHo/
 
 
 # Занятие 2. 
-- Главный цикл приложения. Элементы интерфейса Qt. Core classes.?
+- Повторение: MVC
 - Приложения с GUI. MVC
 - UI в Qt. Модель и представление.
   - Пример: https://github.com/VetrovSV/OOP/tree/master/examples/Qt/database
