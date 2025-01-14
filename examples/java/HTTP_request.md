@@ -23,16 +23,14 @@ System.out.println("Connection Response Code :    "+con.getResponseCode());     
 // InputStreamReader конвертирует полученные данные в набор символов
 BufferedReader br = new BufferedReader(new InputStreamReader((con.getInputStream())));
 
-// Строки в Java неизменяемые.
-// Поэтому используем StringBuilder, чтобы склеить набор символов в строку без потери производительности
-StringBuilder sb = new StringBuilder();
-
 // склеивание набора символов в строку
 String output = br.lines().collect(Collectors.joining());
 
 System.out.println("Connection Response Body :    "+output);
 con.disconnect();
 ```
+
+См. также пример GET и POST запросов с помощью классов java.net.http.{HttpClient,HttpRequest,HttpResponse} (и без явного использования потоков) папке http_requests
 
 ### Ссылки
 https://www.baeldung.com/httpurlconnection-post
