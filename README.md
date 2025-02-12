@@ -3,8 +3,7 @@
 **[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
 
 
-**Курс 24-25**: Осень 2024: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)
-[text]()
+**Курс 24-25**: Весна 2025: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)
 
 
 **[Заочное, часть 2, курс для группы 22](plans/2024_fall_distance.md)**
