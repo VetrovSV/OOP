@@ -1,8 +1,15 @@
 # OOP
 
+**[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
+
+
+**Курс 24-25**: Осень 2024: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)
+[text]()
+
+
 **[Заочное, часть 2, курс для группы 22](plans/2024_fall_distance.md)**
 
-**[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
+
 
 **Курс 24-25**: Осень 2024:  [C++](plans/2024_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2024_oop_1.md)
 
