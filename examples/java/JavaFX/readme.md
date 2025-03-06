@@ -118,3 +118,49 @@ Stage -- это окно (построен на основе javafx.stage.Window
   // Диалог выбора файла для сохранения
   File f = dialog.showSaveDialog(window);
 ```
+
+### Меню приложения
+
+Меню строится из 3 основных элементов:
+* MenuBar - панель для меню программы
+* Menu - основной элемент \ подраздел и т.д. меню программы
+* MenuItem - пункт меню
+  - Основные свойства: 
+    - text - текст
+    - onAction - обработчик нажатия на пункт меню
+    - Accelerator - горячая клавиша
+
+
+Пример меню программы:
+* File
+  - Open
+  - Save
+  - --- Разделитель
+  - Exit
+* Edit
+  - Preferences
+    - Settings
+    - Themes
+```xml
+<!-- панель меню -->
+<MenuBar>
+  <!--Основные элементы меню -->
+    <Menu text="File">
+            <MenuItem text="Open" onAction="#handleOpen" accelerator="Ctrl+O"/>
+            <!--onAction - обработчик нажатия на пункт меню -->
+            <!-- accelerator="Ctrl+O" - горячая клавиша -->
+            <MenuItem text="Save" onAction="#handleSave"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Exit" onAction="#handleExit"/>
+    </Menu>
+        <Menu text="Edit">
+            <Menu text="Preferences">
+                <MenuItem text="Settings" onAction="#handleSettings"/>
+                <MenuItem text="Themes" onAction="#handleThemes"/>
+            </Menu>
+        </Menu>
+        <Menu text="Help">
+            <MenuItem text="About" onAction="#handleAbout"/>
+        </Menu>
+    </MenuBar>
+```
