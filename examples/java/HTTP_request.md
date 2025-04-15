@@ -32,5 +32,35 @@ con.disconnect();
 
 См. также пример GET и POST запросов с помощью классов java.net.http.{HttpClient,HttpRequest,HttpResponse} (и без явного использования потоков) папке http_requests
 
+
+Пример запроса к LLM, запущенной на локальном сервере Ollama:
+
+```java
+HttpClient client = HttpClient.newHttpClient();
+
+String json = "{"
+        + "\"model\": \"lakomoor/vikhr-llama-3.2-1b-instruct:q6_k\","
+        + "\"prompt\": \"Почему небо синее?\","
+        + "\"stream\": false"
+        + "}";
+
+HttpRequest request = HttpRequest.newBuilder()
+        .uri(URI.create("http://localhost:11434/api/generate"))        
+        .header("Content-Type", "application/json")
+        .POST(HttpRequest.BodyPublishers.ofString(json))
+        .build();
+// в коде выше вызывается серия методов, каждый из которых (короме build) возвращает объект типа HttpRequest.Builder, но с заданными свойствами (полями).
+
+// HttpRequest возвращает объект типа HttpRequest
+
+
+HttpResponse<String> response = client.send(
+        request,
+        HttpResponse.BodyHandlers.ofString()        // возвращает специальный объект, который умеет преобразовывать строку с JSON данными в формат подхходящий для тела HTTP запроса.
+);
+```
+
+Два приведённых примера решают одну и ту же задачу, но показывают разные способы обращения к http-серверу. 
+
 ### Ссылки
 https://www.baeldung.com/httpurlconnection-post
