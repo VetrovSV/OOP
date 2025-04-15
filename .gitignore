@@ -16,3 +16,6 @@ build-*Debug/
 CMakeFiles/
 javafx-sdk(linux)/
 .vscode/settings.json
+
+
+lab.*
