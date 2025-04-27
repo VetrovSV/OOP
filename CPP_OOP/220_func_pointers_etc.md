@@ -145,6 +145,8 @@ float(*func3)(float, float) =  [=](auto x, auto y) {return x + y;};
 См. также inline функции.
 
 
+**Функция высшего порядка (higher-order function)** — это функция, которая принимает в качестве аргумента другую функцию или возвращает функцию как результат. В примере ниже это apply_to_array.
+
 #### Примеры использования decltype и auto для указателей на функции
 ...
 
@@ -155,8 +157,8 @@ float(*func3)(float, float) =  [=](auto x, auto y) {return x + y;};
 
 ```cpp
 /// перебирает значения элементов массива arr размером n,
-/// для каждого элемента вызывает функцию void apply_to_array(int * arr, unsigned n, 
-std::function<void(int&)> f){
+/// для каждого элемента вызывает функцию 
+void apply_to_array(int * arr, unsigned n,  std::function<void(int&)> f){
     // std::function<void(int&)> -- указатель на функцию, возвращающую void,
     // принимающую int по ссылке
     for (unsigned i = 0; i < n; ++i)
@@ -181,5 +183,98 @@ apply_to_array(a, 6, [&S](int &x){S.push(x);});
 
 Однако при вызове таких функций, из значений типа `std::function` возникают накладные расходы, поэтому при высоких требованиях к производительности их использование нежелательно.
 
+В `std::function` хранится указатель на функцию-обёртку, вызывающую оригинальный callable, и, возможно, дополнительная память для захваченных данных. Пользователь работает только с `std::function<R(Args…)>`, не зная о том, что внутри — лямбда, функтор или указатель на функцию. Такой подход называется ***type-erasure***.
+
+
+#### Callable
+callable — это тип, для которого определены операции INVOKE и INVOKE<R> (используемые `std::invoke`, `std::function`, `std::bind` и т. д.):
+
+- Функция - указатель R(*)(Args…).
+- Функтор - объект класса с перегруженным operator().
+- Лямбда
+- Члены класса - через std::mem_fn или std::bind можно превратить указатель на метод в callable.
+
 #### Функции как шаблонный тип
 Шаблонные функции (`template<typename F> void apply(F&& f, …)`) обладают гибкостью (любой callable) как и `std::function`, при этом компиляция инстанцирует конкретный код под каждую лямбду, что избавляет от type erasure во время выполнения.
+
+
+```cpp
+#include <cstddef>
+
+template<typename F>
+void apply(F&& f, float* array, std::size_t n) {
+    for (std::size_t i = 0; i < n; ++i)
+        array[i] = std::forward<F>(f)(array[i]);
+}
+
+// Пример вызова:
+apply([](float x){ return x * x; }, data, N);
+
+```
+
+## Функторы
+
+...
+
+
+
+Функтор (function object) — это объект класса или структуры, для которого перегружен оператор вызова `operator()`, благодаря чему такой объект можно вызывать как функцию.
+
+В отличие от обычных функций или указателей на функцию, функторы могут хранить состояние (поля-члены), подлежат инлайн-оптимизации компилятором и широко используются в алгоритмах STL.
+
+```cpp
+#include <iostream>
+struct Greet {
+    void operator()() const {
+        std::cout << "Hello, World!\n";
+    }
+};
+
+int main() {
+    Greet greet;
+    greet();             // выводит "Hello, World!"
+}
+```
+
+Функтор с аргументами:
+```cpp
+#include <iostream>
+struct Add {
+    int operator()(int a, int b) const {
+        return a + b;
+    }
+};
+
+int main() {
+    Add add;
+    std::cout << add(3, 4);  // выводит 7
+}
+```
+
+
+Функтор с состоянием
+```cpp
+#include <iostream>
+struct Accumulator {
+    int sum;
+    Accumulator(int init) : sum(init) {}
+    int operator()(int x) {
+        sum += x;
+        return sum;
+    }
+};
+
+int main() {
+    Accumulator acc(10);
+    std::cout << acc(5) << '\n';   // 15
+    std::cout << acc(3) << '\n';   // 18
+}
+```
+
+
+## Паттерн Стратегия
+todo:
+
+
+# См. также
+- Классы Callable, Runnable, Functional и др. в Java
