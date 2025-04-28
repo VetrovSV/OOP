@@ -271,6 +271,35 @@ int main() {
 }
 ```
 
+### Comparator
+В C++ компаратор — это callable-объект, задающий правило сравнения двух элементов для алгоритмов сортировки и контейнеров (std::sort, std::set, std::priority_queue и т. д.). Компаратор может быть указателем на функцию, функтором (function object) или лямбдой.
+
+
+Встроенные компараторы из `<functional>`
+Стандартная библиотека предоставляет набор готовых function objects:
+- std::less<T> — вызов lhs < rhs (Cppreference)
+- std::less_equal<T> — lhs <= rhs (Cppreference)
+- std::greater<T> / std::greater_equal<T> — обратные операции
+
+
+Примеры:
+```cpp
+std::sort(v.begin(), v.end()); 
+// использует std::less<T>()
+```
+[Cppreference](https://en.cppreference.com/w/cpp/algorithm/sort?utm_source=chatgpt.com)
+
+
+```cpp
+std::vector<int> v = {4,3,5,1,2};
+std::sort(v.begin(), v.end(), [](int a,int b){ return a>b; });  
+```
+
+
+Использование компаратора при объявлении контейнера:
+```cpp
+std::priority_queue<int, std::vector<int>, std::less<>> pq;
+```
 
 ## Паттерн Стратегия
 todo:
