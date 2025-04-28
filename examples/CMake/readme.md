@@ -174,8 +174,6 @@ include_directories("headers/" "more_headers/")
 add_executable(exec_file_name main.cpp Unit1.cpp Unit2.cpp)
 ```
 
-#### Задание компилятора
-
 #### Задание версии стандарта языка С++
 ```cmake
 # рекомендуемый, более общий способ
