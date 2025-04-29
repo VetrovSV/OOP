@@ -63,11 +63,13 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
         System.out.println( keyEvent.getCode() );       // -> KeyCode - код клавиши
         System.out.println( keyEvent.getText() );       //  -> String - строковое обозначение клавиши
         keyEvent.isControlDown();                       // -> True, если нажата клавиша Control
-    }```
+    }
+    ```
+
 
 ##### Обработчик нажатия на Enter для однострочного поля ввода TextField.
 Описание поля ввода в fxml файле:
-```fxml
+```xml
 <TextField fx:id="Text_input" onAction="#on_input_done"/>
 ```
 
@@ -85,11 +87,10 @@ https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инс
 Stage -- это окно (построен на основе javafx.stage.Window)
 
 
-```Java
 обращение через любой экземпляр класса, представляющего элемент интерфейса
+```java
 
- 
- 
+  
  public class Controller {
     @FXML
     public Label label_status;
@@ -165,3 +166,6 @@ Stage -- это окно (построен на основе javafx.stage.Window
         </Menu>
     </MenuBar>
 ```
+
+# Структура программы и её старт
+<img src="FXML_app.drawio.png" >
