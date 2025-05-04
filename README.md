@@ -3,21 +3,26 @@
 **[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
 
 
-**Курс 24-25**: Весна 2025: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)
+**Курс 24-25**: Весна 2025: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)\
 **Курс 24-25**: Осень 2024:  [C++](plans/2024_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2024_oop_1.md)
 
-<br>
-**[Заочное, часть 2, курс для группы 22](plans/2024_fall_distance.md)**
+
+**[Заочное, часть 2, курс для группы 22](plans/2024_fall_distance.md)**\
 **Заочное, часть 1, курс для группы 22**: [С++ и ООП](plans/2024_spring_distance.md)
 
-<br>
-**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md), [Весна 2024](/plans/2024-spring.md)
 
-<br>
-Курс 22-23: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md); [Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
 
-<br>
-[Заочное 2023: Лето](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md); [Заочное 2024: Зима](https://github.com/VetrovSV/OOP/blob/master/plans/dist2024-fall.md)
+**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md),\
+[Весна 2024](/plans/2024-spring.md)
+
+
+
+Курс 22-23: Осень 2022:  [C++](https://github.com/VetrovSV/OOP/blob/master/2022/plan_cpp.md), [ООП](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop.md);\
+[Весна](https://github.com/VetrovSV/OOP/blob/master/2022/plan_oop2.md)
+
+
+[Заочное 2023: Лето](https://github.com/VetrovSV/OOP/blob/master/plans/2023-spring.md);\
+[Заочное 2024: Зима](https://github.com/VetrovSV/OOP/blob/master/plans/dist2024-fall.md)
 
 [Заочное 2022. Семестр 1.](plans/2022-spring_distance.md), [Заочное 2023. Семестр 2.](plans/2023-fall_distance.md)
 
