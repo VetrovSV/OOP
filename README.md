@@ -3,8 +3,8 @@
 **[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
 
 
-**Курс 24-25**: Весна 2025: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)\
-**Курс 24-25**: Осень 2024:  [C++](plans/2024_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2024_oop_1.md)
+**Курс 24-25**: 2. Весна 2025: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)\
+**Курс 24-25**: 1. Осень 2024:  [C++](plans/2024_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2024_oop_1.md)
 
 
 **[Заочное, часть 2, курс для группы 22](plans/2024_fall_distance.md)**\
@@ -12,8 +12,8 @@
 
 
 
-**Курс 23-24**: Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md),\
-[Весна 2024](/plans/2024-spring.md)
+**Курс 23-24**: 1. Осень 2023:  [C++](plans/2023_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2023_fall_oop.md),\
+2. [Весна 2024](/plans/2024-spring.md)
 
 
 

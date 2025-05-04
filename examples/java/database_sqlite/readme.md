@@ -1,5 +1,7 @@
 # SQL (SQLite) + Java
 
+Шпаргалка по работе с СУБД: - Работа с СУБД в Java: https://github.com/ivtipm/BigDataLanguages/tree/main/Java/DataBase
+
 Необходимые пакеты и файлы
 ```java
 import java.sql.Connection;     // класс для подключения и взаимодействия с CУБД
