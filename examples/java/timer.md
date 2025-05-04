@@ -28,3 +28,27 @@ HelloController controller = fxmlLoader.getController();
 stage.setOnHidden(e -> controller.close());
 
 ```
+
+Пример для JavaFX
+```java
+// объект, содержащий код, который нужно выполнять по таймеру
+TimerTask timer_task = new TimerTask() 
+      // создание анонимного наследника от TimerTask, переопределение метода run
+      {
+      @Override
+      public void run() {
+          // для обращения к элементу интерфейса требуется выполнять код в главном потоке выполнения
+          // Поэтому поместим код в очередь обработки событий
+          Platform.runLater( () -> {
+              // это тоже создание анонимного класса, только реализующего интерфейс Runnable
+              // для примера будем отображать текущее время
+              LocalDateTime currentDateTime = LocalDateTime.now();
+              welcomeText.setText(currentDateTime.toString());          });
+      }
+  };
+
+
+timer = new Timer();
+
+timer.schedule(timer_task, 0, 5000);
+```
