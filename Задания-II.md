@@ -181,6 +181,7 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
 - Работа с СУБД в Java: https://github.com/ivtipm/BigDataLanguages/tree/main/Java/DataBase
 - Пример работы с SQLite - [github.com/VetrovSV/OOP/tree/master/examples/java/database_sqlite](https://github.com/VetrovSV/OOP/tree/master/examples/java/database_sqlite)
 - Пример совместной работы представления TableView и ObservableList - https://github.com/VetrovSV/OOP/tree/master/examples/java/database_tableview_observablelist
+- Вызов кода по таймеру: https://github.com/VetrovSV/OOP/blob/master/examples/java/timer.md
 ***
 - DataGrid и BindingList в C#: github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
 - Считывание данных из файла CSV и их представление через QstandardItemModel evileg.com/ru/post/158
