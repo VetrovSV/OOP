@@ -47,12 +47,13 @@
 9. Что такое поведение? Что такое состояние?
 
 #### Ссылки
-- https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
-- https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
+- Слайды: Коротко о Java 
+https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
+- Слайды: Более подробно о Java: https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
 - Примеры и шпаргалка по Java: [VetrovSV/OOP/examples/java](https://github.com/VetrovSV/OOP/tree/master/examples/java)
     - Простое приложение на JavaFX: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 - github.com/VetrovSV/OOP/blob/master/OOP_2.pdf — коротко о классах в C#
-- plantuml.com/ru — создание диаграмм из plain text
+- [plantuml.com/ru](https://plantuml.com/ru/) — создание диаграмм из plain text
 
 
 
