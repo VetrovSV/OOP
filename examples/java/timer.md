@@ -29,7 +29,9 @@ stage.setOnHidden(e -> controller.close());
 
 ```
 
-Пример для JavaFX
+### JavaFX
+
+**Использование Timer**
 ```java
 // объект, содержащий код, который нужно выполнять по таймеру
 TimerTask timer_task = new TimerTask() 
@@ -51,4 +53,27 @@ TimerTask timer_task = new TimerTask()
 timer = new Timer();
 
 timer.schedule(timer_task, 0, 5000);
+```
+
+
+**Использование javafx.animation.Timeline**
+```java
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.util.Duration;
+import java.time.LocalDateTime;
+
+Timeline timeline = new Timeline(
+    // В этом коде KeyFrame задаёт действие (лямбда с аргументом event), которое будет выполняться каждые 5 секунд
+    new KeyFrame(Duration.seconds(5), event -> {
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        welcomeText.setText(currentDateTime.toString());
+    })
+);
+
+// код должен вызываться бесконечно, с указанным выше интервалом
+timeline.setCycleCount(Timeline.INDEFINITE);
+
+// запуск таймера
+timeline.play();
 ```
