@@ -15,6 +15,7 @@ timer.schedule(new TimerTask() {
         }, 0,2000);
     }
 
+// TimerTask — это абстрактный класс, а не интерфейс, поэтому он не является функциональным интерфейсом, и лямбда к нему не приводится.
 
 // Остановка таймера и его потока
 public void close(){
@@ -26,7 +27,54 @@ public void close(){
 // привязка метода JavaFX контроллера к событию закрытия окна
 HelloController controller = fxmlLoader.getController();
 stage.setOnHidden(e -> controller.close());
+```
 
+
+Класс **ScheduledExecutorService** - планировщик - более современное средство для отложенного или периодического запуска задач.
+
+Экземпляр этого класса созадётся с помошью фабричного метода `newSingleThreadScheduledExecutor()`.
+
+Задачи представленны функциональным интерфейсом `Runnable`.
+
+Для запуска задач могт использоваться методы:
+```java
+// Запуск после задержки delay, unit - единицы измерения delay (например TimeUnit.SECONDS)
+ScheduledFuture<?> schedule(Runnable command, long delay, TimeUnit unit);
+
+
+// Фиксированный интервал между запусками по расписанию
+ScheduledFuture<?> scheduleAtFixedRate(Runnable command,
+                                       long initialDelay,
+                                       long period,
+                                       TimeUnit unit);
+
+// Фиксированная задержка «между» окончаниями
+ScheduledFuture<?> scheduleWithFixedDelay(Runnable command,
+                                          long initialDelay,
+                                          long delay,
+                                          TimeUnit unit);
+```
+Через класс `ScheduledFuture` можно управлять задачей, например отменить `cancel()`.
+
+Планировщиком **ScheduledExecutorService** можно управлять через методы:
+- `shutdown()` / `shutdownNow()` — плавно или принудительно остановить планировщик.
+- `awaitTermination(...)` —  ждать завершения.
+
+
+Пример
+```java
+// создать планировщик
+ScheduledExecutorService exec =
+    Executors.newSingleThreadScheduledExecutor();
+// добавить задачу (представлена лямбдой),
+exec.scheduleAtFixedRate(
+    () -> System.out.println("Каждые 10 сек: " + LocalTime.now()),
+    0,          // задержка первого выполнения
+    10,         // интервал повторения
+    TimeUnit.SECONDS        // единицы измерения времени (параметр 2 и 3)
+);
+// ... позже
+exec.shutdown();
 ```
 
 ### JavaFX
