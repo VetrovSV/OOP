@@ -1,7 +1,7 @@
 # ООП. Часть 2 
 
 
-В этом семестре можно выбирать язык программирования общего назначения из: C++ (кроме первого задания), Java, С#.  Можно предложить другой язык программирования, например Kotlin. Согласуйте это с преподавателем. 
+В этом семестре можно выбирать язык программирования общего назначения из: C++ (кроме первого задания), Java, С#.  Можно предложить другой язык программирования, например Kotlin или Rust. Согласуйте это с преподавателем. 
 Рекомендованный язык программирования — Java.
 
 Вместо всех заданий кроме первого можно работать над своим проектом по согласованию с преподавателем.
@@ -45,12 +45,18 @@
 7. Как вызвать метод конкретного объекта находящегося в массиве? Чем отличаются обращения к методам в С++ с использованием объекта, ссылки на объект и указателя на объект?
 8. Что такое равенство объектов? Когда объекты идентичны?
 9. Что такое поведение? Что такое состояние?
+
 #### Ссылки
+- Слайды: Коротко о Java 
+https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
+- Слайды: Более подробно о Java: https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
+- Примеры и шпаргалка по Java: [VetrovSV/OOP/examples/java](https://github.com/VetrovSV/OOP/tree/master/examples/java)
+    - Простое приложение на JavaFX: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 - github.com/VetrovSV/OOP/blob/master/OOP_2.pdf — коротко о классах в C#
-Слайды про Java:
-- https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
-- https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA
-- plantuml.com/ru — создание диаграмм из plain text
+- [plantuml.com/ru](https://plantuml.com/ru/) — создание диаграмм из plain text
+
+
+
 
 
 # Задание 2. Чат-бот.
@@ -68,8 +74,6 @@
 - Бот должен хранить историю сообщений в оперативной памяти, включая время отправки и автора.
 - Записывать историю в файл при завершении программы. Загружать из файла при запуске программы.
 - "Отправка" сообщения по нажатию на <kbd>Enter</kbd> (<kbd>Ctrl</kbd> + <kbd>Enter</kbd>)
-
-
 - *Дополнительно (макс. Оценка на экзамене 3, если не выполнено)*
     - Возможность обращения к LLM;
     - *реализовать один или несколько пунктов*:
@@ -77,22 +81,23 @@
     - Запуск отдельных программ, работа с операционной системой и файлами.
     - Сохранение информации о собеседнике. Собеседник предполагается неизменным.
     - Опционально: показ изображений (в том числе загрузка из интернета, например APOD))
-
 - Требования к GUI:
     - шрифт и цветовая палитра (опционально: использование фоновых изображений) отличные от задаваемых по умолчанию.
     - иконка приложения
     - отправка сообщения по горячей клавише
 
 
-#### Рекомендации
+### Рекомендации
 1. Используйте библиотеки для обработки естественного языка, регулярных выражений.
 2. Помните, что класс (или классы) отвечающие за обработку сообщений должны быть независимы от интерфейса программы. Их, например, можно использовать для реализации онлайн бота.
 3. Старайтесь сделать эти классы гибкими. В них должно просто добавлять новые методы обработки сообщений или реакции на сообщения.
 4. Используйте абстрактные классы для описания программного интерфейса.
 
 **См. также**
+- Слайды о LLM: https://docs.google.com/presentation/d/1y_R99DlMprkxNmDjhekuONVODyO0CUCpOD2AmyMaZhs/edit?usp=sharing
 - Расстояние Левенштейна
 - Word2vec, готовые словари word2vec (https://rusvectores.org/ru/models/)
+- Шаблон ОО проектирования Стратегия
 
 
 
@@ -105,8 +110,9 @@
 6. Ваша лабораторная соблюдает принципы SOLID?
 7. Что такое регулярное выражение?
 
-#### Ссылки
+### Ссылки
 **Примеры**
+1. Многооконное приложение на JavaFX https://github.com/VetrovSV/OOP/tree/master/examples/java/MultyWindow
 1. github.com/VetrovSV/OOP/tree/master/2021-fall/chat_bot – шаблон для программы на C++
 1. многооконные приложения в Qt:
     - github.com/VetrovSV/OOP/blob/master/Qt_lec4.pdf	
@@ -118,19 +124,21 @@
 **Регулярные выражения:**
 1. Фридл Дж. Регулярные выражения, 3-е издание. – Пер. с англ. – СПб.: СимволПлюс, 2008. – 608 с., ил.
 1. regex101.com – сайт для проверки регулярных выражений
-1. https://www.rexegg.com/regex-quickstart.html -- шпаргалка (eng) по регулярным выражениям
-1. [https://regexper.com/](https://regexper.com/#%5B%D0%90-%D0%AF%5D%5B%D0%B0-%D1%8F%5D%7B1%2C10%7D%5Cs%3F%5B%D0%90-%D0%AF%5D%5C.%5B%D0%90-%D0%AF%5D%5C.) -- визуализация регулярных выражений
+1. [rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html) -- шпаргалка (eng) по регулярным выражениям
+1. [regexper.com](https://regexper.com/#%5B%D0%90-%D0%AF%5D%5B%D0%B0-%D1%8F%5D%7B1%2C10%7D%5Cs%3F%5B%D0%90-%D0%AF%5D%5C.%5B%D0%90-%D0%AF%5D%5C.) -- визуализация регулярных выражений
 
+**HTTP Запросы и API:**
+1. Примеры HTTP-запросов в Java: https://github.com/VetrovSV/OOP/blob/master/examples/java/http_requests/src/main/java/zabgu/Main.java
 1. Сайт выдающий прогноз погоды в текстовом (plain text) формате: https://github.com/chubin/wttr.in#usage
 1. тестирование web-API:
-    - https://hoppscotch.io/
-    - https://reqbin.com
-    - https://www.postman.com/
-1. https://github.com/public-apis/public-apis - Каталог сайтов с открытым API
+    - [hoppscotch.io](https://hoppscotch.io/)
+    - [reqbin.com](https://reqbin.com)
+    - [postman.com](https://www.postman.com/)
+1. [github.com/public-apis/public-apis](https://github.com/public-apis/public-apis) - Каталог сайтов с открытым API
 
 
 
-# Задание 3. Простая БД
+# Задание 3. Простое приложение - БД
 *Цель работы: изучить способы работы с табличными данными на примере подхода модель-представление*
 
 Создайте клиентское приложение для работы с БД (СУБД).
@@ -160,6 +168,8 @@
         - Автоматическое сохранение БД через заданные интервалы времени
         - краткая справка
 
+**См. также**
+- Шаблон ОО проектирования Наблюдатель
 
 ### Вопросы
 1. Что такое представление и модель?
@@ -168,14 +178,19 @@
 4. Что такое SOLID? Соблюдаются ли эти принципы в вашей программе?
 
 ### Ссылки
-    - Считывание данных из файла CSV и их представление через QstandardItemModel evileg.com/ru/post/158
-    - raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
-    - Пример на Qt: github.com/VetrovSV/OOP/tree/master/examples/Qt/database
-    - DataGrid и BindingList в C#: github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
-    - Qt StyleSheet 
-        ◦ doc.qt.io/qt-5/stylesheet-examples.html 
-        ◦ doc.qt.io/qt-5/stylesheet-reference.html 
-        ◦ Пример: github.com/VetrovSV/OOP/blob/master/examples/Qt/database/style.qss
+- Работа с СУБД в Java: https://github.com/ivtipm/BigDataLanguages/tree/main/Java/DataBase
+- Пример работы с SQLite - [github.com/VetrovSV/OOP/tree/master/examples/java/database_sqlite](https://github.com/VetrovSV/OOP/tree/master/examples/java/database_sqlite)
+- Пример совместной работы представления TableView и ObservableList - https://github.com/VetrovSV/OOP/tree/master/examples/java/database_tableview_observablelist
+- Вызов кода по таймеру: https://github.com/VetrovSV/OOP/blob/master/examples/java/timer.md
+***
+- DataGrid и BindingList в C#: github.com/VetrovSV/OOP/tree/master/examples/WpfApp_DataGrid
+- Считывание данных из файла CSV и их представление через QstandardItemModel evileg.com/ru/post/158
+- raw.githubusercontent.com/VetrovSV/OOP/master/Qt_lec2.pdf
+- Пример на Qt: github.com/VetrovSV/OOP/tree/master/examples/Qt/database
+- Qt StyleSheet 
+    - doc.qt.io/qt-5/stylesheet-examples.html 
+    - doc.qt.io/qt-5/stylesheet-reference.html 
+    - Пример: github.com/VetrovSV/OOP/blob/master/examples/Qt/database/style.qss
 
 
 # Задание 4. UI markup language
@@ -186,8 +201,10 @@
 Пример приложения – вычисление дохода по вкладу с использованием сложных процентов.
 или\
 Разобраться в XAML\FXML и др. в коде существующего приложения, написать поясняющие комментарии. Должны присутствовать:
-    - Задание цвета шрифта и фона
-    - Задание шрифта
+ - Задание цвета шрифта и фона
+ - Задание шрифта
+
+- Слайды по теме: https://docs.google.com/presentation/d/1BJOtQ5QKtVrGhgpWPkrYao29krP4iNMsJj93BD_Gmu0/edit?usp=sharing
 
 **Вопросы**
 1. Что такое декларативный язык?
@@ -222,10 +239,10 @@
     - Дополнительно: выполнение каждого класса в отдельном потоке.
 
 **Вопросы**
-    1. Изобразите диаграмму классов для приложения
-    2. Что такое регулярное выражение?
-    3. Что такое SOLID? Опишите каждый принцип.
-    4. Ваш код не нарушает принципов SOLID?
+1. Изобразите диаграмму классов для приложения
+2. Что такое регулярное выражение?
+3. Что такое SOLID? Опишите каждый принцип.
+4. Ваш код не нарушает принципов SOLID?
 
 
 
@@ -236,12 +253,13 @@
 Например соединить 2-3 метода одного виджета с другим. Возможно использование лямбда функций.
 
 Вопросы
-    1. Что такое сигнал и слот? Как они работают? 
-    2. Как соединить сигнал со слотом?
-    3. Сколько сигналов могут быть соединены со слотом? Слотов с сигналом? 4.Какие есть требования к классу для использования его методов как сигналов и слотов?
-    4. Как передавать данные с помощью сигналов и слотов? 6.Как соединить сигнал с лямбда-функцией?
-    5. Опишите объектную иерархию в Qt
-    6. Как происходит компиляция проекта использующего Qt?
+1. Что такое сигнал и слот? Как они работают? 
+2. Как соединить сигнал со слотом?
+3. Сколько сигналов могут быть соединены со слотом? Слотов с сигналом? 4.Какие есть требования к классу для использования его методов как сигналов и слотов?
+4. Как передавать данные с помощью сигналов и слотов? 6.Как соединить сигнал с лямбда-функцией?
+5. Опишите объектную иерархию в Qt
+6. Как происходит компиляция проекта использующего Qt?
+
 
 # Задание 8. Приложение для Android.
 *(Не обязательно. Если выполнено +1 к оценке на экзамене)*
