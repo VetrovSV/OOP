@@ -1,5 +1,8 @@
 # OOP
 
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FVetrovSV%2FOOP&label=Visits&icon=github&color=%23198754)
+
+
 **[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
 
 
