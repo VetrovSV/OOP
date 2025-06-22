@@ -46,3 +46,4 @@
 ## Ссылки
 - [Примеры](examples.md)
 - [О языке. План учебной практики](c_language.excalidraw)
+- [Рекомендации по написанию кода](https://github.com/VetrovSV/OOP/blob/master/criteria.md)

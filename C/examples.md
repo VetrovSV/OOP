@@ -714,11 +714,11 @@ int main() {
 Режимы открытия файла (второй аргумент функции `fopen`):
 ```
 "r" 	read - чтение
-"w" 	write - запись, сущесвующий файл перезаписывается
+"w" 	write - запись, существующий файл перезаписывается
 "a" 	append - запись в конец файла
 "r+" 	read/write, read from start, чтение и запись
 "w+" 	create a file for read/write,чтение и запись, но существующее содержимое будет стёрто
-"a+" 	open a file for read/write, чтение и запис в конец файла
+"a+" 	open a file for read/write, чтение и запись в конец файла
 ```
 - https://en.cppreference.com/w/c/io/fopen — документация fopen
 - https://en.cppreference.com/w/c/io — документация по файловому вводу\выводу
@@ -727,3 +727,4 @@ int main() {
 # Ссылки
 1. Задачник: https://ivtipm.github.io/Programming/Files/spisocall.htm
 2. Учебник: Язык программирования С. Лекции и упражнения, Стив Прата, 6-е издание.
+
