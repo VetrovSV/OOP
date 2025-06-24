@@ -91,5 +91,5 @@
 
 ## Ссылки
 - [Примеры](examples.md)
-- [О языке. План учебной практики](c_language.excalidraw)
+- Шпаргалка по языку С. План учебной практики: [excalidraw](c_language.excalidraw), [png](c_language.excalidraw.png) 
 - [Рекомендации и требования по написанию кода](../criteria.md)
