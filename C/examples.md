@@ -706,6 +706,7 @@ int main() {
 
 ---
 ![](c_language.excalidraw.svg)
+![](c_language.excalidraw.png)
 
 # Ссылки
 1. Задачник: https://ivtipm.github.io/Programming/Files/spisocall.htm
