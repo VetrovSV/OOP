@@ -12,29 +12,40 @@
 #### Компиляторы
 Скачайте и установите один из компиляторов, например:
 
-- GCC или MinGW-w64 (версия для Windows) 
-    - https://www.msys2.org/
-- Clang/LLVM
+- Компилятор GCC (MinGW-w64)
+github.com/niXman/mingw-builds-binaries/releases
+Скачивать например
+***x86_64***-15.1.0-release-***posix-seh-ucrt***-rt_v12-rev0.7z или более новую версию. Не требует установки. 
+- Компилятор Clang/LVVM
+github.com/llvm/llvm-project/releases/tag/llvmorg-18.1.8
+Скачивать например `LLVM-18.1.8-win64.exe`
 
+Вариант установки через MSYS2:
+1. Установите MSYS2
+2. Запустите консоль MSYS2: 
+    - Установите компилятор через программу pacman:
+    ```$ pacman -S mingw-w64-ucrt-x86_64-gcc```
 
-#### Настройка
+#### Настройка пути к компилятору
 
 1. Запустите PowerShell. Изучите переменную окружения Path: выполните команду для отображения переменной среды окружения:
 ```$env:path```\
 Эта переменная отвечает за пусть ко всем программам, которые напрямую доступны из консоли.
 Есть ли там путь к компилятору MinGW (GCC.exe)? Если нет, то добавьте через программу настройки "Изменение переменных среды окружения текущего пользователя".
-<!-- <details> -->
+    <details>
+    <img src="assets/Windows_Start.png" width=400>
 
-<ims src="assets/Windows_Start.png">
+    <img src="assets/set_gcc_to_path.png" width=950>
 
-<!-- </details> -->
+    </details>
 
 
-Если установлен фреимвок Qt, то компилятор MinGW (GCC) можно найти по адресу: `C:\Qt\Tools\mingw810_64\bin`. Если нет, то компилятор MinGW64 можно скачать здесь: https://www.mingw-w64.org/downloads/: MingW-W64-builds > Installation: GitHub >
+    Если установлен фреимвок Qt, то компилятор MinGW (GCC) можно найти по адресу: `C:\Qt\Tools\mingw810_64\bin`. Если нет, то компилятор MinGW64 можно скачать здесь: https://www.mingw-w64.org/downloads/: MingW-W64-builds > Installation: GitHub >
 x86_64-XX.X.X-release-posix-xxxxxx.7z ( https://github.com/niXman/mingw-builds-binaries/releases )
 
 2. Проверьте доступность компилятора:\
 ```g++ --version```
+ Может потребоваться перезапуск PowerShell или другой консоли (которой вы пользуетесь)
 
 # Создание проекта на C в Visual Studio 2022
 
