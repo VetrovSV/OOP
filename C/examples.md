@@ -704,6 +704,8 @@ int main() {
 - https://en.cppreference.com/w/c/io/fopen — документация fopen
 - https://en.cppreference.com/w/c/io — документация по файловому вводу\выводу
 
+---
+![](c_language.excalidraw.svg)
 
 # Ссылки
 1. Задачник: https://ivtipm.github.io/Programming/Files/spisocall.htm
