@@ -108,6 +108,8 @@ int main() {
 }
 ```
 
+См. также - настройка кодировки выводимых символов и локали: https://github.com/VetrovSV/OOP/blob/master/C/locale_encoding.md
+
 
 # Компилирование в консоли (компилятор GCC)
 ```bash
@@ -769,4 +771,7 @@ int main() {
 # Ссылки
 1. Задачник: https://ivtipm.github.io/Programming/Files/spisocall.htm
 2. Учебник: Язык программирования С. Лекции и упражнения, Стив Прата, 6-е издание.
+
+**Документация**
+1. Перечень модулей (заголовочных файлов) стандартной библиотеки: https://en.cppreference.com/w/c/header.html
 
