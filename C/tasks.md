@@ -31,6 +31,9 @@
 Номера вариантов смотрите в гугл-таблице.\
 Задачник: https://ivtipm.github.io/Programming/Files/spisocall.htm
 
+https://ivtipm.github.io/Programming/Files/oglav.htm
+
+
 - Изучите [Рекомендации и требования по написанию кода](https://github.com/VetrovSV/OOP/blob/master/criteria.md)
 - Используйте VS Code или Visual Studio
 - В отчётах проводите теоретический материал, скриншоты. Можно использовать markdown формат, онлайн документы и т.п.
