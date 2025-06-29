@@ -770,7 +770,7 @@ int main() {
 ---
 ![](c_language.excalidraw.svg)
 ![](c_language.excalidraw.png)
-[🔗 Открыть в Excalidraw](https://excalidraw.com/#json=ВAША_ЗАКОДИРОВАННАЯ_В_BASE64_JSON_СЦЕНЫ)
+[🔗 Открыть Excalidraw](https://excalidraw.com)
 
 
 # Ссылки
