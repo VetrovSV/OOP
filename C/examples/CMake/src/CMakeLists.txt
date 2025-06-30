@@ -15,6 +15,6 @@ add_executable(
 #   cmake -B ../build . 
 #   будет создана папка build
 # Сборка
-#   cmake
+#   cmake --build ../build
 # Запуск
 #   ../build/hello_cmake
