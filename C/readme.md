@@ -118,6 +118,10 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
 
 # [Задания](tasks.md)
 
+## 12. Java
+Слайды: https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU/edit?usp=sharing
+Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
+
 
 
 <br>
