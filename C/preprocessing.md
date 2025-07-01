@@ -147,3 +147,17 @@ int MAKE_VAR(var, 1); // → int var1;
 ```bash
 gcc -E file.c -o out.i
 ```
+
+## Разное
+Объявление макросов может использоваться для включение или выключения возможностей:
+
+Включить поддержку нестандартных математических констант M_PI, M_E, M_SQRT2 и др.
+```с
+#define _USE_MATH_DEFINES
+#include <math.h> // или <cmath> в C++
+```
+
+Отключает MSVC‑предупреждения о scanf, strcpy
+```c
+#define _CRT_SECURE_NO_WARNINGS
+```
