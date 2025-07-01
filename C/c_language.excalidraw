@@ -7219,13 +7219,8 @@
     {
       "id": "Od-bPzMlJ6VjLOehdQ_Vu",
       "type": "text",
-<<<<<<< HEAD
-      "x": 1731.3220456878887,
-      "y": 6146.959617807766,
-=======
       "x": 1732.1655507230448,
       "y": 6600.645020807766,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "width": 422.63648986816406,
       "height": 20,
       "angle": 0,
@@ -7241,19 +7236,11 @@
       "index": "b2p",
       "roundness": null,
       "seed": 1150971604,
-<<<<<<< HEAD
-      "version": 375,
-      "versionNonce": 1924465195,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1751214875139,
-=======
       "version": 459,
       "versionNonce": 1332104064,
       "isDeleted": false,
       "boundElements": [],
       "updated": 1751297516501,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "link": null,
       "locked": false,
       "text": "int fputs(const char *s, FILE *stream)",
@@ -7269,13 +7256,8 @@
     {
       "id": "bntmlVsk4ni8sfY5xMDLC",
       "type": "text",
-<<<<<<< HEAD
-      "x": 1731.3220456878887,
-      "y": 6205.038181018725,
-=======
       "x": 1732.1655507230448,
       "y": 6653.723584018724,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "width": 422.63648986816406,
       "height": 20,
       "angle": 0,
@@ -7291,19 +7273,11 @@
       "index": "b2q",
       "roundness": null,
       "seed": 1720546388,
-<<<<<<< HEAD
-      "version": 441,
-      "versionNonce": 1109901893,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1751214879649,
-=======
       "version": 526,
       "versionNonce": 865131392,
       "isDeleted": false,
       "boundElements": [],
       "updated": 1751297516501,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "link": null,
       "locked": false,
       "text": "int fgetc(FILE *stream)",
@@ -7319,13 +7293,8 @@
     {
       "id": "itEejix0wlFNnC1jy7Raf",
       "type": "text",
-<<<<<<< HEAD
-      "x": 1731.3220456878887,
-      "y": 6248.896625232592,
-=======
       "x": 1732.1655507230448,
       "y": 6697.582028232591,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "width": 422.63648986816406,
       "height": 20,
       "angle": 0,
@@ -7341,19 +7310,11 @@
       "index": "b2r",
       "roundness": null,
       "seed": 788777428,
-<<<<<<< HEAD
-      "version": 487,
-      "versionNonce": 164508645,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1751215100524,
-=======
       "version": 565,
       "versionNonce": 1407806336,
       "isDeleted": false,
       "boundElements": [],
       "updated": 1751297516501,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "link": null,
       "locked": false,
       "text": "int fputc(int c, FILE *stream)",
@@ -7520,7 +7481,7 @@
       "x": 2198.864789033815,
       "y": 6578.44448815666,
       "width": 469.4697054591165,
-      "height": 64.80000000000001,
+      "height": 43.2,
       "angle": 0,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
@@ -7534,28 +7495,20 @@
       "index": "b2w",
       "roundness": null,
       "seed": 2126980436,
-<<<<<<< HEAD
-      "version": 833,
-      "versionNonce": 540614117,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1751214908664,
-=======
       "version": 838,
       "versionNonce": 1259748224,
       "isDeleted": false,
       "boundElements": [],
       "updated": 1751297516501,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "link": null,
       "locked": false,
-      "text": "Читат строку файла до самого конца в буффер s ращмером\nn-1 символов.  Возвр. NULL если не удалось прочитать.\nЗаписывает строку",
+      "text": "Читат n-1 символов. Возвр NULL если не удалось прочитать\nЗаписывает строку",
       "fontSize": 16,
       "fontFamily": 6,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Читат строку файла до самого конца в буффер s ращмером n-1 символов.  Возвр. NULL если не удалось прочитать.\nЗаписывает строку",
+      "originalText": "Читат n-1 символов. Возвр NULL если не удалось прочитать\nЗаписывает строку",
       "autoResize": false,
       "lineHeight": 1.35
     },
@@ -7636,13 +7589,8 @@
     {
       "id": "trW5C8rijsxt1THWc6aYe",
       "type": "text",
-<<<<<<< HEAD
-      "x": 2091.754625166581,
-      "y": 6205.610475516056,
-=======
       "x": 2092.598130201737,
       "y": 6654.295878516055,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "width": 582.2822178609442,
       "height": 64.80000000000001,
       "angle": 0,
@@ -7658,19 +7606,11 @@
       "index": "b2z",
       "roundness": null,
       "seed": 836584556,
-<<<<<<< HEAD
-      "version": 878,
-      "versionNonce": 40686475,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1751215101603,
-=======
       "version": 958,
       "versionNonce": 187034496,
       "isDeleted": false,
       "boundElements": [],
       "updated": 1751297516501,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "link": null,
       "locked": false,
       "text": "Читат один символ. Если не удалось прочитать, возвращает значение\nконстанты EOF\nЗаписывает один символ",
@@ -7869,43 +7809,6 @@
       "lineHeight": 1.35
     },
     {
-      "id": "pGRJ6M-nfCY7cBtG7AO3g",
-      "type": "text",
-      "x": 2842.5652130747994,
-      "y": 6484.175530157328,
-      "width": 409.4646301269531,
-      "height": 140,
-      "angle": 0,
-      "strokeColor": "#1971c2",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": "pECxx0S5LC4ESxEl5COg4",
-      "index": "b2zzzV",
-      "roundness": null,
-      "seed": 676760555,
-      "version": 13,
-      "versionNonce": 732850757,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1751213968146,
-      "link": null,
-      "locked": false,
-      "text": "#include <unistd.h>  // getcwd\n    char cwd[256];\n    if (getcwd(cwd, sizeof(cwd)) != NULL) {\n        printf(\"Текущая директория: %s\\n\", cwd);\n    } else {\n        perror(\"getcwd() error\");\n    }",
-      "fontSize": 16,
-      "fontFamily": 8,
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
-      "originalText": "#include <unistd.h>  // getcwd\n    char cwd[256];\n    if (getcwd(cwd, sizeof(cwd)) != NULL) {\n        printf(\"Текущая директория: %s\\n\", cwd);\n    } else {\n        perror(\"getcwd() error\");\n    }",
-      "autoResize": true,
-      "lineHeight": 1.25
-    },
-    {
       "id": "pECxx0S5LC4ESxEl5COg4",
       "type": "frame",
       "x": 1679.4596998008624,
@@ -7935,7 +7838,7 @@
       "name": "Файлы"
     },
     {
-      "id": "EzoOkw6vJsN6vaBvYRNwI",
+      "id": "4YT41bL5qeeR1-8FM-CRO",
       "type": "text",
       "x": 2097.2323007339637,
       "y": 6796.977163650288,
@@ -7953,21 +7856,12 @@
       "frameId": "pECxx0S5LC4ESxEl5COg4",
       "index": "b31",
       "roundness": null,
-<<<<<<< HEAD
-      "seed": 1708340965,
-      "version": 978,
-      "versionNonce": 2102121963,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1751213947788,
-=======
       "seed": 1530078548,
       "version": 1061,
       "versionNonce": 1402948480,
       "isDeleted": false,
       "boundElements": [],
       "updated": 1751297516501,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "link": null,
       "locked": false,
       "text": "Проверяет, находится ли курсор в конце файла\nВернёт 0 если курсор не в конце файла",
@@ -9116,13 +9010,6 @@
       "lineHeight": 1.35
     },
     {
-<<<<<<< HEAD
-      "id": "4YT41bL5qeeR1-8FM-CRO",
-      "type": "text",
-      "x": 2842.5652130747994,
-      "y": 6447.9382329911305,
-      "width": 671.3999982738904,
-=======
       "id": "GZAJ2h6HC-THqpn2EwtQo",
       "type": "text",
       "x": 516.5666289950798,
@@ -9959,7 +9846,6 @@
       "x": 5965.033419691772,
       "y": 5587.37541695497,
       "width": 238.461771686857,
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "height": 21.6,
       "angle": 0,
       "strokeColor": "#868e96",
@@ -9970,20 +9856,6 @@
       "roughness": 1,
       "opacity": 100,
       "groupIds": [],
-<<<<<<< HEAD
-      "frameId": "pECxx0S5LC4ESxEl5COg4",
-      "index": "b3s",
-      "roundness": null,
-      "seed": 1530078548,
-      "version": 1035,
-      "versionNonce": 1753554763,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1751213965666,
-      "link": null,
-      "locked": false,
-      "text": "Получить путь к текущей папке",
-=======
       "frameId": "LhGVs5vVSCpqBm_lq-6wG",
       "index": "b4E",
       "roundness": null,
@@ -9996,17 +9868,11 @@
       "link": null,
       "locked": false,
       "text": "тут без extern, но со значением",
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
       "fontSize": 16,
       "fontFamily": 6,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-<<<<<<< HEAD
-      "originalText": "Получить путь к текущей папке",
-      "autoResize": false,
-      "lineHeight": 1.35
-=======
       "originalText": "тут без extern, но со значением",
       "autoResize": false,
       "lineHeight": 1.35
@@ -11207,7 +11073,6 @@
       "originalText": "#define value\n#define func\n\nспециальные \"переменные\"\n\n...",
       "autoResize": true,
       "lineHeight": 1.35
->>>>>>> 624335cc727902e7589fc262bb804d1fcf754c68
     }
   ],
   "appState": {
