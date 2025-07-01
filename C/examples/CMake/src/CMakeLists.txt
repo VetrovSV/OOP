@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.10)
 # Название проекта
 project(hello_cmake)
 
+set(CMAKE_C_STANDARD 23) 
+add_compile_options(-Os)
+
 # Исходники, из которых должен получиться исполняемый файл
 add_executable( 
                 ${PROJECT_NAME}     
