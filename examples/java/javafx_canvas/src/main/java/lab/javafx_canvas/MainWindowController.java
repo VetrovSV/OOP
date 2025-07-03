@@ -15,6 +15,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.PixelWriter;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
@@ -113,11 +114,29 @@ public class MainWindowController {
         gc.setStroke(Color.SLATEBLUE);
         gc.strokePolyline(xLine, yLine, xLine.length);
 
+        // Замкнутый контур: 4 сегмента линий + соединение последней точки и первой
+        gc.setStroke(Color.BLACK);
+        gc.setLineWidth(2);
+        double[] xPoints = { 150+350, 82+350, 244+350, 56+350, 218+350 };
+        double[] yPoints = { 260, 80,  155+33, 155+33, 80 };
+        gc.strokePolygon(xPoints, yPoints, xPoints.length);
+
         // Текст
         gc.setFont(Font.font("Arial", FontWeight.BOLD, 24));
-        gc.setFill(Color.BLACK);
+        gc.setFill(Color.BLACK); gc.setStroke(Color.ORANGERED);
         gc.fillText("Простой текст", 50, 350);           // заполняемый текст
         gc.strokeText("Дизайн!!11", 50, 380);         // контур текста
+
+
+        // Запись отдельных пикселей
+        PixelWriter pw = gc.getPixelWriter();
+        // закрасить отдельный пиксель чёрным
+        pw.setColor(5, 5, Color.BLACK);              // setColor(int x, int y, Color c)
+        // или задав ARGB-значение напрямую
+        int argb = 0x80FF0000; // полупрозрачный красный
+        pw.setArgb(7, 7, argb);                      // setArgb(int x, int y, int argb)
+
+
 
 
         // Сохранение в файл (требует доп. библиотек, см. раздел подключения)
@@ -134,6 +153,8 @@ public class MainWindowController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 
 
