@@ -116,44 +116,58 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
 - Использование typedef для быстрой смени типов в исходном коде.
 
 
-# [Задания](tasks.md)
+
 
 ## 12. Java
 Слайды: https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU/edit?usp=sharing
-Пример: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 
+Примеры: 
+- Программа для арифметических вычислений, с отдельным модулем (классом с функциями), многострочным поле ввода: https://github.com/VetrovSV/OOP/tree/master/C/examples_2025/java_gui_arifm
+- Графика: https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
+- https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 
 ##  Темы, понятия и инструменты для самостоятельного изучения после курса
-* **Современные версии языка**:
+
+Помимо тем, выделенных курсивом предлагается в будущем познакомиться со следующими темами:
+
+* **Возможности, плагины и горячие клавиши вышей любимой среды разработки (VS Code, Visual Studio, ...)**
+
+* **Язык C для микроконтроллерах**
+  Платы и микроконтроллеры: Arduino, STM32 и др. Интерфейсы SPI, I²C, UART; Работа с прерываниями.
+* **Встраиваемые системы и реального времени**
+  bare‑metal на ARM/AVR, RTOS (FreeRTOS), работа с периферией
+* **Системное программирование и ОС‑интеграция**
+  fork/exec, pipe, сигнализация, mmap, IO‑multiplexing (select/epoll)
+&nbsp;
+
+* **Современные версии языка**
   C17, C23 – новые ключевые слова, атомарные типы, улучшенные макросы
 * **Продвинутый препроцессор**:
   вариативные макросы, X‑Macros, условная компиляция для разных платформ
-* **Инструменты отладки и профилирования**:
+&nbsp;
+
+* **Инструменты отладки и профилирования**
   GDB (core dumps, remote debugging), Valgrind, AddressSanitizer, профайлеры (perf, gprof)
-* **Статический и динамический анализ**:
+* **Статический и динамический анализ**
   clang-tidy, Cppcheck, Coverity, Sanitizers (UBSan, LeakSanitizer)
-* **Сборка и автоматизация**:
+* **Сборка и автоматизация**
   CMake, Autotools, Meson, Ninja, CMake в продвинутом режиме, CI/CD (GitHub Actions, GitLab CI)
-* **Документация**:
+* **Документация**
   Doxygen, Sphinx (с Breathe для C), генерация HTML/PDF-доков
+&nbsp;
+
 * **Многопоточность и параллелизм**:
   pthreads, атомарные операции C11, OpenMP
-* **Сетевое программирование**:
+* **Сетевое программирование**
   BSD sockets, SSL/TLS (OpenSSL), REST‑клиенты на C
-* **Системное программирование и ОС‑интеграция**:
-  fork/exec, pipe, сигнализация, mmap, IO‑multiplexing (select/epoll)
-* **Встраиваемые системы и реального времени**:
-  bare‑metal на ARM/AVR, RTOS (FreeRTOS), работа с периферией
-* **Язык C для микроконтроллерах**
-  Платы и микроконтроддеры: Arduino; STM32. Интерфейсы SPI, I²C, UART; Работа с прерываниями.
-* **Интерфейсы с другими языками**:
+
+* **Интерфейсы с другими языками**
   C↔Python (ctypes, CFFI), C↔Java (JNI)
   Создание библиотек .so/.dll, экспорт функций
 
-Эти дополнения помогут глубже погрузиться в экосистему C, отладку и оптимизацию, а также подготовят к разработке крупных кросс‑платформенных и встраиваемых систем.
-
-
 <br>
+
+# [Задания](tasks.md)
 
 ## Ссылки
 - [Примеры](examples.md)
