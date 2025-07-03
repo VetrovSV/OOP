@@ -157,7 +157,7 @@ public class MainWindowController {
 
     }
 
-
+    // Событие - onMouseClicked
     public void draw_pixel(MouseEvent mouseEvent) {
         GraphicsContext gc;
         gc = canvas.getGraphicsContext2D();
@@ -166,6 +166,3 @@ public class MainWindowController {
         gc.strokeLine(mouseEvent.getX(), mouseEvent.getY(),mouseEvent.getX()+0.5, mouseEvent.getY()+0.5);
     }
 }
-
-
-// todo: 3D
