@@ -24,7 +24,7 @@
  */
 static size_t write_callback(void *data, size_t size, size_t nmemb, void *userp) {
     size_t total = size * nmemb;
-    strncat(userp, data, total);  // аккуратно добавляем в буфер ответа
+    strncat(userp, data, total);  // конкатенация новых полученных данных (data) со старыми userp
     return total;
 }
 
@@ -44,7 +44,7 @@ int main(void) {
 
     // Настроика http запроса (запись параметров в переменную curl_easy_setopt):
     // curl_easy_setopt(curl, CURLOPT_URL, "http://example.com");                         // Задание адреса запроса
-    curl_easy_setopt(curl, CURLOPT_URL, "https://wttr.in/Chita_RU?format=2");
+    curl_easy_setopt(curl, CURLOPT_URL, "https://wttr.in/Chita_RU?format=2");       // См. подробности про сайт wttr.in: https://github.com/chubin/wttr.in
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);          // Здание функции, которая будет получать и записывать в массив данные
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, response);                    // Задание переменной, для сохранения ответа
 
@@ -60,7 +60,9 @@ int main(void) {
 
 
 /*
+
 Компиляция
 clang -o lab lab.c -lcurl 
--lcurl -- подключить библиотеку curl
+-lcurl -- подключить библиотеку curl\
+
 */
