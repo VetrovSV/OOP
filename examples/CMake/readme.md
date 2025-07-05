@@ -174,6 +174,13 @@ include_directories("headers/" "more_headers/")
 add_executable(exec_file_name main.cpp Unit1.cpp Unit2.cpp)
 ```
 
+#### Указание статической библиотеки для линковки
+```cmake
+# линовка математической библиотеки (m)
+target_link_libraries(project_name PRIVATE m)
+# PRIVATE - использовать для для данной цели (target)
+```
+
 #### Задание версии стандарта языка С++
 ```cmake
 # рекомендуемый, более общий способ
@@ -300,7 +307,10 @@ cmake -B build .
 Как правило для тестов создаётся отдельный файл конфигурации CMake, который потом включается в основной файл проекта. 
 
 ## См. также
-Папки с примерами в этом каталоге
+
+1. Папки с примерами в этом каталоге
+2. Расширения для VS Code: CMake (автодополнение при редактировании CMakeLists.txt) и CMakeTools (предоставляет GUI для конфигурации, сборки, запуска, тестирования и т.п.)
+   <img src="assets/VSCode_CMakeTools.png" width=200>
 
 # Ссылки
 - https://cliutils.gitlab.io/modern-cmake/
