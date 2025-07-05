@@ -128,7 +128,6 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
 - https://github.com/VetrovSV/OOP/tree/master/examples/java/JavaFX
 
 ##  Темы, понятия и инструменты для самостоятельного изучения после курса
-
 Помимо тем, выделенных курсивом предлагается в будущем познакомиться со следующими темами:
 
 * **Возможности, плагины и горячие клавиши вышей любимой среды разработки (VS Code, Visual Studio, ...)**
