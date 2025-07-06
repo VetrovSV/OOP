@@ -111,50 +111,87 @@ cmake --build build --target clean
 ```
 
 ## Расширенный пример
-Более сложный файл конфигурации сборки `CMakeLists.txt`
-```cmake
-cmake_minimum_required(VERSION 3.24)			# требуемая версия CMake
-
-# название проекта my_project и его версия
-project(my_project VERSION 1.5)
-
-# настройки компилятора
-# set(CMAKE_CXX_COMPILER "g++-12")         		# имя компилятора (можно указать полный путь)
-set(CMAKE_CXX_STANDARD 20)               		# версия стандарта языка
-# set(CMAKE_CXX_STANDARD_REQUIRED True)  		# включает проверку: задана ли явно версия стандарта языка
-add_compile_options(-O2)                 		# другие опции компиляции: второй уровень оптимизации кода
-
-
-# папка для сохранения исполняемого файла: bin
-# стоит указать, чтобы отделить от служебных файлов генерируемых CMake
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
-
-# add_executable -- цель -- создание исполняемого файла
-add_executable(                         
-  ${PROJECT_NAME}                        # имя файла = имя проекта
-  main.cpp                               # Список файлов исходного кода через пробел
-)
-
-
-# если нужно: дополнительная папка для поиска файлов исходного кода (cpp и h) 
-# должна быть указана после того, как указана цель сборки add_executable или add_librarie
-# target_include_directories(${PROJECT_NAME} PUBLIC include)
-# Второй аргумент задаёт видимость включаемых файлов для проектов, использующих данный (если они есть)
-```
-
-
-В результате получится структура проекта
+В результате получится структура
 ```
 my_project
    |-- src
    |   |-- main.cpp
-   |   |--CMakeLists.txt
-   |-- my_build
+   |   |-- CMakeLists.txt
+   |-- build (будет создан автоматически)
    |   |-- ...служебные файлы и папки ...
-   |   |-- my_project.exe
    |   |-- bin
    |   |   |-- my_project.exe
 ```
+
+
+Более сложный файл конфигурации сборки `CMakeLists.txt`
+```cmake
+cmake_minimum_required(VERSION 3.16)      # минимальная версия CMake
+
+# если необходимо, задать предпочитаемый компилятор
+set(CMAKE_CXX_COMPILER clang++ )
+# аналогично можно задать переменную окружения СXX или СС
+# linux: export CXX=clang++
+
+# проект: имя, версия, языки
+project(my_project
+    VERSION 1.0
+    LANGUAGES C CXX           # C и С++
+)
+
+# Стандарт C++ и параметры
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# добавить ключи компилятору (например оптимизация O3)
+set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS}   -O3")       # С
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")       # C++
+
+# Сохранять бинарник в папку bin внутри папки сборки
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# ${PROJECT_NAME} = имя указанное в project
+add_executable(${PROJECT_NAME} 
+               main.cpp )
+
+# Линкуем дополнительные библиотеки
+# Например math для C (ключ -lm), OpenMP (если включено)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    m )
+
+
+# если нужно, добавить дополнительную цель - запуск
+# Цель для запуска
+add_custom_target(run
+    COMMAND           ${PROJECT_NAME}            # команда - имя исполняемого файла
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}        # задать рабочую папку = папка проекта
+    DEPENDS           ${PROJECT_NAME}            # сначала соберётся проект
+    COMMENT "Запуск программы из корня проекта: "
+)
+# тогда сборки и запуск выглядят так: 
+# cmake --build build --target run
+
+```
+
+**Конфигурация. Сборка. Запуск**
+из папки `src/`
+```bash
+
+# 1. Конфигурация сборки:
+cmake -B ../build 
+
+# 2. Сборка:
+cmake --build ../build -j
+
+# 2. Сборка и запуск
+cmake --build ../build -j  --target run
+
+# 3. Запуск в папке проекта:
+cd ..
+build/bin/cpp_lab
+```
+
 
 # Отдельные команды Cmake
 
@@ -196,7 +233,7 @@ target_compile_options(hello PRIVATE -std=c++20)
 - Это нужно делать до задания имени проекта (`project(...)`)
 - Компилятор будет задан только при настройке сборки (`cmake -B`).
 ```cmake
-set(PREFERRED_CXX_COMPILERS clang++-17 clang++-16 clang++ g++)
+set(CMAKE_CXX_COMPILER clang++ )
 ```
 
 #### Переменные
