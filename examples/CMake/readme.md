@@ -457,6 +457,7 @@ cmake -B build .
 1. Папки с примерами в этом каталоге
 2. Расширения для VS Code: CMake (автодополнение при редактировании CMakeLists.txt) и CMakeTools (предоставляет GUI для конфигурации, сборки, запуска, тестирования и т.п.)
    <img src="assets/VSCode_CMakeTools.png" width=200>
+3. [Meson](https://mesonbuild.com/index.html) - более простая и современная система сборки, однако менее популярная.
 
 # Ссылки
 - https://cliutils.gitlab.io/modern-cmake/
