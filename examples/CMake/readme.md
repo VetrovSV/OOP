@@ -129,6 +129,7 @@ cmake --build build --target clean
 
 
 ## Расширенный пример
+
 Более сложный файл конфигурации сборки `CMakeLists.txt`
 ```cmake
 cmake_minimum_required(VERSION 3.24)			# требуемая версия CMake
@@ -162,19 +163,87 @@ add_executable(
 
 
 В результате получится структура проекта
+
 ```
 my_project
    |-- src
    |   |-- main.cpp
-   |   |--CMakeLists.txt
-   |-- my_build
+   |   |-- CMakeLists.txt
+   |-- build (будет создан автоматически)
    |   |-- ...служебные файлы и папки ...
-   |   |-- my_project.exe
    |   |-- bin
    |   |   |-- my_project.exe
 ```
 
 
+
+Более сложный файл конфигурации сборки `CMakeLists.txt`
+```cmake
+cmake_minimum_required(VERSION 3.16)      # минимальная версия CMake
+
+# если необходимо, задать предпочитаемый компилятор
+set(CMAKE_CXX_COMPILER clang++ )
+# аналогично можно задать переменную окружения СXX или СС
+# linux: export CXX=clang++
+
+# проект: имя, версия, языки
+project(my_project
+    VERSION 1.0
+    LANGUAGES C CXX           # C и С++
+)
+
+# Стандарт C++ и параметры
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# добавить ключи компилятору (например оптимизация O3)
+set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS}   -O3")       # С
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")       # C++
+
+# Сохранять бинарник в папку bin внутри папки сборки
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# ${PROJECT_NAME} = имя указанное в project
+add_executable(${PROJECT_NAME} 
+               main.cpp )
+
+# Линкуем дополнительные библиотеки
+# Например math для C (ключ -lm), OpenMP (если включено)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    m )
+
+
+# если нужно, добавить дополнительную цель - запуск
+# Цель для запуска
+add_custom_target(run
+    COMMAND           ${PROJECT_NAME}            # команда - имя исполняемого файла
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}        # задать рабочую папку = папка проекта
+    DEPENDS           ${PROJECT_NAME}            # сначала соберётся проект
+    COMMENT "Запуск программы из корня проекта: "
+)
+# тогда сборки и запуск выглядят так: 
+# cmake --build build --target run
+
+```
+
+**Конфигурация. Сборка. Запуск**
+из папки `src/`
+```bash
+
+# 1. Конфигурация сборки:
+cmake -B ../build 
+
+# 2. Сборка:
+cmake --build ../build -j
+
+# 2. Сборка и запуск
+cmake --build ../build -j  --target run
+
+# 3. Запуск в папке проекта:
+cd ..
+build/bin/cpp_lab
+```
 
 
 # Отдельные команды Cmake
@@ -217,7 +286,7 @@ target_compile_options(hello PRIVATE -std=c++20)
 - Это нужно делать до задания имени проекта (`project(...)`)
 - Компилятор будет задан только при настройке сборки (`cmake -B`).
 ```cmake
-set(PREFERRED_CXX_COMPILERS clang++-17 clang++-16 clang++ g++)
+set(CMAKE_CXX_COMPILER clang++ )
 ```
 
 #### Переменные
@@ -266,7 +335,7 @@ set_target_properties(foo_lib PROPERTIES
 # Загрузка зависимостей
 
 Пример:
-```
+```cmake
 # Подключает модуль FetchContent для CMake
 # FetchContent используется для загрузки внешних зависимостей, входит в состав CMake 3.11+
 include(FetchContent)
@@ -353,6 +422,35 @@ cmake -B build .
 ```
 
 Как правило для тестов создаётся отдельный файл конфигурации CMake, который потом включается в основной файл проекта. 
+
+## Наиболее часто используемые функции и переменные CMake
+
+
+
+| Название                          | Описание                                                        | Возможные значения и пояснения                                                                                                                                                                                                                                                                                                                                                          | Пример использования                                          |
+| --------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| `cmake_minimum_required`          | Задаёт минимальную требуемую версию CMake                       | - `VERSION <версия>` — минимальная версия CMake (например `3.27`). При более старой версии конфигурация остановится с ошибкой.                                                                                                                                                                                                                                                            | `cmake_minimum_required(VERSION 3.16)`                        |
+| `project`                         | Объявляет проект: задаёт имя, версию и поддерживаемые языки     | - `<name>` — имя проекта.<br>- `VERSION <версия>` — устанавливает `PROJECT_VERSION_MAJOR`/`_MINOR`/`_PATCH`.<br>- `LANGUAGES <C CXX Fortran…>` — список языков. Если не указано — по умолчанию `C` и `CXX`.                                                                                                                                                                                  | `project(MyApp VERSION 1.0 LANGUAGES CXX)`                    |
+| `add_executable`                  | Создаёт цель — исполняемый файл                                 | - `<имя>` — имя цели.<br>- `<файлы...>` — исходные файлы (`.cpp`, `.c` и т. д.).                                                                                                                                                                                                                                                                                                       | `add_executable(my_app main.cpp util.cpp)`                    |
+| `add_library`                     | Создаёт цель — библиотеку                                       | - `<имя>` — имя цели.<br>- `STATIC` — статическая библиотека (по умолчанию, если не указано явно).<br>- `SHARED` — динамическая библиотека.<br>- `MODULE` — загружаемая во время выполнения (для плагинов).<br>- `INTERFACE` — заголовочная библиотека без компиляции исходников.<br>- `[файлы...]` — исходники (не для `INTERFACE`).                                         | `add_library(mylib STATIC lib1.cpp lib2.cpp)`                 |
+| `target_include_directories`      | Задаёт пути к заголовкам только для конкретной цели            | - `<target>` — имя цели.<br>- `PRIVATE` — используется только при сборке этой цели.<br>- `PUBLIC` — при сборке этой цели и её потребителей.<br>- `INTERFACE` — только для потребителей (сама цель не видит).<br>- `<директории...>` — пути (абсолютные или относительные).                                                                                                                 | `target_include_directories(my_app PRIVATE include/)`         |
+| `target_link_libraries`           | Линкует цель с библиотеками                                    | - `<target>` — имя цели.<br>- `PRIVATE` — библиотека нужна только этой цели.<br>- `PUBLIC` — нужна и цели, и её потребителям.<br>- `INTERFACE` — только потребителям.<br>- `<библиотеки...>` — имена целей или внешних библиотек (`Boost::filesystem`, `Qt5::Widgets`).                                                                                                               | `target_link_libraries(my_app PRIVATE Boost::filesystem)`     |
+| `set`                             | Устанавливает значение переменной                              | - `<var>` — имя переменной.<br>- `<value>` — строка или число.<br>- `CACHE <TYPE> <doc> [FORCE]` — создаёт cache‑переменную:<br>  • `TYPE` — `STRING`, `BOOL`, `PATH`, `FILEPATH`.<br>  • `doc` — описание в GUI.<br>  • `FORCE` — перезаписать существующую.                                                                                          | `set(CMAKE_CXX_STANDARD 20)`                                  |
+| `option`                          | Создаёт булеву опцию (CACHE‑переменную типа BOOL)              | - `<var>` — имя (например, `ENABLE_TESTS`).<br>- `<описание>` — описание в GUI/ccmake.<br>- `[<значение по умолчанию>]` — `ON` или `OFF` (по умолчанию `OFF`).                                                                                                                                                                                                                        | `option(ENABLE_TESTS "Собирать тесты" ON)`                    |
+| `find_package`                    | Находит установленные пакеты и подключает их. Ищет в и стандартных системных директория и в путях из переменных CMAKE_MODULE_PATH, CMAKE_PREFIX_PATH, CMAKE_INSTALL_PREFIX                   | - `<name>` — имя пакета (`Qt5`, `Boost`).<br>- `[version]` — минимальная версия (`5.15`, `1.75`).<br>- `REQUIRED` — остановить сборку, если не найден.<br>- `COMPONENTS <компоненты...>` — модули (`Widgets`, `Filesystem`).<br>Ищет в `CMAKE_MODULE_PATH`, `CMAKE_PREFIX_PATH`, системных директориях и т. д.                                    | `find_package(Qt5 REQUIRED COMPONENTS Widgets)`               |
+| `target_compile_features`         | Требует поддержки у компилятора определённых возможностей      | - `<target>` — имя цели.<br>- `PRIVATE`/`PUBLIC`/`INTERFACE` — область применения (аналогично include/link).<br>- `<features...>` — список фич, напр. `cxx_std_17`, `cxx_std_20`.                                                                                                                                                                                                          | `target_compile_features(my_app PUBLIC cxx_std_20)`           |
+| `configure_file`                  | Копирует файл с подстановкой переменных                        | - `<input>` — шаблон (обычно `.in`).<br>- `<output>` — файл назначения (в `${CMAKE_BINARY_DIR}`).<br>- `COPYONLY` — без подстановки.<br>- `ESCAPE_QUOTES` — экранировать кавычки.                                                                                                                                                                                                        | `configure_file(config.h.in ${CMAKE_BINARY_DIR}/config.h)`    |
+| `message`                         | Выводит сообщение при конфигурации                             | - `STATUS` — обычное сообщение.<br>- `NOTICE` — информативное (CMake 3.0+).<br>- `WARNING` — предупреждение.<br>- `AUTHOR_WARNING` — для авторов.<br>- `SEND_ERROR` — ошибка, но не прерывает генерацию.<br>- `FATAL_ERROR` — критическая ошибка, прерывает конфигурацию.                                                                    | `message(STATUS "Project version: ${PROJECT_VERSION}")`       |
+| `enable_testing`                  | Подключает поддержку CTest                                      | *(нет аргументов)* — включает модуль CTest и опцию `BUILD_TESTING`, но явная цель `test` появляется только после `add_test` или при `include(CTest)`.                                                                                                                                                                                                                                   | `enable_testing()`                                            |
+| `include_directories` *(устаревшая)* | Глобально задаёт пути к заголовкам для всех целей проекта   | - `<директории...>` — пути (абсолютные или относительные).<br>**Устарело:** лучше `target_include_directories`.                                                                                                                                                                                                                                                                           | `include_directories(common/include/)`                        |
+| `CMAKE_CXX_STANDARD`              | Стандарт C++ для всех целей проекта                            | - `<число>` — `11`, `14`, `17`, `20`, `23`.<br>**Совет:** предпочтительнее `target_compile_features`, и при этом задавать ещё `CMAKE_CXX_STANDARD_REQUIRED` и `CMAKE_CXX_EXTENSIONS`.                                                                                                                                                                                                        | `set(CMAKE_CXX_STANDARD 17)`                                  |
+| `CMAKE_BUILD_TYPE`                | Тип сборки в одноконфигурационных генераторах                  | - `Debug`, `Release`, `RelWithDebInfo`, `MinSizeRel`.                                                                                                                                                                                                                                                                                                                                    | `cmake -DCMAKE_BUILD_TYPE=Release -B build .`                 |
+| `CMAKE_RUNTIME_OUTPUT_DIRECTORY`  | Директория для собираемых исполняемых файлов                   | - `<путь>` — абсолютный или относительный (обычно `${CMAKE_BINARY_DIR}/bin`).<br>**Совет:** для библиотек используйте `CMAKE_LIBRARY_OUTPUT_DIRECTORY` и `CMAKE_ARCHIVE_OUTPUT_DIRECTORY`.                                                                                                                                                | `set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)` |
+
+
+
+
+
 
 ## См. также
 
