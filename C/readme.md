@@ -140,6 +140,8 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
   fork/exec, pipe, сигнализация, mmap, IO‑multiplexing (select/epoll)
 &nbsp;
 
+* **Вставки кода на языке симейства ассемблера (inline‑asm)**
+
 * **Современные версии языка**
   C17, C23 – новые ключевые слова, атомарные типы, улучшенные макросы
 * **Продвинутый препроцессор**:
