@@ -132,7 +132,7 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
 
 * **Возможности, плагины и горячие клавиши вышей любимой среды разработки (VS Code, Visual Studio, ...)**
 
-* **Язык C для микроконтроллерах**
+* **Язык C для микроконтроллеров**
   Платы и микроконтроллеры: Arduino, STM32 и др. Интерфейсы SPI, I²C, UART; Работа с прерываниями.
 * **Встраиваемые системы и реального времени**
   bare‑metal на ARM/AVR, RTOS (FreeRTOS), работа с периферией
@@ -140,7 +140,7 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
   fork/exec, pipe, сигнализация, mmap, IO‑multiplexing (select/epoll)
 &nbsp;
 
-* **Вставки кода на языке симейства ассемблера (inline‑asm)**
+* **Вставки кода на языке семейства ассемблера (inline‑asm)**
 * &nbsp;
 
 * **Современные версии языка**
