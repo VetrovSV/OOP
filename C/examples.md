@@ -15,10 +15,10 @@
 - Компилятор GCC (MinGW-w64)
 github.com/niXman/mingw-builds-binaries/releases
 Скачивать например
-***x86_64***-15.1.0-release-***posix-seh-ucrt***-rt_v12-rev0.7z или более новую версию. Не требует установки. 
+[***x86_64***-15.1.0-release-***posix-seh-ucrt***-rt_v12-rev0.7z](https://github.com/niXman/mingw-builds-binaries/releases/download/15.2.0-rt_v13-rev0/x86_64-15.2.0-release-posix-seh-msvcrt-rt_v13-rev0.7z) или более новую версию. Не требует установки. 
 - Компилятор Clang/LVVM
 github.com/llvm/llvm-project/releases/tag/llvmorg-18.1.8
-Скачивать например `LLVM-18.1.8-win64.exe`
+Скачивать например [`LLVM-18.1.8-win64.exe`](https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/LLVM-18.1.8-win64.exe)
 
 Вариант установки через MSYS2:
 1. Установите MSYS2
