@@ -153,3 +153,4 @@ https://github.com/VetrovSV/OOP/blob/master/C/preprocessing.md
 - [Примеры](../examples.md)
 - Шпаргалка по языку С. [excalidraw](../c_language.excalidraw), [png](../c_language.excalidraw.png) 
 - [Рекомендации и требования по написанию кода](../../criteria.md)
+- [Задания](tasks.md)
