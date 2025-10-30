@@ -56,7 +56,7 @@ char* locale = setlocale(LC_ALL, "");
 ```c
 #include <windows.h>
 
-setlocale(LC_ALL, ".UTF-8");
+setlocale(LC_ALL, ".UTF-8");        // автоматически определить настройки локали, задать кодировку для символов - UTF8
 SetConsoleCP(CP_UTF8);              // задать кодировку для ввода
 SetConsoleOutputCP(CP_UTF8);        // задать кодировку для ввода
 ```
