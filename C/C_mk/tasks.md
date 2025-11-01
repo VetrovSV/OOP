@@ -1,6 +1,14 @@
 Задачник: https://ivtipm.github.io/Programming/Files/spisocall.htm
 
+Пример таблицы с заданиями. Оранжевым выделены первые 4 задачи (4 строки).
+
+<img src="tasks_table_example.png" width=900>
+
 Номер варианта - последняя цифра номера зачётной книжки.
+
+
+
+
 
 # 1. Hello, World!
 Отчёт о создании и компиляции программ в IDE (VS Code, Visual Studio и др.) и *консоли (бонус)*.
