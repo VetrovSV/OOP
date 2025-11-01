@@ -51,3 +51,11 @@ https://ivtipm.github.io/Programming/Files/spisocall.htm
 # 6. Файлы
 
 # 6. Функции и модули
+
+
+# Ссылки
+- [План](readme.md)
+- [Примеры](../examples.md)
+- Шпаргалка по языку С. [excalidraw](../c_language.excalidraw), [png](../c_language.excalidraw.png) 
+- [Рекомендации и требования по написанию кода](../../criteria.md)
+- [Задания](tasks.md)
