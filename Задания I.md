@@ -61,8 +61,8 @@
 ### Ссылки
 
 - Слайды про git -- <https://github.com/VetrovSV/Programming/blob/master/git_lec.pdf>
-- GitBook -- <uleming.github.io/gitbook/index.html>
-- `worktree` -- <inoyakaigor.ru/blog/85>
+- GitBook -- <https://uleming.github.io/gitbook/index.html>
+- `worktree` -- <https://inoyakaigor.ru/blog/85>
 
 # Задание 2. Простой класс
 Классы на выбор:
