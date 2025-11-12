@@ -67,6 +67,8 @@ https://ivtipm.github.io/Programming/Files/spisocall.htm
 # 6. Функции и модули
 
 
+
+
 # Ссылки
 - [План](readme.md)
 - [Примеры](../examples.md)
