@@ -66,7 +66,7 @@ https://ivtipm.github.io/Programming/Files/spisocall.htm
 
 # 6. Функции и модули
 
-
+Решиить задачу из заданика [задачника](https://ivtipm.github.io/Programming/Files/spisocall.htm) из строки 37 согласно вашему варианту.
 
 
 # Ссылки
