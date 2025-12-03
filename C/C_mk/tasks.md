@@ -66,7 +66,7 @@ https://ivtipm.github.io/Programming/Files/spisocall.htm
 
 # 6. Функции и модули
 
-Решите задачу из 17 строки [задачника](https://ivtipm.github.io/Programming/Files/spisocall.htm).
+Решите задачу из 37 строки [задачника](https://ivtipm.github.io/Programming/Files/spisocall.htm).
 
 * Передавайте данные в функцию только через параметры функции. Не используйте глобальные переменные.
 * Возвращайте (return) результат вычислений функции.
