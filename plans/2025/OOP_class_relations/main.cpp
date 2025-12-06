@@ -1,3 +1,4 @@
+#include <cassert>
 #include <iostream>
 #include <vector>
 #include <format>
@@ -102,12 +103,18 @@ class Bow : public Weapon {
         ///
         Bow(string name1, float damage1, float distance1) :
             Weapon(name1, damage1) {
-                set_distance( distance1 );}
+                set_distance( distance1);}
 
         ///
         float get_distance() const { return distance; }
+
         ///
-        void  set_distance(float distance1) { if ( distance1 > 0) distance = distance1; }
+        void  set_distance(float distance1) {
+            if ( distance1 > 0)
+                distance = distance1;
+            // else
+                // throw invalid_argument("....");
+        }
 
         // переопределение метода из базового класса
         /// переводи объект в строку
@@ -138,14 +145,38 @@ public:
 
 int main() {
 
+    {
+        Bow b("Лук1", 5, 10);
+        assert( b.get_distance() == 10 );
+        assert( b.get_damage() == 5 );
+        assert( b.name == "Лук1" );
+    }
 
-    Weapon *w = new Weapon("Меч", 20);
-    Axe *a = new Axe("Базовый топор", 4, false);
+    {
+        Bow b;
+        assert( b.get_distance() == 1);
+        assert( b.get_damage() == 1);
+        assert( b.name == "");
+    }
 
-    // так нельзя! Т.к. в w фактиески записан не Axe а Weapon
-    Axe *a2 = dynamic_cast<Axe*>(w);
-    if ( a2 == nullptr )     // проверка, удалось ли преобразовать
-        cerr << "Не удалось преобразовать Weapon* в Axe*\n";
+
+    {
+        Bow b;
+        b.set_distance(8);
+        assert( b.get_distance() == 8);
+    }
+
+    {
+        Bow b;
+        try{
+            b.set_distance(-1);
+            assert( "Не брошено исключение типа invalid_argument" == "!" );
+        } catch (const invalid_argument &e) {
+            //
+        }
+    }
+
+
 
 
 }
