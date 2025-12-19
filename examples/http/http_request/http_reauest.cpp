@@ -9,8 +9,9 @@
 
 using namespace std;
 
-int main() {
-    // Объект для запросов; хранит адрес серсера, к которому будет отправляться запрос
+
+void simple_https_get_request() {
+        // Объект для запросов; хранит адрес серсера, к которому будет отправляться запрос
     httplib::Client cli("https://wttr.in");
 
 
@@ -25,7 +26,55 @@ int main() {
         cout << "Request answer:\nstatus: " << res->status << "\n";         // HTTP код (int)
         cout << "Body: " << res->body << "\n\n";                            // Тело ответа (string)
     }
+}
 
 
+string extract_responce(const string& raw_json) {
+    int start = raw_json.find("response")+8+3;            // начало текста ответа; длина слова response + ":"
+    if (start == string::npos) return "";       // если слово response не найдено
+    int end = start+1;
 
+    // поиск завершаюшей двойной кавычки
+    while ( (raw_json[end] != '"' or raw_json[end-1] == '\\') and end < raw_json.size() )
+        end++;
+
+    return raw_json.substr(start, end-start);
+}
+
+
+void simple_post_request() {
+    // Клиент для запроса к серверу Ollama
+    httplib::Client cli("http://localhost:11434");
+
+    // JSON строка для запроса; R - raw (сырая) строка, такую строку можно записать как многострочный литерал
+    const char* json = R"(
+    {
+        "model": "smollm2:135m",
+        "prompt": "Who is sir Tim Berners-Lee?",
+        "stream": false
+    }
+    )";
+
+    auto res = cli.Post(
+        "/api/generate",
+        json,
+        "application/json"
+    );
+
+    if (!res) {
+        std::cerr << "Ошибка соединения с Ollama\n";
+        return;
+    }
+
+    std::cout << "HTTP status: " << res->status << "\n";
+    // std::cout << "Response body:\n" << res->body << "\n\n";
+    std::cout << "Response body:\n" << extract_responce(res->body) << "\n";
+
+
+}
+
+
+int main() {
+    // simple_https_get_request();
+    simple_post_request();
 }
