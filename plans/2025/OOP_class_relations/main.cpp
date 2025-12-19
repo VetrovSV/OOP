@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <format>
+#include <math.h>
 
 
 using namespace std;
@@ -118,13 +119,27 @@ class Bow : public Weapon {
 
         // переопределение метода из базового класса
         /// переводи объект в строку
-        string to_string() const override {
-            // Weapon::to_string() - вызов метода базового класса
-            return Weapon::to_string() + format("\ndistance: {:.1f}", distance);
-        }
+        string to_string() const override;
 
 };
 
+// переопределение метода из базового класса
+/// переводи объект в строку
+string Bow::to_string() const {
+    // Weapon::to_string() - вызов метода базового класса
+    return Weapon::to_string() + format("\ndistance: {:.1f}", distance);
+}
+
+
+float f1(int x){ return    sqrt(x); }
+float f2(int x){ return 1./sqrt(x); }
+
+// тип: указаель на функцию которая возвр. float и принимает int
+using FPointer1 = float(*)(int);
+// using FPointer2 = float(int);           // ?????
+
+
+using MPointer = float(Bow::*)() const;
 
 class GameCharacter {
 private:
@@ -144,6 +159,17 @@ public:
 };
 
 int main() {
+
+    MPointer p = &Bow::get_distance;
+
+    Bow b;
+    b.p();          // !
+
+    FPointer1 fp ;// = f1;
+
+    fp(90);            // вызов функции f1
+    fp = f2;
+    fp(90);            // вызов функции f2
 
     {
         Bow b("Лук1", 5, 10);
@@ -176,7 +202,38 @@ int main() {
         }
     }
 
+    // C style cast
+    int x = (int)3.12314;
+    char *c = (char*)x;
 
+    // static_cast
+    int y = static_cast<int>(0.34124234);
 
+    Weapon *w = new Bow();
+    cout << w->to_string();
 
+    // dyncamic_cast - на этапе выполнения
+    Bow *b = dynamic_cast<Bow*> ( w );
+    if ( b == nullptr)
+        cerr << "Не удалось преобразовать Weapon* в Bow* \n";
+    else
+        b->set_distance(79);
+
+    // reinterpret cast
+    char* bytes = reinterpret_cast<char*>(b);
+
+    sizeof(*b);
+    sizeof(Bow);
+
+    // const cast
+    Bow b1("Лук1", 5, 10);
+    Bow b2("Лук1", 5, 10);
+    //  b1 и b2 равны
+    // bool is_equal = b1==b2;
+
+    Bow &b3  = b1;
+    Bow *b4  = &b1;
+
+    // b1 и b3 идентичны
+    // *b1 и b4 идентичны
 }
