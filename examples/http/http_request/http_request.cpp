@@ -10,6 +10,7 @@
 using namespace std;
 
 
+/// Пример: GET запрос
 void simple_https_get_request() {
         // Объект для запросов; хранит адрес серсера, к которому будет отправляться запрос
     httplib::Client cli("https://wttr.in");
@@ -28,7 +29,8 @@ void simple_https_get_request() {
     }
 }
 
-
+/// Извлекает из JSON строки (ответ Ollama) значение поля response
+/// @return: значение поля response
 string extract_responce(const string& raw_json) {
     int start = raw_json.find("response")+8+3;            // начало текста ответа; длина слова response + ":"
     if (start == string::npos) return "";       // если слово response не найдено
@@ -42,6 +44,7 @@ string extract_responce(const string& raw_json) {
 }
 
 
+/// Пример: POST запрос к Ollama
 void simple_post_request() {
     // Клиент для запроса к серверу Ollama
     httplib::Client cli("http://localhost:11434");
@@ -55,13 +58,15 @@ void simple_post_request() {
     }
     )";
 
-    auto res = cli.Post(
+
+    // Отправка POST запроса
+    httplib::Result res = cli.Post(
         "/api/generate",
         json,
         "application/json"
     );
 
-    if (!res) {
+    if (!res) {     // у Result перегружен оператор bool, поэтому можно писать !res
         std::cerr << "Ошибка соединения с Ollama\n";
         return;
     }

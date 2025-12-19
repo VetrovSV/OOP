@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 4.1)
 project(http_request)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 
 include_directories(.)
 
@@ -9,7 +9,7 @@ include_directories(.)
 find_package(OpenSSL REQUIRED)
 
 add_executable(http_request
-        http_reauest.cpp)
+        http_request.cpp)
 
 # Линковка OpenSSL
 target_link_libraries(http_request
