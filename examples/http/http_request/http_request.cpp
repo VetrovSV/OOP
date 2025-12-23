@@ -29,6 +29,7 @@ void simple_https_get_request() {
     }
 }
 
+
 /// Извлекает из JSON строки (ответ Ollama) значение поля response
 /// @return: значение поля response
 string extract_responce(const string& raw_json) {
