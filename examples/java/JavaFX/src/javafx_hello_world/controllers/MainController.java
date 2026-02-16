@@ -9,6 +9,7 @@ import javafx_hello_world.MyRndNumber;
 // этот класс - контроллер в программе
 // его имя (вместе с именем пакета javafx_hello_world)  указывается в FXML файле
 public class MainController {
+
     public Button button_rnd;               // элемент с формы. его имя должно быть указано в свойстве fx:id в fxml файле
     private MyRndNumber rnd_number_gen;     // модель -- класс отвечающий за логику работы программы
 

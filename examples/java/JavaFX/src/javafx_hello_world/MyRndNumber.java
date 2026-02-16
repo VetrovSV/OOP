@@ -16,6 +16,7 @@ public class MyRndNumber {
     public MyRndNumber(int _min, int _max){    // Java не поддерживает дефолтные значения параметров
         this.min=_min;
         this.max=_max;
+        // проверка min и max
     }
 
     public int get_number(){
