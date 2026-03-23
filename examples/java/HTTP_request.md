@@ -110,7 +110,7 @@ HttpRequest request = HttpRequest.newBuilder()
         .header("Content-Type", "application/json")
         .POST(HttpRequest.BodyPublishers.ofString(json))
         .build();
-// в коде выше вызывается серия методов, каждый из которых (короме build) возвращает объект типа HttpRequest.Builder, но с заданными свойствами (полями).
+// в коде выше вызывается серия методов, каждый из которых (кроме build) возвращает объект типа HttpRequest.Builder, но с заданными свойствами (полями).
 
 // HttpRequest возвращает объект типа HttpRequest
 
@@ -209,6 +209,24 @@ WeatherResponse data =
 System.out.println("Temp: " + data.current_weather.temperature);
 ```
 
+
+Альтернатива -- преобразование JSON в словарь
+```java
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        String json = "{\"name\":\"Ivan\",\"age\":25}";
+
+        ObjectMapper mapper = new ObjectMapper();
+        Map<String, Object> map = mapper.readValue(json, Map.class);
+
+        System.out.println(map.get("name")); // Ivan
+        System.out.println(map.get("age"));  // 25
+    }
+}
+```
 
 ### Скачивание бинарного файла
 ```java
