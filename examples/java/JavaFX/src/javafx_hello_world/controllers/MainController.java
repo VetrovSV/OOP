@@ -9,7 +9,9 @@ import javafx_hello_world.MyRndNumber;
 // этот класс - контроллер в программе
 // его имя (вместе с именем пакета javafx_hello_world)  указывается в FXML файле
 public class MainController {
+
     public Button button_rnd;               // элемент с формы. его имя должно быть указано в свойстве fx:id в fxml файле
+
     private MyRndNumber rnd_number_gen;     // модель -- класс отвечающий за логику работы программы
 
     // этот метод вызывается после конструктора, после создания окна
@@ -22,6 +24,7 @@ public class MainController {
 
     // имя обработчика события тоже должно быть указано в fxml файле
     public void onBtnClicked(MouseEvent mouseEvent) {
-        button_rnd.setText( new Integer( rnd_number_gen.get_number() ).toString() );
+        button_rnd.setText( String.valueOf( rnd_number_gen.get_number() ) );
+
     }
 }

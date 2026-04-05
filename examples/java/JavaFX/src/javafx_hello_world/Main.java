@@ -22,6 +22,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx_hello_world.tests.*;
 
+
 public class Main extends Application {
 
     /** Создание главного окна приложения */
@@ -41,7 +42,7 @@ public class Main extends Application {
         // +-----------------+
 
         // Создание корневого элемента сцены по его описанию из fxml файла
-        Parent root = FXMLLoader.load(getClass().getResource("resources/sample.fxml"));
+        Parent root = FXMLLoader.load( getClass().getResource("resources/window.fxml") );
         
         Scene scene = new Scene(root, 600, 450);
         scene.getStylesheets().add(getClass().getResource("resources/style.css").toExternalForm());

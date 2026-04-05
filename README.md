@@ -10,7 +10,7 @@
 ### Планы текущих и старых курсов по С++ \ ООП \ Java
 **[Требования к заданиям](https://github.com/VetrovSV/OOP/blob/master/criteria.md)**
 
-**Курс 25-26**: 1. Осень 2025:  [C++](plans/2025_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2025_oop_1.md)
+**Курс 25-26**: 1. Осень 2025:  [C++](plans/2025_cpp.md) ([практические задания](https://github.com/VetrovSV/OOP/blob/master/plans/tasks_cpp.md)) , [ООП](plans/2025_oop1.md), [ООП 2](plans/2026_oop2.md)
 
 
 **Курс 24-25**: 2. Весна 2025: [ООП](plans/2025_oop2.md), [Задания](Задания-II.md)\
