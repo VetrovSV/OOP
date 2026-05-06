@@ -105,7 +105,6 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
 - Шаблон ОО проектирования Стратегия
 
 
-
 #### Вопросы
 1. Изобразите диаграмму классов для приложения.
 2. Имеется ли интерфейс определяющий способы взаимодействия с классом обрабатывающим сообщения пользователя?
@@ -132,6 +131,7 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
 1. [rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html) -- шпаргалка (eng) по регулярным выражениям
 1. [regexper.com](https://regexper.com/#%5B%D0%90-%D0%AF%5D%5B%D0%B0-%D1%8F%5D%7B1%2C10%7D%5Cs%3F%5B%D0%90-%D0%AF%5D%5C.%5B%D0%90-%D0%AF%5D%5C.) -- визуализация регулярных выражений
 
+
 **HTTP Запросы и API:**
 1. Примеры HTTP-запросов в Java: https://github.com/VetrovSV/OOP/blob/master/examples/java/http_requests/src/main/java/zabgu/Main.java
 1. Сайт выдающий прогноз погоды в текстовом (plain text) формате: https://github.com/chubin/wttr.in#usage
@@ -143,8 +143,11 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
 
 
 
-# Задание 3. Простое приложение - БД
-*Цель работы: изучить способы работы с табличными данными на примере подхода модель-представление*
+
+# Задание 3.1 Простое приложение - БД
+*(Не обязательно)*
+
+*Цель работы: изучить способы работы с табличными данными на примере подхода модель-представление и шаблона наблюдатель*
 
 Создайте клиентское приложение для работы с БД (СУБД).
 
@@ -176,6 +179,7 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
 **См. также**
 - Шаблон ОО проектирования Наблюдатель
 
+
 ### Вопросы
 1. Что такое представление и модель?
 2. Как представлена модель в программе? Как происходит проверка данных?
@@ -198,6 +202,25 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
     - Пример: github.com/VetrovSV/OOP/blob/master/examples/Qt/database/style.qss
 
 
+
+# Задание 3.2
+*Цель работы: изучить способы работы с табличными данными на примере подхода модель-представление и шаблона наблюдатель*
+
+Создайте клиентское приложение для работы с БД (СУБД).
+
+#### Требования
+- Разделение представления и модели (данных и методов работы с ними).
+- Используйте таблицу для *отображения* данных
+- Собственный формат БД или SQL (QSLite или серверная СУБД)
+- Добавление, изменение, удаление данных
+- Сортировка (как минимум по одному полю).
+- Документация (в коде) описывающая формат данных в файле (если используется свой формат файла).
+
+**Требования к GUI**:
+- вывод данных в таблицу (но не хранение в этом компоненте!) 
+
+
+
 # Задание 4. UI markup language
 *(Не обязательно. Если не выполнено макс. оценка на экзамене - 3)*
 Можно создать простое приложение c GUI построенным с использованием языка разметки UI (QML, XAML, FXML и др) или модифицировать другое ваше приложение.
@@ -210,7 +233,7 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
  - опционально: подключение файла стилей (css)
 
 
-- Слайды по теме: https://docs.google.com/presentation/d/1BJOtQ5QKtVrGhgpWPkrYao29krP4iNMsJj93BD_Gmu0/edit?usp=sharing
+- Слайды по теме: https://docs.google.com/presentation/d/1BJOtQ5QKtVrGhgpWPkrYao29krP4iNMsJj93BD_Gmu0
 
 **Вопросы**
 1. Что такое декларативный язык?
@@ -231,7 +254,7 @@ https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e
 
 
 
-# Задание 6. Игра
+# ~~Задание 6. Игра~~
 *(Не обязательно. Если выполнено +1 к оценке на экзамене)*
 
 Любой объектно-ориентированный язык общего назначения на выбор.
