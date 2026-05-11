@@ -1,0 +1,31 @@
+@startuml
+skinparam shadowing true
+
+interface OfficeMachine {
+    +print(doc)
+    +scan(doc)
+    +fax(doc)
+}
+
+class SimplePrinter {
+    +print(doc)
+    +scan(doc)
+    +fax(doc)
+}
+
+class MultifunctionalDevice {
+    +print(doc)
+    +scan(doc)
+    +fax(doc)
+}
+
+OfficeMachine <|.. SimplePrinter
+OfficeMachine <|.. MultifunctionalDevice
+
+note right of SimplePrinter
+  Вынужден реализовывать
+  scan() и fax(),
+  хотя они не нужны
+end note
+
+@enduml

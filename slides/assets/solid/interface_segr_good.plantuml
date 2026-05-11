@@ -1,0 +1,37 @@
+@startuml
+skinparam shadowing true
+
+interface IPrinter {
+    +print(doc)
+}
+
+interface IScanner {
+    +scan(doc)
+}
+
+interface IFax {
+    +fax(doc)
+}
+
+class SimplePrinter {
+    +print(doc)
+}
+
+class MultifunctionalDevice {
+    +print(doc)
+    +scan(doc)
+    +fax(doc)
+}
+
+IPrinter <|.. SimplePrinter
+
+IPrinter <|.. MultifunctionalDevice
+IScanner <|.. MultifunctionalDevice
+IFax <|.. MultifunctionalDevice
+
+note right of SimplePrinter
+  Реализует только
+  нужный интерфейс
+end note
+
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+skinparam class {
+    BackgroundColor<<abstract>> #AAAAAA
+    BackgroundColor<<interface>> #CCCCCC
+    Shadowing true
+}
+
+abstract class Bird {
+    + eat()
+}
+
+interface Flyable {
+    + fly()
+}
+
+class Sparrow {
+    + fly()
+}
+
+class Penguin {
+    + swim()
+}
+
+class FlyingService {
+    + makeFly(Flyable bird)
+}
+
+Bird <|.. Sparrow
+Bird <|.. Penguin
+Flyable <|.. Sparrow
+Flyable <-- FlyingService
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+skinparam shadowing true
+
+abstract class Bird {
+    +fly()
+}
+
+class Sparrow {
+    +fly()
+}
+
+
+class Penguin {
+    +fly()
+    +swim()
+}
+
+class BirdService{
+    + makeBirdFly(Bird b);
+}
+
+
+
+Bird <|.. Sparrow
+
+Penguin <|.. Sparrow
+
+ Bird -->  BirdService
+
+@enduml
