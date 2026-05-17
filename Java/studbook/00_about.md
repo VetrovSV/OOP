@@ -5,22 +5,21 @@ Java — современный объектно‑ориентирован�
 
 todo: ссылка на доску excalidraw
 
-<img src="../../langs_timeline.png">
+<img src="../../langs_timeline.png" />
     
 <br>   
 
-<img src="img/00_intro/TIOBE_years_table.png">
+<img src="img/00_intro/TIOBE_years_table.png" />
     
 https://www.tiobe.com/tiobe-index/
 
 
-<img src="img/00_intro/SO_langs_2025.png">
+<img src="img/00_intro/SO_langs_2025.png" />
 
 https://survey.stackoverflow.co/2025/technology#most-popular-technologies
 
 
 См. также https://devecosystem-2025.jetbrains.com/
-
 
 ## Сравнение с C и Python
 | Аспект | C | Python | Java |
@@ -34,8 +33,6 @@ https://survey.stackoverflow.co/2025/technology#most-popular-technologies
 | **Инструменты и IDE** | gcc/clang, VS, gdb | PyCharm, VS Code, pip, virtualenv | IntelliJ IDEA, Eclipse, NetBeans, Maven, Gradle |
 | **Пакетные менеджеры / системы сборки** | make, cmake, pkg‑config, autotools | pip, conda, poetry, setuptools | Maven, Gradle, Ant, Maven Wrapper |
 
-
-
 ## Где используется Java?
 - **Корпоративные серверные приложения** (Spring, Jakarta EE)
 - **Мобильные приложения** (Android, хотя сейчас Kotlin доминирует)
@@ -44,13 +41,15 @@ https://survey.stackoverflow.co/2025/technology#most-popular-technologies
 - **Настольные (desktop) приложения** – классические GUI‑приложения с использованием Swing, JavaFX, JIDE, Vaadin (для гибридных) и других фреймворков. Java‑десктоп остаётся популярным в корпоративных инструментах, научных визуализациях и кроссплатформенных утилитах.
 
 ## Ключевые концепции, важные для понимания
-- **Классы и объекты** – всё в Java является объектом, кроме примитивов.
-- **Наследование, интерфейсы, полиморфизм** – базовые кирпичики ООП.
-- **Пакеты (`package`)** – организация кода и управление видимостью.
+- **Главный класс** с функцией `public static void main(String[] args)` – точка входа.
+- **Классы и объекты** – всё в Java является объектом, кроме примитивных типов (`int`, `boolean`, `float` …).
+- **Пакеты (`package`)** – способ группировать классы и управлять пространством имён.
 - **Исключения** – `try/catch/finally`, проверяемые и непроверяемые.
 - **Сборщик мусора** – автоматическое освобождение памяти, не требуется `free`.
-- **Генерики** – параметризованные типы, типобезопасность.
-- **Лямбда‑выражения и Stream API** (Java 8) – функциональный стиль.
+- **Обобщённые типы (generics)** – параметризованные типы, обеспечивающие типобезопасность.
+- **Лямбда‑выражения и Stream API** (начиная с Java 8) – функциональный стиль.
+- **JIT‑компиляция** – динамический перевод байт‑кода в машинный код во время выполнения, повышающий производительность.
+
 
 ## Краткая история развития
 - **1995** – первая версия (Java 1.0).
@@ -63,7 +62,7 @@ https://survey.stackoverflow.co/2025/technology#most-popular-technologies
 
 ## Важные библиотеки и фреймворки
 - **JUnit** – тестирование.
-- **JavaFX** – GUI‑фреймворк для создания приложений.
+- **JavaFX** – GUI‑фреймворк.
 - **Log4j / SLF4J** – логирование.
 - **Apache Commons** – набор готовых утилит.
 - **Maven / Gradle** – системы сборки и управления зависимостями.
