@@ -53,7 +53,7 @@ https://survey.stackoverflow.co/2025/technology#most-popular-technologies
 - **Лямбда‑выражения и Stream API** (Java 8) – функциональный стиль.
 
 ## Краткая история развития
-- **1995** – первая версия (Java 1.0).\
+- **1995** – первая версия (Java 1.0).
 - **1998** – Java 2 (J2SE 1.2) – введён пакетный механизм, коллекции.
 - **2004** – Java 5 – генераики, аннотации, автобоксинг.
 - **2006** – Java 6 – улучшения в API, скриптовый движок.
@@ -69,11 +69,7 @@ https://survey.stackoverflow.co/2025/technology#most-popular-technologies
 - **Maven / Gradle** – системы сборки и управления зависимостями.
 
 ## Литература и источники
-- *Effective Java* (Joshua Bloch) – лучшие практики.
-- *Java: The Complete Reference* (Herbert Schildt).
-- Официальная документация JDK <https://docs.oracle.com/en/java/>
-- Онлайн‑курсы: Coursera “Java Programming and Software Engineering Fundamentals”, Udemy “Java Programming Masterclass”.
-- Сообщества: Stack Overflow, Reddit r/java, Russian forum java‑forum.ru.
-
----
-*Этот раздел написан как быстрый справочник для студентов, знакомых с C и Python, чтобы быстро перейти к практической работе на Java.*
+- [Дорожная карта изучения Java](https://roadmap.sh/java)
+- Слайды: 
+  - https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU/edit?slide=id.g205b655ab26_0_1091#slide=id.g205b655ab26_0_1091
+  - https://docs.google.com/presentation/d/1pmOlWlulw2prFhPjn73f3SE6KCyYtW2jYux-aKugVcA/edit?slide=id.g1d57d625921_0_52#slide=id.g1d57d625921_0_52
