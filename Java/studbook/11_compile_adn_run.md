@@ -2,16 +2,24 @@
 
 ## Предварительные шаги
 
-1. **Установить JDK** (Java Development Kit). На Windows / macOS / Linux скачайте дистрибутив с официального сайта Oracle или любой другой.
+1. **Установить JDK** (Java Development Kit). На Windows / macOS / Linux скачайте дистрибутив с официального сайта Oracle или любой другой:
+  - OracleJDK https://www.oracle.com/java/technologies/downloads/
+  - OpenJDK: https://openjdk.org/
 
+  &nbsp;
+
+  
 2. **Добавить `bin`‑директорию JDK в `PATH`** — так вы сможете использовать `javac` и `java` из любой папки.
+
+  &nbsp;
 
 3. Проверить установку и доступность компилятора и JRE:
   ```sh
   java   --version   # → вывод версии JRE (исполняет код)
   javac  --version   # → вывод версии компилятора
   ```
-  Если команды не найдены, проверьте переменную `PATH`.
+  Если команды не найдены, проверьте переменную окружения `PATH`.
+
 
 ## Компиляция одного файла
 
