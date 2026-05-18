@@ -41,7 +41,6 @@
 - Стандартный ввод/вывод: `System.out.println`, `System.err`, `Scanner`
 - Форматированный вывод: `System.out.printf`, `format`
 - Чтение из консоли с `Scanner`, типы методов (`nextInt`, `nextLine` и т.д.)
-- Работа с файлами (класс `File` как представление пути, атрибуты)
 
 
 ## 3. Управляющие конструкции
@@ -56,7 +55,18 @@
 - **Пример:** "Перебор массивов с for‑each"
 - **Пример:** "Switch с arrow‑syntax"
 
-## 4. [Массивы и строки](studbook/40_arrays.md)
+
+## 4. Управление памятью и оператор `new`
+- Зачем понимать, как устроена память?
+- [Три области памяти в JVM](studbook/20_memory.md): стек, куча, статическая область (Metaspace)
+- Оператор `new`: выделение памяти в куче, создание объектов и массивов
+- Примитивы vs ссылки на объекты
+- Сборщик мусора (Garbage Collector) и сравнение с `malloc`/`free` в C
+- Передача параметров по значению
+- **Раздел:** [Управление памятью и оператор `new`](studbook/20_memory.md)
+
+
+## 5. [Массивы и строки](studbook/40_arrays.md)
 - Объявление, инициализация, размеры, индексация, границы массива
 - Одномерные и многомерные массивы, «рэгги‑массивы»
 - Копирование массивов: `System.arraycopy`, `Arrays.copyOf`, `clone()`
@@ -67,7 +77,7 @@
 - **Пример:** "Создание и копирование двумерного массива"
 - **Пример:** "StringBuilder для построения запросов"
 
-## 5. Методы (функции) и параметры
+## 6. Методы (функции) и параметры
 - Синтаксис объявления, сигнатура, тип возвращаемого значения
 - Параметры по значению (примитивы) и передачa ссылок (объекты)
 - Параметры переменной длины (`varargs`), их использование и ограничения
@@ -79,7 +89,7 @@
 - **Пример:** "Varargs: summation of arbitrary numbers"
 - **Ресурсы:** раздел «Methods» в официальном учебнике, курс Coursera "Fundamentals of Java Programming" (модуль «Methods & Parameters»)
 
-## 10. Пакетирование и модульность
+## 11. Пакетирование и модульность
 - Организация кода в пакеты, соглашения по именованию (`com.company.project`) 
 - Директива `package` в начале файла, правило «один публичный класс на файл»
 - Импорт классов: `import`, `import static`
@@ -89,7 +99,7 @@
 - **Пример:** "Пакет com.example.utils с классом StringUtils"
 - **Пример:** "module-info.java с requires java.base; exports com.example.app;"
 
-## 6. Файловый Ввод‑вывод
+## 7. Файловый Ввод‑вывод
 - Стандартный ввод/вывод: `System.out.println`, `System.err`, `Scanner`
 - Форматированный вывод: `System.out.printf`, `format`
 - Чтение из консоли с `Scanner`, типы методов (`nextInt`, `nextLine` и т.д.)
@@ -101,7 +111,7 @@
 - Работа с директориями, проверка существования, создание, удаление
 - **Примеры:** запись массива в файл, чтение файла до конца.
 
-## 7. Обработка исключений
+## 8. Обработка исключений
 - Иерархия `Throwable` → `Error` vs `Exception`
 - Проверяемые (`checked`) исключения (`IOException`, `SQLException`), непроверяемые (`unchecked`) (`NullPointerException`, `IllegalArgumentException`)
 - Блоки `try`, `catch`, `finally`
@@ -114,7 +124,7 @@
 - **Пример:** "Пользовательское CheckedException для валидации"
 - **Ресурсы:** глава «Exceptions» в книге "Effective Java", курс Coursera "Fundamentals of Java Programming" (секция «Exception Handling»)
 
-## 8. Коллекции и обобщения (Generics)
+## 9. Коллекции и обобщения (Generics)
 - Интерфейсы коллекций: `Collection`, `List`, `Set`, `Map`
 - Реализации: `ArrayList`, `LinkedList`, `Vector`, `HashSet`, `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`
 - Итерация: `Iterator`, `for‑each`, `ListIterator`
@@ -127,7 +137,7 @@
 - **Пример:** "Generic метод swapElements(T[] array, int i, int j)"
 - **Ресурсы:** официальное руководство Oracle "Collections Framework", курс Udemy "Java Collections: Mastering the Core API"
 
-## 11. Инструменты разработки и сборки
+## 10. Инструменты разработки и сборки
 - Компиляция: `javac MyClass.java` (опции `-d`, `-classpath`)
 - Запуск: `java com.example.Main`
 - IDE: IntelliJ IDEA (основные функции: рефакторинг, автодополнение), Eclipse, VS Code с расширением Java

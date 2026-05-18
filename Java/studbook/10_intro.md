@@ -160,7 +160,7 @@ boolean isReady = true;
 ```java
 import java.util.Scanner;
 
-Scanner sc = new Scanner(System.in);
+Scanner sc = new Scanner(System.in); // new — создаёт объект Scanner
 System.out.print("Введите целое число: ");
 int a = sc.nextInt();
 
