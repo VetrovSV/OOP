@@ -231,6 +231,32 @@ import static java.lang.Math.PI;     // подключение конкретн�
 float y = sin(PI);
 ```
 
+### Стандартная библиотека Java (Java Class Library)
+
+Стандартная библиотека Java (Java Class Library, JCL) — это набор пакетов с классами и интерфейсами, которые доступны в любой реализации Java. Имена пакетов составные (например, `java.util.regex`), потому что пакеты могут быть вложенными: пакет `java.util.regex` является подпакетом пакета `java.util`. 
+
+Пакет — это пространство имён, которое соответствует иерархии каталогов на диске. В Java 9+ появилась система модулей (JPMS), где модуль — это группа связанных пакетов, описываемая в файле `module-info.java`. Отдельные файлы `.java` модулями не являются — они содержат классы, которые входят в состав пакетов, а пакеты, в свою очередь, могут быть объединены в модули.
+
+Ниже перечислены основные пакеты стандартной библиотеки:
+
+- **java.lang**. Содержит классы, которые подключаются автоматически (без `import`): `String`, `Math`, `System`, `Integer`, `Double`, `Thread`, `Throwable` и др.
+- **java.util**. Содержит коллекции (`List`, `Set`, `Map`, `Queue`), и различные классы, необходимые почти в любом коде `Scanner`, `Random`, `Date`, `Optional` и др.
+- **java.util.regex**. Регулярные выражения: `Pattern`, `Matcher`.
+- **java.util.function**. Функциональные интерфейсы для лямбда-выражений и Stream API: `Function`, `Predicate`, `Consumer`, `Supplier`.
+- **java.io**. Потоки ввода-вывода (байтовые и символьные): `InputStream`, `OutputStream`, `Reader`, `Writer`, `File`.
+- **java.util.stream**. Stream API для функциональной обработки коллекций: `Stream`, `IntStream`, `Collectors`.
+- **java.nio**. Неблокирующий ввод-вывод (New I/O): `Buffer`, `Channel`, `Path`, `Files`.
+- **java.net**. Сетевые возможности: `URL`, `Socket`, `ServerSocket`, `HttpURLConnection`.
+- **java.math**. Математические операции произвольной точности: `BigInteger`, `BigDecimal`.
+- **java.time**. Дата и время (Java 8+): `LocalDate`, `LocalTime`, `LocalDateTime`, `Duration`, `Period`.
+- **java.sql**. Работа с базами данных через JDBC: `Connection`, `Statement`, `ResultSet`.
+- **java.awt**. Базовые элементы графического интерфейса (минимальный набор возможностей для создания GUI): `Component`, `Container`, `Graphics`, `Color`.
+- **javax.swing**. Расширенный набор GUI-компонентов (Swing, менее предпочтителен чем JavaFX): `JFrame`, `JButton`, `JTextField`.
+- **java.text**. Форматирование чисел, дат и текста: `NumberFormat`, `DateFormat`, `SimpleDateFormat`.
+- **java.lang.reflect**. Рефлексия — возможность исследовать классы во время выполнения: `Class`, `Method`, `Field`, `Constructor`.
+- **java.lang.annotation**. Работа с аннотациями: `Annotation`, `Retention`, `Target`.
+- **java.security**. Криптография и управление доступом: `MessageDigest`, `KeyStore`, `Permission`.
+
 #### 6. Математическая библиотека Java
 - Официальная справка (англ.): <https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Math.html>
 - Русскоязычное руководство: <https://javaer.ru/learn/java-docs/java-lang-math/>
