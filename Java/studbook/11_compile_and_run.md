@@ -246,7 +246,7 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my_project_name 
   </properties>
 ```
 
-Далее все операции должны происходит из папки в pom файлом.
+Далее все операции должны происходит из папки с pom файлом.
 
 Компиляция
 ```bash
