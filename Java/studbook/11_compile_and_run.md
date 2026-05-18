@@ -253,6 +253,8 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my_project_name 
 mvn compile
 ```
 
+Важно, чтобы доступная в JAVA_HOME версия JDK совпадала с той, что указана в `pom.xml` файле или была более новой.
+
 Запуск тестов (включает compile)
 ```bash
 mvn test
