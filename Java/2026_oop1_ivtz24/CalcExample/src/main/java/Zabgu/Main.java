@@ -8,29 +8,28 @@ import java.util.Scanner;
 
 public class Main {
 
+
+    // главный метод (функция) программы
     public static void main(String[] args) {
 
+        // Создадим переменную для считывания данных с консоли
         Scanner input = new Scanner(System.in);
 
-        // масса в кг
-        double m;
+        double m;   // масса в кг
+        double h;   // рост в метрах
+        double I;   // индекс массы тела
 
         System.out.printf("Введите массу в кг:");
-        m = input.nextDouble();
-
-        // рост в метрах
-        double h;
+        m = input.nextDouble();     // считываем вещественное число, которое ввел пользователь
 
         System.out.printf("Введите рост в метрах:");
         h = input.nextDouble();
-
-        // индекс массы тела
-        double I;
 
 //        I = m / ( h*h );
         I = m / Math.pow(h, 2.0);
 
         System.out.printf("Индекс массы тела: %.1f", I);
+        // %.1f - выводим вещественное число с одним знаком после запятой
 
     }
 }
