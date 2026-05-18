@@ -181,6 +181,8 @@ if (!sc.hasNextInt()) {
 ```
 
 ## 5. Примеры
+
+
 1. **Площадь прямоугольника**
    ```Java
    Scanner sc = new Scanner(System.in);
@@ -191,6 +193,8 @@ if (!sc.hasNextInt()) {
    double area = w * h;
    System.out.printf("Площадь = %.2f\n", area);
    ```
+
+Пример полной программы: [Java/2026_oop1_ivtz24/CalcExample](../2026_oop1_ivtz24/CalcExample/)
 
 ## 6. Подключение пакетов
 
