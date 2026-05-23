@@ -2,7 +2,10 @@ package com.example.multywindow;
 // Контроллер второго (основного) окна программы
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Label;z
+
+
+ // класс для хранения результатов запроса
 
 public class WindowMain {
 
