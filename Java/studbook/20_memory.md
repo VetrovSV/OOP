@@ -93,12 +93,40 @@ Scanner sc = new Scanner(System.in);
 
 Схематично:
 
-```
-Стек:                        Куча:
-┌──────────────┐            ┌───────────────────┐
-│  sc          │ ─────────→ │  Scanner           │
-│  (ссылка)    │            │   ...              │
-└──────────────┘            └───────────────────┘
+```mermaid
+flowchart TD
+    subgraph Metaspace [Metaspace — Статическая память]
+        direction TB
+        MD[Метаданные классов]
+        SF["static appName = 'MyApp'"]
+        MD --- SF
+    end
+
+    subgraph Heap [Heap — Куча]
+        direction TB
+        OBJ1[Объект Scanner]
+        OBJ2["Массив int[10]"]
+        OBJ3["String 'Hi'"]
+    end
+
+    subgraph Stack [Stack — Стек]
+        direction TB
+        subgraph Frame [Фрейм метода example]
+            V1["int x = 10"]
+            V2["String s (ссылка)"]
+            V3["Scanner sc (ссылка)"]
+            V4["int[] arr (ссылка)"]
+        end
+    end
+
+    V2 -.->|адрес| OBJ3
+    V3 -.->|адрес| OBJ1
+    V4 -.->|адрес| OBJ2
+
+    style Metaspace fill:#f9f,stroke:#333,stroke-width:1px
+    style Heap fill:#bbf,stroke:#333,stroke-width:1px
+    style Stack fill:#bfb,stroke:#333,stroke-width:1px
+    style Frame fill:#eee,stroke:#999,stroke-dasharray: 5 5
 ```
 
 ### Для чего нужен `new`?
