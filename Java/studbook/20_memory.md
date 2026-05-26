@@ -7,6 +7,30 @@ Java занимает промежуточную позицию. Памятью 
 но понимать, **где** и **как** хранятся данные, необходимо, чтобы писать эффективный и корректный код.
 
 
+```mermaid
+flowchart TB
+
+    subgraph row1[" "]
+        direction LR
+        Stack["Стек (Stack)"] ~~~ s_ex["int x = 10 | String s (ссылка) | Scanner sc (ссылка)"]
+    end
+
+    subgraph row2[" "]
+        direction LR
+        Heap["Куча (Heap)"] ~~~ h_ex["new Scanner() | new int[10] | \"Hi\" (объект)"]
+    end
+
+    subgraph row3[" "]
+        direction LR
+        Meta["Metaspace"] ~~~ m_ex["static String appName | class Scanner { … }"]
+    end
+
+    row1 ~~~ row2
+    row2 ~~~ row3
+```
+
+---
+
 ## 1. Три области памяти в JVM
 
 ### Стек (Stack)
