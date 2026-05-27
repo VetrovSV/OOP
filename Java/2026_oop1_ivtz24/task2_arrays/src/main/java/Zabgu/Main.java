@@ -5,44 +5,54 @@ import java.lang.Math;
 import java.util.Random;
 
 
+// Дан массив a из N чисел
+// Преобразовать эл-ты массива по формуле: a[i] = log2( a[i] +1  )
+
+
 
 public class Main {
+
+
     public static void main(String[] args) {
 
-        // генератор случайных чисел
-        Random r = new Random();
+        // ToDo: сделать тесты для функции random_fill_array
 
+        // Определение переменной -- объявление + инициализация
+        // Объявление переменной r типа Random: Random r
+        Random r = new Random();            // генератор случайных чисел
+        // new -- выделением памити для переменной
+        // Random() -- инициализация переменной
+
+        // Определение переменной N типа int, 51 -- начальное значение
+        // Инициализация -- задание начального значения
         int N = 51;
 
         // объявление массива и выделение памяти под массив
-        double[] a = new double[ N ];
+        double[] a = ArraysFunctions.random_fill_array( N );
 
-        // Задача: Заполнить массив случайными числами
-        for ( int i = 0; i<N; i++ ) {
-            a[i] = r.nextInt();
-        }
+        System.out.println("Массив после заполнения случайными числами: ");
+        ArraysFunctions.print_array( a );
+        System.out.println("");
 
 
-//        // Задача: Заполнить массив a числами по формуле
-//        // a[i] = log2( i+1 ), где i = 1, 52
-//        // Заполнение массива
-//        for ( int i = 0; i<N; i++ ){
-//            a[i] = Math.log(i+1) / Math.log(2.0);
-//            // запись числа i в массив a по индексу i ( a[i] )
-//        }
+        System.out.println("Массив после заполнения случайными числами: ");
+        ArraysFunctions.print_array( a );
+        System.out.println("");
 
-        // Вывод массива на экран
-        System.out.println("Массив: ");
+        // Заполнение массива
         for ( int i = 0; i<N; i++ ){
-
-            System.out.printf("%14.2f ", a[i] );
-            // если остаток от деления на 10 равен 9, то переходим на новую строку
-            if ( i % 10 == 9 )    System.out.print("\n");
+            a[i] = Math.log( a[i] + 1) / Math.log(2.0);
+            // запись числа i в массив a по индексу i ( a[i] )
         }
 
+        System.out.println("Массив после преобразования: ");
+        ArraysFunctions.print_array( a );
+        System.out.println("");
 
 
-        }
+
+
+    }
     }
 //
 //// Условный оператор
