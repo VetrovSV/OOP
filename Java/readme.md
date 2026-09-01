@@ -12,7 +12,7 @@
 - Использование коллекций и generics.
 - Навыки работы с IDE, компиляцией, Maven/Gradle и юнит‑тестированием.
 
-Эти результаты позволяют студенту уверенно переходить к более продвинутым темам.
+Слайды: https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
 
 ## 1. [Введение в Java](studbook/10_intro.md)
 - История языка, эволюция (от Java 1 до Java 21) и место в индустрии
