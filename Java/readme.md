@@ -14,7 +14,7 @@
 
 Слайды: https://docs.google.com/presentation/d/14Y8LWzVeChUyjaKhb6rgELdWJR58B2YGUIukeZ-e3PU
 
-Задания: [tasks_java.md](tasks_java.md)
+Задания: [tasks_java.md](../plans/tasks_java.md)
 
 ## 1. [Введение в Java](studbook/10_intro.md)
 - История языка, эволюция (от Java 1 до Java 21) и место в индустрии
