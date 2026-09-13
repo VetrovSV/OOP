@@ -34,10 +34,9 @@
 - [Примитивные типы](studbook/10_intro.md): `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`
 - [Диапазоны, переполнение, приведение типов, автоматическое расширение](studbook/12_expr_cast.md)
 - [Random](studbook/12_expr_cast.md)
-- Объектные обёртки (`Byte`, `Short`, `Integer`, `Long`, `Float`, `Double`, `Character`, `Boolean`)
-- Автоупаковка/автораспаковка, сравнение `==` vs `.equals()`
+- Объектные обёртки (`Byte`, `Short`, `Integer`, `Long`, `Float`, `Double`, `Character`, `Boolean`). Автоупаковка/автораспаковка для числовых типов-обёрток, сравнение `==` vs `.equals()`
 - Ключевое слово `var` (type inference, Java 10+)
-- Константы `final`, иммутабельность
+- Константы `final`, иммутабельность (неизменяемость)
 - Инициализация переменных, локальные vs поля класса
 
 
@@ -72,7 +71,7 @@
 
 ## 5. [Массивы и строки](studbook/40_arrays.md)
 - Объявление, инициализация, размеры, индексация, границы массива
-- Одномерные и многомерные массивы, «рэгги‑массивы»
+- Одномерные и многомерные массивы, ступенчатые массивы
 - Копирование массивов: `System.arraycopy`, `Arrays.copyOf`, `clone()`
 - Класс `String`: иммутабельность, пул строк, интернирование
 - Основные методы `length()`, `charAt()`, `substring()`, `indexOf()`, `contains()`, `startsWith()`, `endsWith()`
@@ -81,30 +80,33 @@
 - **Пример:** "Создание и копирование двумерного массива"
 - **Пример:** "StringBuilder для построения запросов"
 
+
 ## 6. Методы (функции) и параметры
 - Синтаксис объявления, сигнатура, тип возвращаемого значения
 - Параметры по значению (примитивы) и передачa ссылок (объекты)
-- Параметры переменной длины (`varargs`), их использование и ограничения
+- *Параметры переменной длины (`varargs`), их использование и ограничения*
 - `static` методы, `final` методы, `abstract` методы (знакомство)
 - `static import` для упрощения вызова утилит (`import static java.lang.Math.*;`)
 - Перегрузка методов, различие по типу и количеству параметров
 - Принцип единственной ответственности (SRP) при проектировании методов
+- Тестирование методов (assert, флаг JRE `-ea`)
 - **Пример:** "Перегрузка метода calculateArea"
 - **Пример:** "Varargs: summation of arbitrary numbers"
 - **Ресурсы:** раздел «Methods» в официальном учебнике, курс Coursera "Fundamentals of Java Programming" (модуль «Methods & Parameters»)
 
-## 11. Пакетирование и модульность
+## 7. Пакеты и модульность
+- **Шпаргалка:** [топ пакетов для начинающих и справочник методов](studbook/16_packages.md#шпаргалка-самые-полезные-классы-и-методы) (`String`, `Math`, `Scanner`, `ArrayList`, `HashMap`, `Files` и др.)
 - Организация кода в пакеты, соглашения по именованию (`com.company.project`) 
 - Директива `package` в начале файла, правило «один публичный класс на файл»
 - Импорт классов: `import`, `import static`
 - Пример конфликтов имен и использования полного квалификатора
 - Кратко о системе модулей Java 9 (`module-info.java`), имена модулей, `requires`, `exports`
 - При необходимости: как собрать проект без модулей (classpath) и с модулями (modulepath)
-- **Шпаргалка:** [топ пакетов для начинающих и справочник методов](studbook/16_packages.md#шпаргалка-самые-полезные-классы-и-методы) (`String`, `Math`, `Scanner`, `ArrayList`, `HashMap`, `Files` и др.)
 - **Пример:** "Пакет com.example.utils с классом StringUtils"
 - **Пример:** "module-info.java с requires java.base; exports com.example.app;"
 
-## 7. Файловый Ввод‑вывод
+
+## 8. Файловый Ввод‑вывод
 - Стандартный ввод/вывод: `System.out.println`, `System.err`, `Scanner`
 - Форматированный вывод: `System.out.printf`, `format`
 - Чтение из консоли с `Scanner`, типы методов (`nextInt`, `nextLine` и т.д.)
@@ -115,6 +117,7 @@
 - Современный API NIO: `Path`, `Files.readAllLines`, `Files.write`, `Files.copy`
 - Работа с директориями, проверка существования, создание, удаление
 - **Примеры:** запись массива в файл, чтение файла до конца.
+
 
 ## 8. Обработка исключений
 - Иерархия `Throwable` → `Error` vs `Exception`
@@ -129,6 +132,7 @@
 - **Пример:** "Пользовательское CheckedException для валидации"
 - **Ресурсы:** глава «Exceptions» в книге "Effective Java", курс Coursera "Fundamentals of Java Programming" (секция «Exception Handling»)
 
+
 ## 9. Коллекции и обобщения (Generics)
 - Интерфейсы коллекций: `Collection`, `List`, `Set`, `Map`
 - Реализации: `ArrayList`, `LinkedList`, `Vector`, `HashSet`, `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`
@@ -141,6 +145,7 @@
 - **Пример:** "HashMap для словаря слов и определений"
 - **Пример:** "Generic метод swapElements(T[] array, int i, int j)"
 - **Ресурсы:** официальное руководство Oracle "Collections Framework", курс Udemy "Java Collections: Mastering the Core API"
+
 
 ## 10. Инструменты разработки и сборки
 - Компиляция: `javac MyClass.java` (опции `-d`, `-classpath`)
