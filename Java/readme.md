@@ -27,16 +27,18 @@
   - Настройки компиляции (File > Project Structure) и запуска (Run > Edit Configuration...). Версия JDK для сборки и запуска. Скачивание JDK.
   - Режимы запуска. Отладка.
   - Настройка IDE. Размер текста.
+- [Пакеты и стандартная библиотека](studbook/16_packages.md): `import`, `import static`, JCL, шпаргалка по классам
 
 ## 2. Примитивные типы данных, переменные и константы
 - Hello World.
 - [Примитивные типы](studbook/10_intro.md): `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`
 - [Диапазоны, переполнение, приведение типов, автоматическое расширение](studbook/12_expr_cast.md)
+- [Random](studbook/12_expr_cast.md)
 - Объектные обёртки (`Byte`, `Short`, `Integer`, `Long`, `Float`, `Double`, `Character`, `Boolean`)
 - Автоупаковка/автораспаковка, сравнение `==` vs `.equals()`
 - Ключевое слово `var` (type inference, Java 10+)
 - Константы `final`, иммутабельность
-- Инициализация переменных, локальные vs полевые
+- Инициализация переменных, локальные vs поля класса
 
 
 ## 3. Консольный ввод‑вывод
@@ -98,6 +100,7 @@
 - Пример конфликтов имен и использования полного квалификатора
 - Кратко о системе модулей Java 9 (`module-info.java`), имена модулей, `requires`, `exports`
 - При необходимости: как собрать проект без модулей (classpath) и с модулями (modulepath)
+- **Шпаргалка:** [топ пакетов для начинающих и справочник методов](studbook/16_packages.md#шпаргалка-самые-полезные-классы-и-методы) (`String`, `Math`, `Scanner`, `ArrayList`, `HashMap`, `Files` и др.)
 - **Пример:** "Пакет com.example.utils с классом StringUtils"
 - **Пример:** "module-info.java с requires java.base; exports com.example.app;"
 
