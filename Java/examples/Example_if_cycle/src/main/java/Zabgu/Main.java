@@ -7,31 +7,14 @@ import java.util.Scanner;
 
 import java.math.*;
 
+
 public class Main {
-
-    // определение функции
-
-    /// Вычисляет и возвращает сумму ряда, где слагаемое вычисляется по формуле:
-    /// ln(i) * cos( 3*i*w ) / (i!+1), i = 1...N,
-    static double sum(double w, int N)     // заголовок функции
-    // тело функции
-    {
-        // формальные аргументы (параметры) - w, N
-        // Локальнеы переменные:
-        double S = 0.0, a = 0.0;
-        double f = 1.0;
-
-        for ( int i = 1; i<=N; i++){
-            f = f * i;
-            a = Math.log( i ) * Math.cos ( 3.0 * i * w ) / (f + 1.0);
-            S = S + a;}
-
-        // возврат значения из функции
-        return S;
-    }
 
 
     public static void main(String[] args) {
+
+        CustomMath.test_sum();
+
 
         // Локальнеы переменные:
         double S = 0.0, x = 0.0;
@@ -45,7 +28,7 @@ public class Main {
         n = sc.nextInt();
 
         // вызов функции
-        S = sum(x, n);
+        S = CustomMath.sum(x, n);
         // фактические аргументы (параметры) - x, n;
 
 
