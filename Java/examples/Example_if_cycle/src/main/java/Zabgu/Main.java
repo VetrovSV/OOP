@@ -5,8 +5,6 @@ import java.util.Scanner;
 // Найти сумму для i = 1...n, где слагаемое:
 // ln(i) * cos( 3*i*x ) / (i!+1)
 
-import java.math.*;
-
 
 public class Main {
 
@@ -28,7 +26,7 @@ public class Main {
         n = sc.nextInt();
 
         // вызов функции
-        S = CustomMath.sum(x, n);
+        S = CustomMath.sum_of_series(x, n);
         // фактические аргументы (параметры) - x, n;
 
 
