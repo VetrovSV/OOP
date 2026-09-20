@@ -269,6 +269,41 @@ graph TD
 | **Unchecked** | `RuntimeException` | Программист | `NullPointerException` | Нет |
 | **Checked** | `Exception` | Внешняя среда | `IOException` | **Да** |
 
+
+### Часто встречающиеся исключения Java
+
+Некоторые исключения возникают настолько часто, что их стоит знать «в лицо». В таблице ниже — самые распространённые, сгруппированные по категориям.
+
+#### Исключения, которые выбрасывает JVM (ошибки времени выполнения)
+
+Эти исключения возникают сами собой, когда код делает что-то недопустимое. Их не нужно объявлять в `throws` — они unchecked.
+
+| Исключение | Когда возникает | Типичный пример |
+| :--- | :--- | :--- |
+| `NullPointerException` | Обращение к методу или полю объекта по ссылке `null` | `String s = null; s.length();` |
+| `ArrayIndexOutOfBoundsException` | Индекс за пределами массива | `int[] a = {1,2}; a[5] = 0;` |
+| `ArithmeticException` | Арифметическая ошибка (деление на ноль) | `int x = 10 / 0;` |
+| `ClassCastException` | Неудачное приведение типа | `Object o = "str"; Integer i = (Integer) o;` |
+| `NumberFormatException` | Строку нельзя преобразовать в число | `Integer.parseInt("abc");` |
+| `IllegalArgumentException` | Методу передан некорректный аргумент | см. следующий раздел |
+| `IndexOutOfBoundsException` | Индекс вне границ (общий случай) | `new ArrayList<>().get(10);` |
+| `ConcurrentModificationException` | Коллекция изменяется во время итерации | `for (var x : list) { list.remove(x); }` |
+
+#### Исключения, которые программисты бросают сами (ручная валидация)
+
+Эти исключения программист создаёт и выбрасывает через `throw`, когда проверяет предусловия или бизнес-правила.
+
+| Исключение | Когда бросают | Пример |
+| :--- | :--- | :--- |
+| `IllegalArgumentException` | Аргумент функции не проходит проверку | `if (age < 0) throw new IllegalArgumentException(...)` |
+| `IllegalStateException` | Объект находится в неподходящем состоянии | `if (!isOpen) throw new IllegalStateException("Connection closed")` |
+| `UnsupportedOperationException` | Вызван метод, который не поддерживается реализацией | `throw new UnsupportedOperationException("not implemented yet")` |
+| `NoSuchElementException` | Элемент не найден (итератор, коллекция) | `if (!found) throw new NoSuchElementException(...)` |
+| `IOException` (checked) | Ошибка ввода-вывода | `throw new IOException("File not found")` |
+
+> **Разница простая:** `NullPointerException`, `ArrayIndexOutOfBoundsException` и `ArithmeticException` JVM выбрасывает сама, когда код нарушает правила языка. А `IllegalArgumentException`, `IllegalStateException` и `UnsupportedOperationException` — это инструменты для самого программиста: он явно пишет `throw new ...`, чтобы сигнализировать о нарушении контракта функции.
+
+
 ## 3. Обработка исключений: `try-catch-finally`
 
 Для перехвата исключений используется конструкция `try-catch`.
@@ -404,7 +439,7 @@ public class BankAccount {
 
 ## 7. Практические рекомендации и антипаттерны
 
-### ❌ Антипаттерны
+### Антипаттерны
 
 1. **«Поглощение» исключений**
 
@@ -428,7 +463,7 @@ public class BankAccount {
 
     Конструкции `catch (Throwable t)` или слишком общий `catch (Exception e)` затрудняют отладку, потому что вместе с ожидаемыми ошибками перехватываются и ошибки, которые программа не должна обрабатывать.
 
-### ✅ Рекомендации
+### Рекомендации
 
 - **Будьте специфичны.** Перехватывайте максимально конкретные исключения.
 - **Не используйте исключения для управления обычной логикой.** Исключения предназначены для *исключительных* ситуаций, а не для обычных условий. Например, вместо `try-catch` для проверки наличия файла используйте `Files.exists()`.
