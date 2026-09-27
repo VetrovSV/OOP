@@ -251,6 +251,8 @@ graph TD
 | **Unchecked** | `RuntimeException` | Программист | `NullPointerException` | Нет |
 | **Checked** | `Exception` | Внешняя среда | `IOException` | **Да** |
 
+
+![](img/exceptions_hierarchy.png)
 ### Часто встречающиеся исключения Java
 
 Некоторые исключения возникают настолько часто, что их стоит знать «в лицо». В таблице ниже — самые распространённые, сгруппированные по категориям.
