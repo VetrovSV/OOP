@@ -2,11 +2,37 @@
 
 ## Мотивация
 
-Программа, которая ничего не сохраняет может быть бесполезна: после закрытия консоли все результаты исчезают. Файлы позволяют хранить данные между запусками программы и обмениваться ими с другими программами.
+Программа, которая ничего не сохраняет может быть бесполезна. После закрытия консоли все результаты исчезают. Файлы позволяют хранить данные между запусками программы и обмениваться ими с другими программами.
 
 Файлы также позволяют хранить и обрабатывать гораздо большие объёмы данных, чем это позволяет вместить оперативная память.
 
 В C работа с файлами — это связка `fopen` → `fprintf`/`fscanf` → `fclose`. Каждую операцию нужно проверять на ошибку, а про закрытие файла легко забыть. В Python проще: `open()` + `with` закрывает файл автоматически. В Java используется похожий на Python подход: классы из пакета `java.io`, исключения `IOException` и конструкция `try-with-resources`, которая сама закрывает файл.
+
+## Краткая справка
+
+Ссылки ведут на документацию Java SE 20. Все открытые в примерах файлы закрывайте через `try-with-resources`.
+
+- [`java.io.FileWriter`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/io/FileWriter.html) — записывает текст в файл.
+  - `new FileWriter("data.txt")` — открыть файл (создать или перезаписать существующий).
+  - `new FileWriter("data.txt", true)` — открыть файл в режиме дополнения (дописывать в конец).
+  - `writer.write("Привет")` — записать текст; перевод строки добавляется отдельно, например `writer.write("\n")`.
+- [`java.io.PrintWriter`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/io/PrintWriter.html) — удобная запись чисел и форматированного текста.
+  - `out.println(42)` — записать значение и перейти на новую строку.
+  - `out.printf("Среднее: %.2f%n", average)` — записать форматированный текст.
+- [`java.io.File`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/io/File.html) — хранит путь и позволяет проверить сведения о файле; сам файл не открывает.
+  - `File file = new File("data.txt")` — создать объект-путь.
+  - `file.exists()` — проверить, существует ли файл; `file.isFile()` — является ли он файлом.
+- [`java.util.Scanner`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/Scanner.html) — читает значения из файла / консоли.
+  - `sc.hasNext() -> boolean` — проверить, доступно ли следующее значение.
+  - `sc.next() -> String` — прочитать строку.
+  - `sc.hasNextInt() -> boolean` — проверить, доступно ли следующее целое число.
+  - `sc.nextInt() -> int` — прочитать целое число.
+- [`java.io.BufferedReader`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/io/BufferedReader.html) — читает текст построчно.
+  - `reader.readLine() -> String` — прочитать строку; вернуть `null` в конце файла.
+- [`java.io.FileReader`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/io/FileReader.html) — читает символы из файла; обычно используется вместе с `BufferedReader`: `new BufferedReader(new FileReader("data.txt"))`.
+- [`java.io.IOException`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/io/IOException.html) — исключение при ошибках ввода-вывода; его можно обработать или объявить через `throws IOException`.
+- [`java.lang.System`](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/lang/System.html) — `System.getProperty("user.dir")` возвращает рабочую папку программы.
+
 
 
 ## 1. Текстовые и бинарные файлы
@@ -56,7 +82,7 @@ public class Main {
 > **Важно.** Если файл уже существует, открытие на запись **стирает** его содержимое. Чтобы дописывать в конец, передайте второй аргумент: `new FileWriter("hello.txt", true)`.
 
 
-## Имена файлов
+## Имена файлов и рабочая папка
 
 **Относительное имя**, например `data/input.txt`, задаёт путь от **рабочей (текущей) папки** программы.
 
@@ -74,6 +100,7 @@ public class Main {
 В IntelliJ IDEA рабочая папка задаётся в конфигурации запуска: **Run → Edit Configurations… → Working directory**. Проверьте это значение: часто там указана папка проекта, но оно зависит от конфигурации.
 
 
+<img src="img/50_files/IDEA_working_dir.png" alt="IDEA_working_dir.png">
 
 
 
