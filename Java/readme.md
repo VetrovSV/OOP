@@ -110,7 +110,7 @@
 - **Пример:** "module-info.java с requires java.base; exports com.example.app;"
 
 
-## 8. Файловый Ввод‑вывод
+## 8. [Файловый Ввод‑вывод](studbook/50_files.md)
 - Стандартный ввод/вывод: `System.out.println`, `System.err`, `Scanner`
 - Форматированный вывод: `System.out.printf`, `format`
 - Чтение из консоли с `Scanner`, типы методов (`nextInt`, `nextLine` и т.д.)
