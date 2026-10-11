@@ -22,7 +22,7 @@
 - Сравнение с C (компиляция, управление памятью) и Python (динамичность, синтаксис)
 - Основные инструменты разработки (IDE, консоль, сборщики)
   - Версии. Скачивание. Скачивание JDK.
-  - Создание проектов в IDE. Компиляция и запуск. 
+  - Создание проектов в IDE. Компиляция и запуск.
   - Устройство IDE. Панель проекта. Состав проекта. Главный файл. Исполняемый файл проекта. Панель структуры кода.
   - Настройки компиляции (File > Project Structure) и запуска (Run > Edit Configuration...). Версия JDK для сборки и запуска. Скачивание JDK.
   - Режимы запуска. Отладка.
@@ -92,7 +92,7 @@
 - **Ресурсы:** раздел «Methods» в официальном учебнике, курс Coursera "Fundamentals of Java Programming" (модуль «Methods & Parameters»)
 
 ## 11. Пакетирование и модульность
-- Организация кода в пакеты, соглашения по именованию (`com.company.project`) 
+- Организация кода в пакеты, соглашения по именованию (`com.company.project`)
 - Директива `package` в начале файла, правило «один публичный класс на файл»
 - Импорт классов: `import`, `import static`
 - Пример конфликтов имен и использования полного квалификатора
@@ -100,6 +100,7 @@
 - При необходимости: как собрать проект без модулей (classpath) и с модулями (modulepath)
 - **Пример:** "Пакет com.example.utils с классом StringUtils"
 - **Пример:** "module-info.java с requires java.base; exports com.example.app;"
+
 
 ## 7. Файловый Ввод‑вывод
 - Стандартный ввод/вывод: `System.out.println`, `System.err`, `Scanner`
@@ -113,18 +114,20 @@
 - Работа с директориями, проверка существования, создание, удаление
 - **Примеры:** запись массива в файл, чтение файла до конца.
 
+
 ## 8. Обработка исключений
 - Иерархия `Throwable` → `Error` vs `Exception`
 - Проверяемые (`checked`) исключения (`IOException`, `SQLException`), непроверяемые (`unchecked`) (`NullPointerException`, `IllegalArgumentException`)
 - Блоки `try`, `catch`, `finally`
 - Множественные `catch`, `catch (IOException | SQLException e)`
-- Перехват и повторный бросок (`throw e`), вложенные исключения (`throw new MyException("msg", e)`) 
+- Перехват и повторный бросок (`throw e`), вложенные исключения (`throw new MyException("msg", e)`)
 - Пользовательские исключения: наследование от `Exception` (checked) или `RuntimeException` (unchecked)
 - Ресурсный менеджер `try‑with‑resources` (автоматическое закрытие `AutoCloseable`)
 - Принципы: не скрывать исключения, логировать, использовать информативные сообщения
 - **Пример:** "Обработчик файлов с try‑with‑resources"
 - **Пример:** "Пользовательское CheckedException для валидации"
 - **Ресурсы:** глава «Exceptions» в книге "Effective Java", курс Coursera "Fundamentals of Java Programming" (секция «Exception Handling»)
+
 
 ## 9. Коллекции и обобщения (Generics)
 - Интерфейсы коллекций: `Collection`, `List`, `Set`, `Map`
@@ -138,6 +141,7 @@
 - **Пример:** "HashMap для словаря слов и определений"
 - **Пример:** "Generic метод swapElements(T[] array, int i, int j)"
 - **Ресурсы:** официальное руководство Oracle "Collections Framework", курс Udemy "Java Collections: Mastering the Core API"
+
 
 ## 10. Инструменты разработки и сборки
 - Компиляция: `javac MyClass.java` (опции `-d`, `-classpath`)
