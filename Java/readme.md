@@ -70,7 +70,7 @@
 
 ## Git
 Слайды: https://github.com/VetrovSV/Programming/blob/master/git_lec.pdf
-Задание: [Задания I.md](Задания I.md)
+Задание: [Задания I.md](/Задания-I.md)
 
 
 ## 5. [Массивы и строки](studbook/40_arrays.md)
