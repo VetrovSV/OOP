@@ -137,7 +137,8 @@
 - **Ресурсы:** глава «Exceptions» в книге "Effective Java", курс Coursera "Fundamentals of Java Programming" (секция «Exception Handling»)
 
 
-## 9. Коллекции и обобщения (Generics)
+## 9. [Коллекции и обобщения (Generics)](studbook/60_collections.md)
+- [Простые коллекции: ArrayList](studbook/60_collections.md): классы-обёртки и автоупаковка, базовые операции, перебор, массив ↔ ArrayList
 - Интерфейсы коллекций: `Collection`, `List`, `Set`, `Map`
 - Реализации: `ArrayList`, `LinkedList`, `Vector`, `HashSet`, `LinkedHashSet`, `TreeSet`, `HashMap`, `LinkedHashMap`, `TreeMap`
 - Итерация: `Iterator`, `for‑each`, `ListIterator`
