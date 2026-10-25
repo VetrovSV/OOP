@@ -1,0 +1,16 @@
+@startuml
+
+scale 2
+
+class Cuboid {
+  - lenght: double
+  - width: double
+  - height: double
+
+  + Cuboid()
+}
+
+@enduml
+
+
+zz
