@@ -1,5 +1,7 @@
 package Zabgu;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -39,5 +41,35 @@ public class Main {
         boxes[0].setLength(10.0);
 
 
+        /// объявление массива размера 0
+        ArrayList<Cuboid> boxes3 = new ArrayList<Cuboid>();
+        for (int i = 0; i < 5; i++) {
+            // Создание и инициализация объекта
+            Cuboid tmp = new Cuboid();
+            boxes3.add( tmp );      // добавление элемента в конец массива
+        }
+
+
+//        for (int i = 0; i < boxes3.size(); i++) {
+//            Cuboid tmp = boxes3.get(i);
+//            System.out.println( tmp.toString() );
+//        }
+
+        for (int i = 0; i < boxes3.size(); i++) {
+//            Cuboid tmp = boxes3.get(i);  System.out.println( tmp.toString() );
+            System.out.println( boxes3.get(i).toString() );
+        }
+
+        int[] arr10 = new int[100];
+        ArrayList<Integer> arr20 = new ArrayList<Integer>();
+
+
+
+
+        // добавить новый элемент в конец массива
+//        Cuboid[] boxes1 = new Cuboid[ boxes.length + 1 ];
+//        for (int i = 0; i < boxes.length; i++) {
+//            boxes1[i] = boxes[i];        }
+//        boxes1[5] = new Cuboid();
     }
 }
