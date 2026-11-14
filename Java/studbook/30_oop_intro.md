@@ -79,7 +79,35 @@ TODO
 
 
 ```plantuml
+@startuml
+class Mammal {
+  -eyeColor : int
+  +getEyeColor() : int
+}
 
+class Dog {
+  -barkFrequency : int
+  +bark() : void
+}
+
+class Cat {
+  -meowFrequency : int
+  +meow() : void
+}
+
+class GermanShepherd {
+  +isGerman() : void
+}
+
+class Poodle {
+  +isFrench() : void
+}
+
+Mammal <|-- Dog
+Mammal <|-- Cat
+Dog <|-- GermanShepherd
+Dog <|-- Poodle
+@enduml
 ```
 #### Обобщение / специализация
 
