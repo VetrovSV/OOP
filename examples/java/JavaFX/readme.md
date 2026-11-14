@@ -11,6 +11,9 @@
   Теперь программу можно запускать
 
 
+# Структура программы
+<img src="program_structure.png">
+
 # Ссылки
 https://www.jetbrains.com/help/idea/javafx.html -- аналогичная инструкция на сайте JetBrains
 
