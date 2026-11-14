@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zabgu.javafx_cuboid.WindowController">
+   <children>
+      <Button fx:id="ButtonCalc" layoutX="252.0" layoutY="128.0" mnemonicParsing="false" onAction="#onButtonCalcClick" text="Вычислить" AnchorPane.bottomAnchor="46.0" AnchorPane.rightAnchor="59.0" />
+      <TextField fx:id="TextFiledHeight" layoutX="27.0" layoutY="44.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="TextFieldWidth" layoutX="136.0" layoutY="40.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="TextFiledLength" layoutX="259.0" layoutY="41.0" prefHeight="26.0" prefWidth="70.0" />
+      <Label layoutX="27.0" layoutY="26.0" text="Высота" />
+      <Label layoutX="136.0" layoutY="22.0" text="Ширина" />
+      <Label layoutX="259.0" layoutY="22.0" text="Глубина" />
+      <Label layoutX="29.0" layoutY="93.0" text="Объём" />
+      <Label fx:id="LabelV" layoutX="86.0" layoutY="93.0" text=" " />
+      <Label layoutX="27.0" layoutY="132.0" text="Площадь бок. поверхн." />
+      <Label fx:id="LabelS" layoutX="27.0" layoutY="150.0" text=" " />
+   </children>
+</AnchorPane>
