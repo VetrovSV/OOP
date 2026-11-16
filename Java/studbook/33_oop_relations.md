@@ -83,7 +83,7 @@ Rectangle *-- Point
 университета погибают.
 
 
-<img src="img/33_oop_relations/University_departments.png">
+<img src="img/33_oop_relations/University_departments.png" width=150>
 
 <!--
 ```plantuml
@@ -218,7 +218,7 @@ public class Person {
 
 Класс `Cuboid` (прямоугольный параллелепипед) взят из JavaFX-проекта [JavaFX_Cuboid](../examples/JavaFX_Cuboid); тот же класс без графики есть в обычном Java-проекте [class_example](../examples/class_example):
 
-<img src="img/33_oop_relations/Cuboid.png">
+<img src="img/33_oop_relations/Cuboid.png" width="500">
 
 <!--
 
@@ -275,7 +275,7 @@ classDiagram
 
 Ассоциацию между классами удобно увидеть в том же JavaFX-приложении. Контроллер окна `WindowController` хранит ссылку на объект `Cuboid` и пользуется им при нажатии кнопки:
 
-<img src="img/33_oop_relations/WindowController_cuboid.png">
+<img src="img/33_oop_relations/WindowController_cuboid.png" width="300">
 
 <!--
 

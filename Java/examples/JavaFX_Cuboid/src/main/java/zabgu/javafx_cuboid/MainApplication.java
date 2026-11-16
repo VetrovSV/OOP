@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class MainApplication extends Application {
 
+    // метод start будет вызван методом launch
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("window.fxml"));
