@@ -1,5 +1,6 @@
 package zabgu.javafx_cuboid;
 
+// Модель из MVC
 // Пареллепипед
 public class Cuboid {
     private double length, width, height;   // длина, ширина, высота
