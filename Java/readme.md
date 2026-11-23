@@ -40,7 +40,7 @@
 - Инициализация переменных, локальные vs поля класса
 
 
-## 3. [Консольный ввод‑вывод](Java/studbook/13_IO.md)
+## 3. [Консольный ввод‑вывод](studbook/13_IO.md)
 - Стандартный ввод/вывод: `System.out.println`, `System.err`, `Scanner`
 - Форматированный вывод: `System.out.printf`, `format`
 - Чтение из консоли с `Scanner`, типы методов (`nextInt`, `nextLine` и т.д.)
@@ -70,7 +70,7 @@
 
 ## Git
 Слайды: https://github.com/VetrovSV/Programming/blob/master/git_lec.pdf
-Задание: [Задания I.md](/Задания-I.md)
+Задание: [Задания I.md](../Задания-I.md)
 
 
 ## 5. [Массивы и строки](studbook/40_arrays.md)
