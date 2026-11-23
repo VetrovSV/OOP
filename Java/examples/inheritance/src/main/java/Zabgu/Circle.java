@@ -14,7 +14,6 @@ public class Circle extends Figure {
         radius = 1.0;
     }
 
-
     Circle(double radius1){
         // здесь будет происходить неявный автоматический вызов конструктора базвого класса
         radius = 0.0;
@@ -33,6 +32,17 @@ public class Circle extends Figure {
 
     public double getRadius(){ return radius; }
 
+    @Override
+    public double area(){
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public double perimeter(){
+        return 2 * Math.PI * radius;
+    }
+
+
     // переопределение метода toString из базового класса
     // переопределение - создание новой версии метода с другим телом (реализацией), но с таким же заголовком
     @Override
@@ -40,6 +50,9 @@ public class Circle extends Figure {
         // super.toString() -- вызов метода toString из базового класса
         return super.toString() + String.format(", radius = %.2f", radius);
     }
+
+    // TODO: equals
+
 
 
 }

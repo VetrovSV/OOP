@@ -1,7 +1,7 @@
 package Zabgu;
 
 // Базовый (родительский, суперкласс) класс для всех геом. фигур
-public class Figure /* extends Object */{
+public abstract class Figure /* extends Object */{
     public double x, y;
     public String color;
 
@@ -31,4 +31,8 @@ public class Figure /* extends Object */{
                ( Math.abs(f2.y - this.y) < 1.e-9 ) &&
                ( f2.color.equals( this.color ) );
     }
+
+    public abstract double area();
+
+    public abstract double perimeter();
 }
